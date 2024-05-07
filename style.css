@@ -41,7 +41,20 @@
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
   * {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
+body {font-family: Verdana, sans-serif; margin:0; -webkit-text-stroke-color: black; -webkit-text-stroke-width: 0.2px; font-weight: 800; color: white;}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
+.spin-image {
+  width: 150px; /* Adjust the size of the image */
+  animation: spin 30s linear infinite; /* Set the animation to loop infinitely */
+}
+
+@keyframes spin {
+  0% { transform: rotate(45deg); }
+  15% { transform: rotate(-45deg); }
+  45% { transform: rotate(-135deg); }
+  65% { transform: rotate(-225deg); }
+  75% { transform: rotate(-315deg); }
+  100% { transform: rotate(-315deg); }
+}
