@@ -1,0 +1,76 @@
+h1 {
+    color: rgb(103, 103, 103);
+    -webkit-text-stroke-width: .8px;
+    -webkit-text-stroke-color: black;
+    font-family: fantasy;
+    background-color: rgb(68, 68, 111);
+    border: 2px solid black;
+    max-width: 890px;
+}
+h1.top{
+    max-width: none;
+}
+h2 {
+    font-family: fantasy;
+}
+h3 {
+    color: rgb(103, 103, 103);
+    font-size: 25px;
+    font-style: italic
+}
+li {
+    list-style-type: square;
+    list-style-position: outside;
+    font-family: Arial;
+    margin: 0px;
+    background: #99aab4;
+    color: rgb(10, 7, 47);
+    padding: 5px;
+    margin-left: -35px;
+    outline: 1px solid black;
+    margin-bottom: 10px;
+    max-width: 875px;
+}
+li.subclass {
+    background: #7f8547;
+    color: rgb(25, 30, 6);
+}
+li.perk {
+    background: #47854e;
+    color: rgb(7, 47, 8);
+}
+li.trait {
+    background: #854779;
+    color: rgb(30, 6, 22);
+}
+li.item {
+    background: #605d6a;
+    color: rgb(34, 34, 36);
+}
+li.champion {
+    background: #ff0000;
+    color: rgb(255, 255, 255);
+}
+li.less {
+    list-style-type: square;
+    list-style-position: outside;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background: none;
+    color: none;
+    padding: 0px;
+    margin-left: -50px;
+    outline: none;
+    margin-bottom: 0px;
+    position: relative;
+    top: -20;
+    max-width: none;
+}
+div.box {
+    outline: 3px solid rgb(0, 0, 0);
+    margin: 20px;
+    background-color: rgba(68, 68, 111, 0.379);
+}
+nav ul{height:400px; width:75%;}
+nav ul{overflow:hidden; overflow-y:scroll;}

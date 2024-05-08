@@ -1,0 +1,603 @@
+<body>
+    <link rel="stylesheet" href="style.css">
+    <!--Character Info-->
+    <body>
+        <!--TopStats-->
+        <div class="box" style = "width:130;height:160;position: absolute; left: 275; top: 35"></div>
+        <div class="box" style = "width:140;height:160;position: absolute; left: 407; top: 35"></div>
+        <div class="box" style = "width:120;height:155;position: absolute; left: 550; top: 35"></div>
+        <div class="box" style = "width:120;height:155;position: absolute; left: 673; top: 35"></div>
+        <div class="box" style = "width:120;height:155;position: absolute; left: 796; top: 35"></div>
+        <div class="box" style = "width:130;height:155;position: absolute; left: 919; top: 35"></div>
+        <div class="box" style = "width:130;height:155;position: absolute; left: 1051; top: 35"></div>
+        <!--Inventory-->
+        <div class="box" style = "width:775;height:30;position: absolute; left: 410; top: 210"></div>
+        <div class="box" style = "width:775;height:60;position: absolute; left: 410; top: 240"></div>
+        <div class="box" style = "width:775;height:40;position: absolute; left: 410; top: 300"></div>
+        <div class="box" style = "width:775;height:45;position: absolute; left: 410; top: 340"></div>
+        <div class="box" style = "width:775;height:45;position: absolute; left: 410; top: 385"></div>
+        <!--Setup-->
+        <h1 class="top">ATLAS CHARACTER CREATOR</h1>
+        <button id="saveBtn">Save Data</button>
+        <br><br>
+        <button hidden = "" onclick="loadProficiencies()" id="loadBtn">Update</button>
+        <br><br>
+        <h2>Character Info:</h2>
+        <!--Name-->
+        <p>Name:
+            <input type="text" id="chrName" placeholder="Enter your Character Name:">
+        </p>
+        <p>Level:
+            <input type="number" id="levelVal" placeholder="Enter your Character level:" style="width: 50px">
+        </p>
+        <!--Traits-->
+            <form action="/action_page.php">
+                <label for="trait1">Trait1:</label>
+                <select name="trait1" id="trait1">
+                    <option value="">Pick a Trait (optional)</option>
+                    <option value="LightFrame">LightFrame</option>
+                    <option value="HeavyFrame">HeavyFrame</option>
+                    <option value="PistolPacker">PistolPacker</option>
+                    <option value="SlowDraw">SlowDraw</option>
+                    <option value="FastLearner">FastLearner</option>
+                    <option value="Gifted">Gifted</option>
+                    <option value="Optimist">Optimist</option>
+                    <option value="Altruist">Altruist</option>
+                    <option value="Survivor">Survivor</option>
+                    <option value="SilverTongued">SilverTongued</option>
+                    <option value="FastFingers">FastFingers</option>
+                    <option value="HeavyHanded">HeavyHanded</option>
+                    <option value="FarSighted">FarSighted</option>
+                    <option value="NearSighted">NearSighted</option>
+                </select>
+            </form>
+            <form action="/action_page.php">
+                <label for="trait2">Trait2:</label>
+                <select name="trait2" id="trait2">
+                    <option value="">Pick a Trait (optional)</option>
+                    <option value="LightFrame">LightFrame</option>
+                    <option value="HeavyFrame">HeavyFrame</option>
+                    <option value="PistolPacker">PistolPacker</option>
+                    <option value="SlowDraw">SlowDraw</option>
+                    <option value="FastLearner">FastLearner</option>
+                    <option value="Gifted">Gifted</option>
+                    <option value="Optimist">Optimist</option>
+                    <option value="Altruist">Altruist</option>
+                    <option value="Survivor">Survivor</option>
+                    <option value="SilverTongued">SilverTongued</option>
+                    <option value="FastFingers">FastFingers</option>
+                    <option value="HeavyHanded">HeavyHanded</option>
+                    <option value="FarSighted">FarSighted</option>
+                    <option value="NearSighted">NearSighted</option>
+                </select>
+            </form>
+        <!--Background-->
+            <form action="/action_page.php">
+                <label for="background">Background:</label>
+                <select name="background" id="background">
+                    <option value="Bandit">Bandit</option>
+                    <option value="Farmer">Farmer</option>
+                    <option value="Pilot">Pilot</option>
+                    <option value="Thief">Thief</option>
+                    <option value="Mercenary">Mercenary</option>
+                    <option value="Soldier">Soldier</option>
+                    <option value="Performer">Performer</option>
+                    <option value="Mechanic">Mechanic</option>
+                    <option value="Wanderer">Wanderer</option>
+                    <option value="Scrapper">Scrapper</option>
+                    <option value="Politician">Politician</option>
+                    <option value="Leader">Leader</option>
+                </select>
+            </form>
+        <!--Class-->
+        <p>
+            <form action="/action_page.php">
+                <label for="classtype">Class:</label>
+                <select name="classtype" id="classtype">
+                    <option value="Fighter">Fighter</option>
+                    <option value="Medic">Medic</option>
+                    <option value="Technician">Technician</option>
+                    <option value="Mercenary">Mercenary</option>
+                    <option value="Soldier">Soldier</option>
+                </select>
+            </form>
+        </p>
+        <!--Subclass-->
+        <p>
+            <form action="/action_page.php">
+                <label for="subclasstype">Subclass Perk:</label>
+                <select name="subclasstype" id="subclasstype">
+                    <option value="">Select a Class</option>
+                </select>
+            </form>
+        </p>
+        <!--Perks-->
+        <p>
+            <p>
+                <form action="/action_page.php">
+                    <label for="perktype1">Level 3 Perk:</label>
+                    <select name="perktype1" id="perktype1">
+                        <option value="">Select a Class</option>
+                    </select>
+                </form>
+            </p>
+            <p>
+                <form action="/action_page.php">
+                    <label for="perktype2">Level 7 Perk:</label>
+                    <select name="perktype2" id="perktype2">
+                        <option value="">Select a Class</option>
+                    </select>
+                </form>
+            </p>
+            <p hidden = "hidden">
+                <form action="/action_page.php" hidden = "hidden">
+                    <label for="perktype3">Level 9 Perk:</label>
+                    <select name="perktype3" id="perktype3">
+                        <option value="">Select a Perk</option>
+                    </select>
+                </form>
+            </p>
+        </p>
+        <!--Champion Perk-->
+        <p>
+            <form action="/action_page.php">
+                <label for="championval">Champion Perk:</label>
+                <select name="championval" id="championval">
+                    <option value="">Select a Class</option>
+                </select>
+            </form>
+        </p>
+
+        <!--Subclass Changer-->
+        <script src="scripts/subclasschanger.js" defer></script>
+
+        <!--Perk Changer-->
+        <script src="scripts/perkchanger.js" defer></script>
+
+        <!--Championperk Changer-->
+        <script src="scripts/championchanger.js" defer></script>
+    </body>
+    <!--Character Stats-->
+    <body>
+        <h2>Base Stats:</h2>
+        <h4>Points Left: <p id="pointsLeft">0</p></h4>
+        <h4>Proficiencies: <p id="Proficiencies">0</p></h4>
+    <h3>Agility:</h3>
+            <p>Agility:
+                <input type="number" id="Agility" placeholder="Agility:" value=0 style="width: 50px">
+            </p>
+            <p>Finesse:
+                <input type="number" id="Finesse" placeholder="Finesse:"value=0 style="width: 50px">
+                <button onclick="swapProficiency('Finesse')">add/remove</button>
+            </p>
+            <p>Dodge:
+                <input type="number" id="Dodge" placeholder="Dodge:"value=0 style="width: 50px">
+                <button onclick="swapProficiency('Dodge')">add/remove</button>
+            </p>
+            <p>PistolTraining:
+                <input type="number" id="PistolTraining" placeholder="PistolTraining:"value=0 style="width: 50px">
+                <button onclick="swapProficiency('PistolTraining')">add/remove</button>
+            </p>
+            <p>Speed:
+                <input type="number" id="Speed" placeholder="Speed:"value=0 style="width: 50px">
+                <button onclick="swapProficiency('Speed')">add/remove</button>
+            </p>
+    <h3>Trickery:</h3>
+            <p>Trickery:
+                <input type="number" id="Trickery" placeholder="Trickery:"value=0 style="width: 50px">
+            </p>
+            <p>SleightofHand:
+                <input type="number" id="SleightofHand" placeholder="SleightofHand:"value=0 style="width: 50px">
+                <button onclick="swapProficiency('SleightofHand')">add/remove</button>
+            </p>
+            <p>Stealth:
+                <input type="number" id="Stealth" placeholder="Stealth:"value=0 style="width: 50px">
+                <button onclick="swapProficiency('Stealth')">add/remove</button>
+            </p>
+            <p>Deception:
+                <input type="number" id="Deception" placeholder="Deception:"value=0 style="width: 50px">
+                <button onclick="swapProficiency('Deception')">add/remove</button>
+            </p>
+            <p>Charm:
+                <input type="number" id="Charm" placeholder="Charm:"value=0 style="width: 50px">
+                <button onclick="swapProficiency('Charm')">add/remove</button>
+            </p>
+    <h3>Luck:</h3>
+            <p>Luck:
+                <input type="number" id="Luck" placeholder="Luck:"value=0 style="width: 50px">
+            </p>
+            <p>RifleTraining:
+                <input type="number" id="RifleTraining" placeholder="RifleTraining:"value=0 style="width: 50px">
+                <button onclick="swapProficiency('RifleTraining')">add/remove</button>
+            </p>
+            <p>Accuracy:
+                <input type="number" id="Accuracy" placeholder="Accuracy:"value=0 style="width: 50px">
+                <button onclick="swapProficiency('Accuracy')">add/remove</button>
+            </p>
+            <p>Scavenge:
+                <input type="number" id="Scavenge" placeholder="Scavenge:"value=0 style="width: 50px">
+                <button onclick="swapProficiency('Scavenge')">add/remove</button>
+            </p>
+            <p>Pilot:
+                <input type="number" id="Pilot" placeholder="Pilot:"value=0 style="width: 50px">
+                <button onclick="swapProficiency('Pilot')">add/remove</button>
+            </p>
+    <h3>Anger:</h3>
+            <p>Anger:
+                <input type="number" id="Anger" placeholder="Anger:"value=0 style="width: 50px">
+            </p>
+            <p>Constitution:
+                <input type="number" id="Constitution" placeholder="Constitution:"value=0 style="width: 50px">
+                <button onclick="swapProficiency('Constitution')">add/remove</button>
+            </p>
+            <p>MeleeTraining:
+                <input type="number" id="MeleeTraining" placeholder="MeleeTraining:"value=0 style="width: 50px">
+                <button onclick="swapProficiency('MeleeTraining')">add/remove</button>
+            </p>
+            <p>HeavyWeaponTraining:
+                <input type="number" id="HeavyWeaponTraining" placeholder="HeavyWeaponTraining:"value=0 style="width: 50px">
+                <button onclick="swapProficiency('HeavyWeaponTraining')">add/remove</button>
+            </p>
+            <p>Wrath:
+                <input type="number" id="Wrath" placeholder="Wrath:"value=0 style="width: 50px">
+                <button onclick="swapProficiency('Wrath')">add/remove</button>
+            </p>
+    <h3>Smarts:</h3>
+            <p>Smarts:
+                <input type="number" id="Smarts" placeholder="Smarts:"value=0 style="width: 50px">
+            </p>
+            <p>AnimalHandling:
+                <input type="number" id="AnimalHandling" placeholder="AnimalHandling:"value=0 style="width: 50px">
+                <button onclick="swapProficiency('AnimalHandling')">add/remove</button>
+            </p>
+            <p>Awareness:
+                <input type="number" id="Awareness" placeholder="Awareness:"value=0 style="width: 50px">
+                <button onclick="swapProficiency('Awareness')">add/remove</button>
+            </p>
+            <p>Survival:
+                <input type="number" id="Survival" placeholder="Survival:"value=0 style="width: 50px">
+                <button onclick="swapProficiency('Survival')">add/remove</button>
+            </p>
+            <p>Mechanic:
+                <input type="number" id="Mechanic" placeholder="Mechanic:"value=0 style="width: 50px">
+                <button onclick="swapProficiency('Mechanic')">add/remove</button>
+            </p>
+    </body>
+    <button onclick="clearProficiencies()">clear</button>
+
+<!--Traits-->
+    <body>
+        <head>
+            <div style = "position: relative; left: 300; top: -1550">
+                <h1>TRAITS</h1>
+                <dl>
+                    <dt><h3>Kill an Enemy</h3></dt>
+                    <dd id="KillEnemy"></dd>
+                    <dt><h3>Bonuses</h3></dt>
+                    <dd id="Bonuses"></dd>
+                    <dt><h3>Passive</h3></dt>
+                    <dd id="Passive"></dd>
+                    <dt><h3>Abilities</h3></dt>
+                    <dd id="Abilities"></dd>
+                </dl>
+            </div>
+        </head>
+    </body>
+<!--Abilities-->
+    <body>
+        <head>
+            <div style = "position: relative; left: 300; top: -1550">
+                <h1>Abilites</h1>
+                <dl>
+                    <dt><h3>Defensive</h3></dt>
+                    <dd id="DefensiveA"></dd>
+                    <dt><h3>Offensive</h3></dt>
+                    <dd id="OffensiveA"></dd>
+                    <dt><h3>Support</h3></dt>
+                    <dd id="SupportA"></dd>
+                </dl>
+            </div>
+        </head>
+    </body>
+<!--Base Stats-->
+<body>
+    <h4 style = "position: absolute; left: 300; top: 50">
+        HP: 
+        <input type="number" id="curHP" placeholder="HP:" style="width: 50px">
+        <h>/</h>
+        <h id="maxHP">1</h>
+    </h4>
+    <h4 style = "position: absolute; left: 300; top: 80">
+        Temp HP: 
+        <input type="number" id="curTP" placeholder="Temp:" style="width: 50px">
+    </h4>
+    <h4 style = "position: absolute; left: 300; top: 110">
+        SP: 
+        <input type="number" id="curSP" placeholder="SP:" style="width: 50px">
+        <h>/</h>
+        <h id="maxSP">1</h>
+    </h4>
+    <h4 style = "position: absolute; left: 300; top: 140">
+        CP: 
+        <input type="number" id="curCP" placeholder="CP:" style="width: 50px">
+        <h>/</h>
+        <h id="maxCP">1</h>
+    </h4>
+    <h4 style = "position: absolute; left: 300; top: 170">
+        AC:
+        <h id="AC">0</h>
+    </h4>
+    <h4 style = "position: absolute; left: 435; top: 170">
+        Speed:
+        <h id="maxSpeed">30</h>ft
+    </h4>
+    <h4 style = "position: absolute; left: 435; top: 50">
+        Initiative:
+        <h id="initiative">0</h>
+    </h4>
+    <h4 style = "position: absolute; left: 435; top: 80">
+        Throwing:
+        <h id="Throwing">0</h>ft
+    </h4>
+    <h4 style = "position: absolute; left: 435; top: 110">
+        Second Chances:
+        <input hidden = "hidden" style = "position: relative; left: -120; top: 25" type="checkbox" id="chance1">
+        <input hidden = "hidden" style = "position: relative; left: -120; top: 25" type="checkbox" id="chance2">
+        <input hidden = "hidden" style = "position: relative; left: -120; top: 25" type="checkbox" id="chance3">
+        <input hidden = "hidden" style = "position: relative; left: -120; top: 25" type="checkbox" id="chance4">
+    </h4>
+</body>
+
+<!--Weakness and Resistances-->
+<body>
+    <head>
+        <div style = "position: absolute; left: 1250; top: 35">
+            <h3>Resistances</h3>
+            <dl  class="less">
+                <dd id="Resistances"></dd>
+            </dl>
+        </div>
+        <div style = "position: absolute; left: 1250; top: 155">
+            <h3>Weaknesses</h3>
+            <dl>
+                <dd id="Weaknesses"></dd>
+            </dl>
+        </div>
+        <div style = "position: absolute; left: 1250; top: 275">
+            <h3>Proficiencies</h3>
+            <dl>
+                <dd id="ProficienciesL"></dd>
+            </dl>
+        </div>
+    </head>
+</body>
+
+<nav style= "position: absolute; left: 1230; top: 400">
+    <h3>Inventory</h3>
+    <ul id="InventoryList">
+    </ul>
+    <input type="text" id="itemName" placeholder="Enter an item:">
+    <button onclick="addItemInventory()">Add Item</button>
+    <input type="number" id="itemAmount" placeholder="Enter an amount:">
+    <button onclick="removeItemInventory()">Remove Item</button>
+    <button onclick="clearInventory()">Clear Inventory</button>
+</nav>
+
+<!--Skills-->
+<body>
+    <h4 style = "position: absolute; left: 575; top: 50">
+        Agility:<h id="upAgility">0</h>
+    </h4>
+    <h4 style = "position: absolute; left: 575; top: 80">
+        Finesse:<h id="upFinesse">0</h>
+    </h4>
+    <h4 style = "position: absolute; left: 575; top: 110">
+        Dodge:<h id="upDodge">0</h>
+    </h4>
+    <h4 style = "position: absolute; left: 575; top: 140">
+        PistolTraining:<h id="upPistolTraining">0</h>
+    </h4>
+    <h4 style = "position: absolute; left: 575; top: 170">
+        Speed:<h id="upSpeed">0</h>
+    </h4>
+</body>
+<body>
+    <h4 style = "position: absolute; left: 700; top: 50">
+        Trickery:<h id="upTrickery">0</h>
+    </h4>
+    <h4 style = "position: absolute; left: 700; top: 80">
+        SleightofHand:<h id="upSleightofHand">0</h>
+    </h4>
+    <h4 style = "position: absolute; left: 700; top: 110">
+        Stealth:<h id="upStealth">0</h>
+    </h4>
+    <h4 style = "position: absolute; left: 700; top: 140">
+        Deception:<h id="upDeception">0</h>
+    </h4>
+    <h4 style = "position: absolute; left: 700; top: 170">
+        Charm:<h id="upCharm">0</h>
+    </h4>
+</body>
+<body>
+    <h4 style = "position: absolute; left: 825; top: 50">
+        Luck:<h id="upLuck">0</h>
+    </h4>
+    <h4 style = "position: absolute; left: 825; top: 80">
+        RifleTraining:<h id="upRifleTraining">0</h>
+    </h4>
+    <h4 style = "position: absolute; left: 825; top: 110">
+        Accuracy:<h id="upAccuracy">0</h>
+    </h4>
+    <h4 style = "position: absolute; left: 825; top: 140">
+        Scavenge:<h id="upScavenge">0</h>
+    </h4>
+    <h4 style = "position: absolute; left: 825; top: 170">
+        Pilot:<h id="upPilot">0</h>
+    </h4>
+</body>
+<body>
+    <h4 style = "position: absolute; left: 950; top: 50">
+        Anger:<h id="upAnger">0</h>
+    </h4>
+    <h4 style = "position: absolute; left: 950; top: 80">
+        Constitution:<h id="upConstitution">0</h>
+    </h4>
+    <h4 style = "position: absolute; left: 950; top: 110">
+        MeleeTraining:<h id="upMeleeTraining">0</h>
+    </h4>
+    <h4 style = "position: absolute; left: 950; top: 140">
+        HvyWepTrning:<h id="upHeavyWeaponTraining">0</h>
+    </h4>
+    <h4 style = "position: absolute; left: 950; top: 170">
+        Wrath:<h id="upWrath">0</h>
+    </h4>
+</body>
+<body>
+    <h4 style = "position: absolute; left: 1075; top: 50">
+        Smarts:<h id="upSmarts">0</h>
+    </h4>
+    <h4 style = "position: absolute; left: 1075; top: 80">
+        AnimalHandling:<h id="upAnimalHandling">0</h>
+    </h4>
+    <h4 style = "position: absolute; left: 1075; top: 110">
+        Awareness:<h id="upAwareness">0</h>
+    </h4>
+    <h4 style = "position: absolute; left: 1075; top: 140">
+        Survival:<h id="upSurvival">0</h>
+    </h4>
+    <h4 style = "position: absolute; left: 1075; top: 170">
+        Mechanic:<h id="upMechanic">0</h>
+    </h4>
+</body>
+
+<!--Items-->
+
+<body>
+<!--PrimaryWeapon-->
+    <form action="/action_page.php" style = "position: absolute; left: 240; top: 240">
+        <input type="file" id="chosenslot"accept="file/txt">
+
+        <label for="primaryslot"></label>
+        <select hidden = "hidden" name="primaryslot" id="primaryslot">
+        </select>
+    </form>
+    <p style = "position: absolute; left: 240; top: 205">Selected Weapon:</p>
+<!--Armor-->
+    <form action="/action_page.php" style = "position: absolute; left: 240; top: 290">
+        <input type="file" id="chosenArmor"accept="file/txt">
+
+        <label for="armorslot"></label>
+        <select hidden = "hidden" name="armorslot" id="armorslot">
+    </select>
+    </form>
+    <p style = "position: absolute; left: 240; top: 250">Selected Armor:</p>
+    <p  style = "position: absolute; left: 240; top: 375">
+        Armor Requirements:
+    </p>
+    <p  style = "position: absolute; left: 240; top: 400" id="armorReqs">
+        None
+    </p>
+<!--Shield-->
+<form action="/action_page.php" style = "position: absolute; left: 240; top: 330">
+        <input type="file" id="chosenShield"accept="file/txt">
+
+        <label for="armorslot"></label>
+        <label for="shieldslot"></label>
+        <select name="shieldslot" id="shieldslot" hidden="hidden">
+    </select>
+    </form>
+    <p style = "position: absolute; left: 240; top: 295">Selected Shield:</p>
+    <p  style = "position: absolute; left: 240; top: 445">
+        Shield Requirements:
+    </p>
+    <p  style = "position: absolute; left: 240; top: 465" id="shieldReqs">
+        None
+    </p>
+<!--ClipHolder-->
+    <p  style = "position: absolute; left: 240; top: 345">
+        AmmoClip:
+        <input type="number" id="clipAmount" placeholder="Clip:" style = "width: 50px">
+    </p>
+
+    <h4 style = "position: absolute; left: 440; top: 210">Name:</h4>
+    <h4 id= "prName" style = "max-width: 75px;position: absolute; left: 440; top: 240">Name</h4>
+
+    <h4 style = "position: absolute; left: 550; top: 210">Requirement:</h4>
+    <h4 id= "prRequirement" style = "max-width: 75px; position: absolute; left: 550; top: 240">Requirement</h4>
+
+    <h4 id= "SwapAmmoType" style = "position: absolute; left: 670; top: 210">AmmoType:</h4>
+    <h4 id= "prAmmoType" style = "position: absolute; left: 670; top: 240">AmmoType</h4>
+
+    <h4 id= "SwapClip" style = "position: absolute; left: 770; top: 210">Clip:</h4>
+    <h4 id= "prClip" style = "position: absolute; left: 770; top: 240">Clip</h4>
+
+    <h4 style = "position: absolute; left: 810; top: 210">Range:</h4>
+    <h4 id= "prRange" style = "position: absolute; left: 810; top: 240">Range</h4>
+
+    <h4 id = "Reload" style = "position: absolute; left: 890; top: 210">Reload:</h4>
+    <h4 id= "prReload" style = "position: absolute; left: 890; top: 240">Reload</h4>
+
+    <h4 id = "Malfunction" style = "position: absolute; left: 970; top: 210">Malfunction:</h4>
+    <h4 id= "prMalfunction" style = "position: absolute; left: 970; top: 240">Malfunction</h4>
+
+    <h4 id = "Repair" style = "position: absolute; left: 1090; top: 210">Repair:</h4>
+    <h4 id= "prRepair" style = "position: absolute; left: 1090; top: 240">Repair</h4>
+
+    <h4 style = "position: absolute; left: 440; top: 310">Primary Attack:</h4>
+    <h4 id= "prPrimaryAttack" style = "max-width: 650px;position: absolute; left:560; top: 310">PrimaryAttack</h4>
+
+    <h4 style = "position: absolute; left: 440; top: 345">Special Attack:</h4>
+    <h4 id= "prSpecialAttack" style = "max-width: 650px;position: absolute; left:560; top: 345">SpecialAttack</h4>
+
+    <h4 style = "position: absolute; left: 440; top: 385">Crit Attack:</h4>
+    <h4 id= "prCritAttack" style = "max-width: 650px;position: absolute; left:560; top: 385">CritAttack</h4>
+</body>
+
+<!--Level Subclass Info-->
+    <script src="ChrSheet/Subclasses.js" defer></script>
+    <script src="ChrSheet/Perks.js" defer></script>
+
+    <body>
+        <title>ATLAS</title>
+        <!--PointTally-->
+        <script src="ChrSheet/PointTotal.js" defer></script>
+        <!--Saver/Loader-->
+        <script src="scripts/save-load.js" defer></script>
+        <!--ClassHandler-->
+        <script src="ChrSheet/SheetStats.js" defer></script>
+        <script src="ChrSheet/ClassInfo.js" defer></script>
+        <script src="ChrSheet/SubclassInfo.js" defer></script>
+        <script src="ChrSheet/PerkInfo.js" defer></script>
+        <script src="ChrSheet/TraitAbilityHandler.js" defer></script>
+        <script src="ChrSheet/BtnProf.js" defer></script>
+        <script src="ItemHandler/Inventory.js" defer></script>
+        <script src="ChrSheet/BackgroundTraitInfo.js" defer></script>
+        <script src="ChrSheet/SpecialEvent.js" defer></script>
+        <script src="ChrSheet/ChampionInfo.js" defer></script>
+        <script src="ItemHandler/Weapons.js" defer></script>
+        <script src="ItemHandler/Armor.js" defer></script>
+        <script src="ItemHandler/Shield.js" defer></script>
+        <script defer>
+            // This script uses MAGIC to make it so the update button is no longer necessary when the page is first loaded in most cases - NBF
+            setTimeout(() => {
+                const loadBtn = document.querySelector('#loadBtn');
+                loadBtn.click();
+            }, 10);
+        </script>
+    </body>
+</body>
+
+<html>
+<script type="text/javascript">
+        function Copy() 
+        {
+            var Url = document.getElementById("paste-box");
+            Url.value = window.location.href;
+            Url.focus();
+            Url.select();  
+            document.execCommand("Copy");
+        }
+</script>
+<body>
+</body>
+</html>
