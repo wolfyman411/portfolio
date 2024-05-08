@@ -10,7 +10,7 @@
 </head>
 <div id = "header"></div>
 
-<body style="background-image: url(Media/Games/bloodfuel/background.png); background-repeat: no-repeat; background-size: cover; position: sticky;">
+<body style="background-image: url(Media/Games/bloodfuel/background.png); background-size: cover; background-attachment: fixed; background-repeat: no-repeat; margin: 0; padding: 0; height: 100%; width: 100%;">
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <!-- Elites -->
@@ -60,7 +60,7 @@
 </div>
 
 <div style="display: flex; justify-content: space-between; align-items:end;">
-    <!-- Waves -->
+    <!-- Phases -->
     <div style="display: flex; align-items: center; padding-left: 5%">
         <img src="Media/Games/bloodfuel/wheel.png" style="width: 35%;" class="spin-image">
         <div style="max-width: 35%; padding-left: 5%">
@@ -69,9 +69,9 @@
         </div>
     </div>
     <!-- Cards -->
-    <div style="display: flex; align-items: center; padding-left: 5%; padding-top: 10%;">
+    <div style="display: flex; align-items: center; padding-left: 5%; padding-top: 5%;">
         <img src="Media/Games/bloodfuel/cards.png" style="width: 35%;">
-        <div style="max-width: 35%; padding-left: 5%">
+        <div style="max-width: 65%; padding-left: 5%">
             <h3>Cards</h3>
             <p>Cards are awarded to the player after defeating a boss, they can give abilities, attacks, or upgrade the player in some way.</p>
         </div>
@@ -82,6 +82,33 @@
         <div style="max-width: 35%;">
             <h3>Shop</h3>
             <p>The player is awarded when they die an amount of death tokens relative to their score. The player can then spend these tokens on lasting upgrades and boons to make the game easier.</p>
+        </div>
+    </div>
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items:end; height: 500px; text-align: center;">
+    <!-- Gaemplay1 -->
+    <div style="display: flex-box; align-items: center;">
+        <h3>Unique Runs</h3>
+        <img src="Media/Games/bloodfuel/gameplay1.gif" style="width: 75%;">
+        <div style="max-width: 100%; padding: 1%;">
+            <p>Since cards are randomly chosen from a pool, and players can only pick 2 attacks and 3 abilities, no two runs will ever feel the same.</p>
+        </div>
+    </div>
+    <!-- Gameplay2 -->
+    <div style="display: flex-box; align-items: center;">
+        <h3>Complex Spawning</h3>
+        <img src="Media/Games/bloodfuel/gameplay2.gif" style="height: 75%;">
+        <div style="max-width: 100%; padding: 4%;">
+            <p>Enemies always try to stick close to the player by spawning and teleporting to the edges of the screen. The amount of elites and number of enemies is determined by a phase that is constantly changing.</p>
+        </div>
+    </div>
+    <!-- Gameplay3 -->
+    <div style="display: flex-box; align-items: center;">
+        <h3>Difficult Bosses</h3>
+        <img src="Media/Games/bloodfuel/gameplay3.gif" style="width: 100%; padding-right: 10%;">
+        <div style="max-width: 100%; padding: 1%;">
+            <p>At the end of a wave, a difficult boss will spawn, testing the abilities and loadout of the player.</p>
         </div>
     </div>
 </div>

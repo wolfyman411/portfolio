@@ -43,6 +43,7 @@
   * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0; -webkit-text-stroke-color: black; -webkit-text-stroke-width: 0.2px; font-weight: 800; color: white;}
 p {text-shadow: 2px 2px black;}
+h3 {text-shadow: 1px 1px white; color: black; -webkit-text-stroke-color: white;}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
