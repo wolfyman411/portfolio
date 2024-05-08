@@ -57,7 +57,7 @@ createDropdown("Games", [
 ]);
 
 createDropdown("Software", [
-    {url: "/chrsheet.html", text: "ATLAS Character Maker"},
+    {url: "ATLAS/chrsheet.html", text: "ATLAS Character Maker"},
     {url: "#", text: "Garden Discord Bot"},
     {url: "#", text: "RPG Discord Bot"}
 ]);
