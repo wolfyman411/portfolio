@@ -12,39 +12,84 @@
 
 <br></vbr>
 
-<body style="background-image: url(Media/Games/bloodfuel/background.png); background-repeat: no-repeat; background-size: cover;">
+<body style="background-image: url(Media/Games/bloodfuel/background.png); background-repeat: no-repeat; background-size: cover; position: sticky;">
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
-    <!-- Waves -->
-    <div style="display: flex; align-items: center; padding-left: 5%">
-        <img src="Media/Games/bloodfuel/wheel.png" style="width: 35%;" class="spin-image">
-        <div style="max-width: 25%; padding-left: 5%">
-            <h3>Waves</h3>
-            <p>Waves control the type of enemies that spawn, the amount of enemies, and how many elites can spawn. These numbers become more aggressive the higher wave the player gets to.</p>
+    <!-- Elites -->
+    <div style="display: flex; align-items: center; padding-left: 5%;">
+        <button type="button" onclick="moveEliteIndex(-1)" style="background: transparent; border: none;">
+            <img src="Media/Games/bloodfuel/arrowleft.png">
+        </button>
+        <img id="EliteImg" src="Media/Games/bloodfuel/paladin.png">
+        <button type="button" onclick="moveEliteIndex(1)" style="background: transparent; border: none;">
+            <img src="Media/Games/bloodfuel/arrowright.png">
+        </button>
+        <div>
+            <h3 id="EliteName">PALADIN</h3>
+            <p id="EliteBio">Buffs nearby allies giving them increased health and speed.</p>
         </div>
     </div>
 
     <!-- Enemies -->
-    <div style="display: flex; align-items: center;">
-        <button type="button" onclick="moveIndex(-1)">-1</button>
+    <div style="display: flex; align-items: center; padding-left: 10%">
+        <button type="button" onclick="moveIndex(-1)" style="background: transparent; border: none;">
+            <img src="Media/Games/bloodfuel/arrowleft.png">
+        </button>
         <img id="CharImg" src="Media/Games/bloodfuel/archer.gif" style="width: 35%;">
-        <button type="button" onclick="moveIndex(1)">+1</button>
-        <div style="max-width: 25%;">
+        <button type="button" onclick="moveIndex(1)" style="background: transparent; border: none;">
+            <img src="Media/Games/bloodfuel/arrowright.png">
+        </button>
+        <div style="max-width: 45%;">
             <h3 id="CharName">ARCHER</h3>
             <p id="CharBio">Stalks the player and tries to keep a distance from the player. When within range, will fire an arrow at the player.</p>
         </div>
     </div>
 
     <!-- Bosses -->
-    <div style="display: flex; align-items: center;">
-        <button type="button" onclick="moveBossIndex(-1)">-1</button>
+    <div style="display: flex; align-items: center; padding-right: 5%">
+        <button type="button" onclick="moveBossIndex(-1)" style="background: transparent; border: none;">
+            <img src="Media/Games/bloodfuel/arrowleft.png">
+        </button>
         <img id="BossImg" src="Media/Games/bloodfuel/orion.gif" style="width: 45%;">
-        <button type="button" onclick="moveBossIndex(1)">+1</button>
-        <div style="max-width: 35%;">
+        <button type="button" onclick="moveBossIndex(1)" style="background: transparent; border: none;">
+            <img src="Media/Games/bloodfuel/arrowright.png">
+        </button>
+        <div style="max-width: 45%;">
             <h3 id="BossName">ORION</h3>
             <p id="BossBio">Spawns as the boss on wave 10, summons enemies, and fires columns and rows of projectiles.</p>
         </div>
     </div>
 </div>
+
+<div style="display: flex; justify-content: space-between; align-items:end;">
+    <!-- Waves -->
+    <div style="display: flex; align-items: center; padding-left: 5%">
+        <img src="Media/Games/bloodfuel/wheel.png" style="width: 35%;" class="spin-image">
+        <div style="max-width: 35%; padding-left: 5%">
+            <h3>Phases</h3>
+            <p>Phases control the type of enemies that spawn, the amount of enemies, and how many elites can spawn. These numbers become more aggressive the higher wave the player gets to.</p>
+        </div>
+    </div>
+    <!-- Cards -->
+    <div style="display: flex; align-items: center; padding-left: 5%; padding-top: 10%;">
+        <img src="Media/Games/bloodfuel/cards.png" style="width: 35%;">
+        <div style="max-width: 35%; padding-left: 5%">
+            <h3>Cards</h3>
+            <p>Cards are awarded to the player after defeating a boss, they can give abilities, attacks, or upgrade the player in some way.</p>
+        </div>
+    </div>
+    <!-- Shop -->
+    <div style="display: flex; align-items: center; padding-left: 5%">
+        <img src="Media/Games/bloodfuel/deathtoken.gif" style="width: 35%;">
+        <div style="max-width: 35%;">
+            <h3>Shop</h3>
+            <p>The player is awarded when they die an amount of death tokens relative to their score. The player can then spend these tokens on lasting upgrades and boons to make the game easier.</p>
+        </div>
+    </div>
+</div>
+
+    <div style="width:80%;margin: 0 auto;position: fixed;bottom: 0; left: 50%; transform: translateX(-50%);">
+        <iframe src="https://www.youtube.com/watch?v=cfp9lZ5_xgY" frameborder="0" allowfullscreen style="width: 100%; height: 100%;"></iframe>
+    </div>
 
 </body>

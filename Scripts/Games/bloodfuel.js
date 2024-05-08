@@ -17,6 +17,16 @@ var bossBio =[
 ]
 var currentBossId = 0
 
+var eliteNames= ["paladin","protected","resurrector","righteous","blessed"]
+var eliteBio =[
+    "This elite buffs nearby allies giving them increased health and speed.",
+    "This elite gives the enemy a large pool of additional health.",
+    "This elite revives all dead enemies in a small AOE when killed.",
+    "This elite does increased damage to the player.",
+    "This elite regenerates health slowly."
+]
+var currentEliteId = 0
+
 function moveIndex(num)
 {
     currentCharId += num
@@ -42,16 +52,36 @@ function moveBossIndex(num)
     {
         currentBossId = bossNames.length-1
     }
-    UpdateInfo(true)
+    UpdateInfo("boss")
 }
 
-function UpdateInfo(boss)
+function moveEliteIndex(num)
 {
-    if (boss)
+    currentEliteId += num
+    if (currentEliteId >= eliteNames.length)
+    {
+        currentEliteId = 0
+    }
+    else if (currentEliteId < 0)
+    {
+        currentEliteId = eliteNames.length-1
+    }
+    UpdateInfo("elite")
+}
+
+function UpdateInfo(type)
+{
+    if (type === "boss")
     {
         document.getElementById("BossImg").src = "Media/Games/bloodfuel/"+bossNames[currentBossId]+".gif"
         document.getElementById("BossName").innerHTML = bossNames[currentBossId].toUpperCase()
         document.getElementById("BossBio").innerHTML = bossBio[currentBossId]
+    }
+    else if (type === "elite")
+    {
+        document.getElementById("EliteImg").src = "Media/Games/bloodfuel/"+eliteNames[currentEliteId]+".png"
+        document.getElementById("EliteName").innerHTML = eliteNames[currentEliteId].toUpperCase()
+        document.getElementById("EliteBio").innerHTML = eliteBio[currentEliteId]
     }
     else
     {
