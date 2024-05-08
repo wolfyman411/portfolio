@@ -42,12 +42,17 @@
 
   * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0; -webkit-text-stroke-color: black; -webkit-text-stroke-width: 0.2px; font-weight: 800; color: white;}
+p {text-shadow: 2px 2px black;}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
 .spin-image {
   width: 150px; /* Adjust the size of the image */
   animation: spin 30s linear infinite; /* Set the animation to loop infinitely */
+}
+
+.left-image {
+  animation: left 30s linear infinite; /* Set the animation to loop infinitely */
 }
 
 @keyframes spin {
@@ -57,4 +62,9 @@ img {vertical-align: middle;}
   65% { transform: rotate(-225deg); }
   75% { transform: rotate(-315deg); }
   100% { transform: rotate(-315deg); }
+}
+
+@keyframes left {
+  from { background-position: left center;
+  } to { background-position: 200% center; }
 }

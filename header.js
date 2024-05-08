@@ -50,10 +50,10 @@ createDropdown("Pages", [
 
 createDropdown("Games", [
     {url: "bloodfuel.html", text: "Blood Fuel ", indicator: "Media/Indicators/Unity.png"},
-    {url: "#", text: "Dungeon Bounties ", indicator: "Media/Indicators/UE5.png"},
-    {url: "#", text: "Knee Cappers ", indicator: "Media/Indicators/UE5.png"},
-    {url: "#", text: "Thruster ", indicator: "Media/Indicators/Unity.png"},
-    {url: "#", text: "Poultry Panic ", indicator: "Media/Indicators/Clickteam.png"}
+    {url: "dungeonbounties.html", text: "Dungeon Bounties ", indicator: "Media/Indicators/UE5.png"},
+    {url: "kneecappers.html", text: "Knee Cappers ", indicator: "Media/Indicators/UE5.png"},
+    {url: "thruster.html", text: "Thruster ", indicator: "Media/Indicators/Unity.png"},
+    {url: "poultry.html", text: "Poultry Panic ", indicator: "Media/Indicators/Clickteam.png"}
 ]);
 
 createDropdown("Software", [
