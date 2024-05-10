@@ -57,7 +57,7 @@ createDropdown("Games", [
 ]);
 
 createDropdown("Software", [
-    {url: "ATLAS/chrsheet.html", text: "ATLAS Character Maker"},
+    {url: "", text: "ATLAS Character Maker"},
     {url: "bloodfuel.html", text: "Garden Discord Bot"},
     {url: "#", text: "RPG Discord Bot"}
 ]);
@@ -67,13 +67,7 @@ createDropdown("Programming", [
 ]);
 
 createDropdown("Projects", [
-    {url: "#", text: "Infinite Finality"},
+    {url: "infinitefinality.html", text: "Infinite Finality"},
     {url: "#", text: "Sky Jellies"},
     {url: "#", text: "ATLAS"}
-]);
-
-createDropdown("Art", [
-    {url: "#", text: "Sketches"},
-    {url: "#", text: "Concept Art"},
-    {url: "#", text: "Finished Pieces"}
 ]);
