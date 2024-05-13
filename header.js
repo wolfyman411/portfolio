@@ -45,7 +45,7 @@ function createDropdown(title, links) {
 createDropdown("Pages", [
     {url: "index.html", text: "Home"},
     {url: "#", text: "About"},
-    {url: "#", text: "Contact"}
+    {url: "contact.html", text: "Contact"}
 ]);
 
 createDropdown("Games", [
