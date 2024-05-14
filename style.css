@@ -61,6 +61,10 @@ h3 {text-shadow: 1px 1px white; color: black; -webkit-text-stroke-color: white;}
 img {vertical-align: middle;}
 h1 {-webkit-text-stroke-width: 1px; text-shadow: 2px 2px black;}
 
+button:hover{
+  filter: brightness(150%);
+}
+
 .spin-image {
   width: 150px; /* Adjust the size of the image */
   animation: spin 30s linear infinite; /* Set the animation to loop infinitely */
