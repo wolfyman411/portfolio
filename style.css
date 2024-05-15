@@ -133,6 +133,17 @@ button:hover{
 
 html, body {
   max-width: 100%;
+  min-height: 1080px;
   overflow-x: hidden;
 }
 
+.transition {
+  animation: fade 10s ease-in-out infinite;
+}
+
+@keyframes fade {
+  0% {opacity: 0;}
+  35% {opacity: 1;}
+  70% {opacity: 1;}
+  100% {opacity: 0;}
+}

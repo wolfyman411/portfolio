@@ -56,11 +56,11 @@ createDropdown("Games", [
     {url: "poultry.html", text: "Poultry Panic ", indicator: "Media/Indicators/Clickteam.png"}
 ]);
 
-createDropdown("Software", [
-    {url: "", text: "ATLAS Character Maker"},
-    {url: "bloodfuel.html", text: "Garden Discord Bot"},
-    {url: "#", text: "RPG Discord Bot"}
-]);
+//createDropdown("Software", [
+    //{url: "", text: "ATLAS Character Maker"},
+    //{url: "bloodfuel.html", text: "Garden Discord Bot"},
+    //{url: "#", text: "RPG Discord Bot"}
+//]);
 
 createDropdown("Programming", [
     {url: "#", text: "Procedural Generation"}
@@ -68,6 +68,6 @@ createDropdown("Programming", [
 
 createDropdown("Projects", [
     {url: "infinitefinality.html", text: "Infinite Finality"},
-    {url: "#", text: "Sky Jellies"},
-    {url: "#", text: "ATLAS"}
+    //{url: "#", text: "Sky Jellies"},
+    {url: "ATLAS.html", text: "ATLAS"}
 ]);
