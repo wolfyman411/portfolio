@@ -44,7 +44,6 @@ function createDropdown(title, links) {
 // Create dropdown menus
 createDropdown("Pages", [
     {url: "index.html", text: "Home"},
-    {url: "#", text: "About"},
     {url: "contact.html", text: "Contact"}
 ]);
 

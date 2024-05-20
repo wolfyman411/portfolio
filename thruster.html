@@ -8,69 +8,113 @@
     <script src="header.js" defer></script>
     <script src="Scripts/Games/thruster.js"></script>
 </head>
-<div id = "header"></div>
+<header id = "header"></header>
 
 <body style="background-image: url(Media/Games/thruster/Background.png); background-size: cover; background-attachment: fixed; background-repeat: repeat; margin: 0; padding: 0; height: 100vh; width: 100vw;" class="left-image">
-    <div style="display: flex; margin: 0 auto; padding-left: 5%; padding-right: 5%; text-align: center; padding-bottom: 1%;">
-        <div>
-            <h1>Items</h1>
-            <p>Colored item boxes are scattered around the race track. Collecting the same color increases the level of the item by 1.</p>
-            <img src="Media/Games/thruster/item.gif" class="img-border">
-            <h3>Attack</h3>
-            <p id="AtkName">LASER</p> 
-            <p id="AtkBio">Fires a homing laser at the racer in front, dealing a moderate amount of damage.</p>
-            <button type="button" onclick="moveIndex(-1)" style="background: transparent; border: none;">
-                <img src="Media/Games/bloodfuel/arrowleft.png">
-            </button>
-            <img src="Media/Games/thruster/laser.png" id="AtkImg">
-            <button type="button" onclick="moveIndex(1)" style="background: transparent; border: none;">
-                <img src="Media/Games/bloodfuel/arrowright.png">
-            </button>
-            <h3>Defense</h3>
-            <p id="DefName">LANDMINE</p> 
-            <p id="DefBio">Places a landmine behind the racer, which explodes when it comes into contact with another racer.</p>
-            <button type="button" onclick="moveDefIndex(-1)" style="background: transparent; border: none;">
-                <img src="Media/Games/bloodfuel/arrowleft.png">
-            </button>
-            <img src="Media/Games/thruster/landmine.png" id="DefImg">
-            <button type="button" onclick="moveDefIndex(1)" style="background: transparent; border: none;">
-                <img src="Media/Games/bloodfuel/arrowright.png">
-            </button>
-            <h3>Boost</h3>
-            <p id="BstName">BOOST</p> 
-            <p id="BstBio">A short boost that carries the racer forwards a distance.</p>
-            <button type="button" onclick="moveBstIndex(-1)" style="background: transparent; border: none;">
-                <img src="Media/Games/bloodfuel/arrowleft.png">
-            </button>
-            <img src="Media/Games/thruster/boost.png" id="BstImg">
-            <button type="button" onclick="moveBstIndex(1)" style="background: transparent; border: none;">
-                <img src="Media/Games/bloodfuel/arrowright.png">
-            </button>
-        </div>
-        <div>
-            <h1>Racers</h1>
-            <p>Racers have the same abilities as the player, and have a logic system that determines when they use items.</p>
-            <h3>Randomizer</h3>
-            <p>Colors and names are randomly generated at the start of a race cup, and carry on between races. This allows players to form nemeses throughout the race.</p>
-            <h3>Drifting</h3>
-            <p>Racers are capable of taking sharp turns around corners. After completing a drift, a small boost will activate launching the racer forwards.</p>
-            <img src="Media/Games/thruster/drift.gif" class="img-border">
-            <h3>Health</h3>
-            <p>Racers have a certain amount of health that is reduced when smashing into walls or getting hit by lasers. When HP drops to 0 the racer will explode and be placed at a race checkpoint.</p>
-            <h3>Quips</h3>
-            <p>When racers pass a another racer, hurt a racer, or finish a race, they will exchange dialogue and taunt.</p>
-            <img src="Media/Games/thruster/taunt.gif" class="img-border">
-        </div>
-        <div>
-            <h1>Race</h1>
-            <p>Races are a simple 3 laps and are part of a cup. Cups are 3 races long, and at the end of a cup, scores are created and whoever is in first wins.</p>
-            <h3>Leaderboard</h3>
-            <p>Leaderboards award points based on finished position, they carry between races until the end of the cup. They also determine placement in the next race.</p>
-            <img src="Media/Games/thruster/leaderboard.gif" class="img-border">
-            <h3>Race Logic</h3>
-            <img src="Media/Games/thruster/checkpoints.gif" class="img-border">
-            <img src="Media/Games/thruster/checkpoints2.gif" class="img-border">
-            <p>Races are built by a series of checkpoints, these checkpoints determine where racers will respawn, and help accurately determine racer placement.</p>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding-left: 15%; padding-right: 15%;">
+            <!--Other Half-->
+            <div style="background-color: black; padding: 15%;">
+                <div style="width: 100%; text-align: left;">
+                    <div>
+                        <h1 style="text-align: center;">What I did</h1>
+                        <p>I programmed everything, created all the art assets and integrated them, made music and sound effects, implemented UI, and designed the game.</p>
+                    </div>
+                    <div>
+                        <h1 style="text-align: center;">What is Thruster</h1>
+                        <img src="Media/Games/bloodfuel/gameplay2.gif"style="display: flex; margin: 0 auto;">
+                        <p>Thruster is a faster paced arcade racing game with a focus on more intelligent AI racers.</p>
+                    </div>
+                    <div>
+                        <h1 style="text-align: center;">Racers</h1>
+                        <p>Racers have the same abilities as the player, and have a logic system that determines when they use items.</p>
+                    </div>
+                    <div>
+                        <h3 style="text-align: center;">Randomization</h3>
+                        <img src="Media/Games/kneecappers/selection.gif" style="display: flex; margin: 0 auto; width: 50%;">
+                        <p>Colors and names are randomly generated at the start of a race cup, and carry on between races. This allows players to form nemeses throughout the race.</p>
+                    </div>
+                    <div>
+                        <h3 style="text-align: center;">Drifting</h3>
+                        <img src="Media/Games/thruster/drift.gif" style="display: flex; margin: 0 auto; width: 50%;">
+                        <p>Racers are capable of taking sharp turns around corners. After completing a drift, a small boost will activate launching the racer forwards.</p>
+                    </div>
+                    <div>
+                        <h3 style="text-align: center;">Health</h3>
+                        <p>Racers have a certain amount of health that is reduced when smashing into walls or getting hit by lasers. When HP drops to 0 the racer will explode and be placed at a race checkpoint.</p>
+                    </div>
+                    <div>
+                        <h3 style="text-align: center;">Quips</h3>
+                        <img src="Media/Games/thruster/taunt.gif" style="display: flex; margin: 0 auto; width: 50%;">
+                        <p>When racers pass a another racer, hurt a racer, or finish a race, they will exchange dialogue and taunt.</p>
+                    </div>
+                    <div>
+                        <h1 style="text-align: center;">Items</h1>
+                        <img src="Media/Games/thruster/item.gif" style="display: flex; margin: 0 auto; width: 50%;">
+                        <p>Colored item boxes are scattered around the race track. Collecting the same color increases the level of the item by 1.</p>
+                    </div>
+                    <div>
+                        <h3 style="text-align: center;">Attack Items</h3>
+                        <p id="AtkName">LASER</p> 
+                        <p id="AtkBio">Fires a homing laser at the racer in front, dealing a moderate amount of damage.</p>
+                        <div style="display: flex; margin: 0 auto; width: 50%;">
+                            <button type="button" onclick="moveIndex(-1)" style="background: transparent; border: none;">
+                                <img src="Media/Games/bloodfuel/arrowleft.png">
+                            </button>
+                            <img src="Media/Games/thruster/laser.png" id="AtkImg">
+                            <button type="button" onclick="moveIndex(1)" style="background: transparent; border: none;">
+                                <img src="Media/Games/bloodfuel/arrowright.png">
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 style="text-align: center;">Defense Items</h3>
+                        <p id="DefName">LANDMINE</p> 
+                        <p id="DefBio">Places a landmine behind the racer, which explodes when it comes into contact with another racer.</p>
+                        <div style="display: flex; margin: 0 auto; width: 50%;">
+                            <button type="button" onclick="moveDefIndex(-1)" style="background: transparent; border: none;">
+                                <img src="Media/Games/bloodfuel/arrowleft.png">
+                            </button>
+                            <img src="Media/Games/thruster/landmine.png" id="DefImg">
+                            <button type="button" onclick="moveDefIndex(1)" style="background: transparent; border: none;">
+                                <img src="Media/Games/bloodfuel/arrowright.png">
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 style="text-align: center;">Boost Items</h3>
+                        <p id="BstName">BOOST</p> 
+                        <p id="BstBio">A short boost that carries the racer forwards a distance.</p>
+                        <div style="display: flex; margin: 0 auto; width: 50%;">
+                            <button type="button" onclick="moveBstIndex(-1)" style="background: transparent; border: none;">
+                                <img src="Media/Games/bloodfuel/arrowleft.png">
+                            </button>
+                            <img src="Media/Games/thruster/boost.png" id="BstImg">
+                            <button type="button" onclick="moveBstIndex(1)" style="background: transparent; border: none;">
+                                <img src="Media/Games/bloodfuel/arrowright.png">
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 style="text-align: center;">Race</h1>
+                        <p>Races are a simple 3 laps and are part of a cup. Cups are 3 races long, and at the end of a cup, scores are created and whoever is in first wins.</p>
+                    </div>
+                    <div>
+                        <h3 style="text-align: center;">Leaderboard</h3>
+                        <img src="Media/Games/thruster/leaderboard.gif" style="display: flex; margin: 0 auto; width: 50%;">
+                        <p>Leaderboards award points based on finished position, they carry between races until the end of the cup. They also determine placement in the next race.</p>
+                    </div>
+                    <div>
+                        <h3 style="text-align: center;">Race Logic</h3>
+                        <img src="Media/Games/thruster/checkpoints.gif" style="display: flex; margin: 0 auto; width: 50%;">
+                        <img src="Media/Games/thruster/checkpoints2.gif" style="display: flex; margin: 0 auto; width: 50%;">
+                        <p>Races are built by a series of checkpoints, these checkpoints determine where racers will respawn, and help accurately determine racer placement.</p>
+                    </div>
+                    <div style="text-align: center; padding: 10%;">
+                        <a href="https://wolfy411.itch.io/thruster">Download on Itch.io</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
