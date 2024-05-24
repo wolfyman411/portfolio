@@ -143,7 +143,7 @@ button:hover{
 html, body {
   max-width: 100%;
   min-height: 1080px;
-  overflow-x: hidden;
+  overflow-x: initial !important;
 }
 
 .transition {
