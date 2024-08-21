@@ -68,5 +68,5 @@ createDropdown("Experiments", [
 createDropdown("Projects", [
     {url: "infinitefinality.html", text: "Infinite Finality"},
     {url: "SkyJellies.html", text: "Sky Jellies"},
-    {url: "ATLAS.html", text: "ATLAS"}
+    //{url: "ATLAS.html", text: "ATLAS"}
 ]);
