@@ -10,7 +10,7 @@
 </head>
 <header id = "header"></header>
 
-<body style="background-image: url(Media/Games/kneecappers/selectorbackground.png); background-size: cover; background-attachment: fixed; background-repeat: repeat; margin: 0; padding: 0; height: 100vh; width: 100vw;" class="left-image">
+<body style="background-image: url(Media/Games/kneecappers/selectorbackground.png); background-size: cover; background-attachment: fixed; background-repeat: repeat; margin: 0; padding: 0; height: 100vh; width: 100vw;">
     <div style="display: flex; justify-content: space-between; align-items: center;">
         <div style="display: flex; justify-content: space-between; align-items: center; padding-left: 15%; padding-right: 15%;">
             <!--Other Half-->
@@ -22,32 +22,62 @@
                     </div>
                     <div>
                         <h1 style="text-align: center;">What is KneeCappers</h1>
-                        <img src="Media/Games/kneecappers/gameplay.gif"style="display: flex; margin: 0 auto;">
+                        <div>
+                            <img id="gifImage" src="Media/Games/kneecappers/gameplay.gif"style="display: none; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img id="altImage" src="Media/Games/kneecappers/gameplay.png"style="display: flex; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img src="Media/Main/play.png" style="transform: translate(2300%, -1050%); position: absolute; scale: 20%; display: flex;">
+                            <img src="Media/Main/pause.png" style="transform: translate(2300%, -1050%); position: absolute; scale: 20%; display: none;">
+                        </div>
                         <p>KneeCappers is a couch co-op heist game, where players take the roles of Mafia members to commit organized crime around a city.</p>
                     </div>
                     <div>
                         <h1 style="text-align: center;">Character Selection</h1>
-                        <img src="Media/Games/kneecappers/selection.gif" style="display: flex; margin: 0 auto; width: 50%;">
+                        <div>
+                            <img id="gifImage" src="Media/Games/kneecappers/selection.gif"style="display: none; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img id="altImage" src="Media/Games/kneecappers/selection.png"style="display: flex; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img src="Media/Main/play.png" style="transform: translate(2300%, -1050%); position: absolute; scale: 20%; display: flex;">
+                            <img src="Media/Main/pause.png" style="transform: translate(2300%, -1050%); position: absolute; scale: 20%; display: none;">
+                        </div>
                         <p>Players can select characters, each with their own set of abilities and color schemes.</p>
                     </div>
                     <div>
                         <h1 style="text-align: center;">Peer to Peer</h1>
-                        <img src="Media/Games/kneecappers/multi.gif" style="display: flex; margin: 0 auto; width: 50%;">
+                        <div>
+                            <img id="gifImage" src="Media/Games/kneecappers/multi.gif"style="display: none; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img id="altImage" src="Media/Games/kneecappers/multi.png"style="display: flex; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img src="Media/Main/play.png" style="transform: translate(2300%, -880%); position: absolute; scale: 20%; display: flex;">
+                            <img src="Media/Main/pause.png" style="transform: translate(2300%, -880%); position: absolute; scale: 20%; display: none;">
+                        </div>
                         <p>All actions are replicated on the host and the client, allowing people to play together without the need of servers.</p>
                     </div>
                     <div>
                         <h1 style="text-align: center;">Engaging Enemies</h1>
-                        <img src="Media/Games/kneecappers/ai.gif" style="display: flex; margin: 0 auto; width: 50%;">
+                        <div>
+                            <img id="gifImage" src="Media/Games/kneecappers/ai.gif"style="display: none; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img id="altImage" src="Media/Games/kneecappers/ai.png"style="display: flex; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img src="Media/Main/play.png" style="transform: translate(2300%, -980%); position: absolute; scale: 20%; display: flex;">
+                            <img src="Media/Main/pause.png" style="transform: translate(2300%, -980%); position: absolute; scale: 20%; display: none;">
+                        </div>
                         <p>Enemies patrol, and scout out for players, each enemy type reacts differently to spotting a player. Some enemies can also call the aid of nearby allies in a small radius.</p>
                     </div>
                     <div>
                         <h1 style="text-align: center;">Scoring System</h1>
-                        <img src="Media/Games/kneecappers/score.gif" style="display: flex; margin: 0 auto; width: 50%;">
+                        <div>
+                            <img id="gifImage" src="Media/Games/kneecappers/score.gif"style="display: none; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img id="altImage" src="Media/Games/kneecappers/score.png"style="display: flex; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img src="Media/Main/play.png" style="transform: translate(2300%, -1150%); position: absolute; scale: 20%; display: flex;">
+                            <img src="Media/Main/pause.png" style="transform: translate(2300%, -1150%); position: absolute; scale: 20%; display: none;">
+                        </div>
                         <p>At the end of a game, players are scored based off the objectives they've completed.</p>
                     </div>
                     <div>
                         <h1 style="text-align: center;">Traversal Options</h1>
-                        <img src="Media/Games/kneecappers/zipline.gif" style="display: flex; margin: 0 auto; width: 50%;">
+                        <div>
+                            <img id="gifImage" src="Media/Games/kneecappers/zipline.gif"style="display: none; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img id="altImage" src="Media/Games/kneecappers/zipline.png"style="display: flex; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img src="Media/Main/play.png" style="transform: translate(2300%, -800%); position: absolute; scale: 20%; display: flex;">
+                            <img src="Media/Main/pause.png" style="transform: translate(2300%, -800%); position: absolute; scale: 20%; display: none;">
+                        </div>
                         <p>Levels are filled with unique ways to traverse throughout the map.</p>
                     </div>
                     <h1 style="text-align: center;">

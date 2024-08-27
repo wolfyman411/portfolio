@@ -70,3 +70,24 @@ createDropdown("Projects", [
     {url: "SkyJellies.html", text: "Sky Jellies"},
     //{url: "ATLAS.html", text: "ATLAS"}
 ]);
+
+function toggleGif(event) {
+    const clickedItem = event.target
+    var alterItem;
+    var play = clickedItem.parentElement.children[2]
+    var pause = clickedItem.parentElement.children[3]
+    if (clickedItem.id === "gifImage")
+    {
+        alterItem = clickedItem.parentElement.children[1]
+        pause.style.display = "none";
+        play.style.display = "flex";
+    }
+    else
+    {
+        alterItem = clickedItem.parentElement.children[0]
+        pause.style.display = "flex";
+        play.style.display = "none";
+    }
+    alterItem.style.display = "flex";
+    clickedItem.style.display = "none";
+}

@@ -10,7 +10,7 @@
 </head>
 <header id = "header"></header>
 
-<body style="background-image: url(Media/Games/thruster/Background.png); background-size: cover; background-attachment: fixed; background-repeat: repeat; margin: 0; padding: 0; height: 100vh; width: 100vw;" class="left-image">
+<body style="background-image: url(Media/Games/thruster/Background.png); background-size: cover; background-attachment: fixed; background-repeat: repeat; margin: 0; padding: 0; height: 100vh; width: 100vw;">
     <div style="display: flex; justify-content: space-between; align-items: center;">
         <div style="display: flex; justify-content: space-between; align-items: center; padding-left: 15%; padding-right: 15%;">
             <!--Other Half-->
@@ -22,7 +22,12 @@
                     </div>
                     <div>
                         <h1 style="text-align: center;">What is Thruster</h1>
-                        <img src="Media/Games/thruster/gameplay.gif"style="display: flex; margin: 0 auto;">
+                        <div>
+                            <img id="gifImage" src="Media/Games/thruster/gameplay.gif"style="display: none; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img id="altImage" src="Media/Games/thruster/gameplay.png"style="display: flex; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img src="Media/Main/play.png" style="transform: translate(2300%, -1010%); position: absolute; scale: 20%; display: flex;">
+                            <img src="Media/Main/pause.png" style="transform: translate(2300%, -1010%); position: absolute; scale: 20%; display: none;">
+                        </div>
                         <p>Thruster is a faster paced arcade racing game with a focus on more intelligent AI racers.</p>
                     </div>
                     <div>
@@ -35,7 +40,12 @@
                     </div>
                     <div>
                         <h3 style="text-align: center;">Drifting</h3>
-                        <img src="Media/Games/thruster/drift.gif" style="display: flex; margin: 0 auto; width: 50%;">
+                        <div>
+                            <img id="gifImage" src="Media/Games/thruster/drift.gif"style="display: none; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img id="altImage" src="Media/Games/thruster/drift.png"style="display: flex; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img src="Media/Main/play.png" style="transform: translate(2300%, -980%); position: absolute; scale: 20%; display: flex;">
+                            <img src="Media/Main/pause.png" style="transform: translate(2300%, -980%); position: absolute; scale: 20%; display: none;">
+                        </div>
                         <p>Racers are capable of taking sharp turns around corners. After completing a drift, a small boost will activate launching the racer forwards.</p>
                     </div>
                     <div>
@@ -44,12 +54,22 @@
                     </div>
                     <div>
                         <h3 style="text-align: center;">Quips</h3>
-                        <img src="Media/Games/thruster/taunt.gif" style="display: flex; margin: 0 auto; width: 50%;">
+                        <div>
+                            <img id="gifImage" src="Media/Games/thruster/taunt.gif"style="display: none; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img id="altImage" src="Media/Games/thruster/taunt.png"style="display: flex; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img src="Media/Main/play.png" style="transform: translate(2300%, -980%); position: absolute; scale: 20%; display: flex;">
+                            <img src="Media/Main/pause.png" style="transform: translate(2300%, -980%); position: absolute; scale: 20%; display: none;">
+                        </div>
                         <p>When racers pass a another racer, hurt a racer, or finish a race, they will exchange dialogue and taunt.</p>
                     </div>
                     <div>
                         <h1 style="text-align: center;">Items</h1>
-                        <img src="Media/Games/thruster/item.gif" style="display: flex; margin: 0 auto; width: 50%;">
+                        <div>
+                            <img id="gifImage" src="Media/Games/thruster/item.gif"style="display: none; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img id="altImage" src="Media/Games/thruster/item.png"style="display: flex; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img src="Media/Main/play.png" style="transform: translate(2300%, -980%); position: absolute; scale: 20%; display: flex;">
+                            <img src="Media/Main/pause.png" style="transform: translate(2300%, -980%); position: absolute; scale: 20%; display: none;">
+                        </div>
                         <p>Colored item boxes are scattered around the race track. Collecting the same color increases the level of the item by 1.</p>
                     </div>
                     <div>
@@ -100,13 +120,28 @@
                     </div>
                     <div>
                         <h3 style="text-align: center;">Leaderboard</h3>
-                        <img src="Media/Games/thruster/leaderboard.gif" style="display: flex; margin: 0 auto; width: 50%;">
+                        <div>
+                            <img id="gifImage" src="Media/Games/thruster/leaderboard.gif"style="display: none; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img id="altImage" src="Media/Games/thruster/leaderboard.png"style="display: flex; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img src="Media/Main/play.png" style="transform: translate(2300%, -980%); position: absolute; scale: 20%; display: flex;">
+                            <img src="Media/Main/pause.png" style="transform: translate(2300%, -980%); position: absolute; scale: 20%; display: none;">
+                        </div>
                         <p>Leaderboards award points based on finished position, they carry between races until the end of the cup. They also determine placement in the next race.</p>
                     </div>
                     <div>
                         <h3 style="text-align: center;">Race Logic</h3>
-                        <img src="Media/Games/thruster/checkpoints.gif" style="display: flex; margin: 0 auto; width: 50%;">
-                        <img src="Media/Games/thruster/checkpoints2.gif" style="display: flex; margin: 0 auto; width: 50%;">
+                        <div>
+                            <img id="gifImage" src="Media/Games/thruster/checkpoints.gif"style="display: none; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img id="altImage" src="Media/Games/thruster/checkpoints.png"style="display: flex; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img src="Media/Main/play.png" style="transform: translate(2300%, -980%); position: absolute; scale: 20%; display: flex;">
+                            <img src="Media/Main/pause.png" style="transform: translate(2300%, -980%); position: absolute; scale: 20%; display: none;">
+                        </div>
+                        <div>
+                            <img id="gifImage" src="Media/Games/thruster/checkpoints2.gif"style="display: none; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img id="altImage" src="Media/Games/thruster/checkpoints2.png"style="display: flex; margin: 0 auto; width: 50%; cursor: pointer;" onclick="toggleGif(event)">
+                            <img src="Media/Main/play.png" style="transform: translate(2300%, -900%); position: absolute; scale: 20%; display: flex;">
+                            <img src="Media/Main/pause.png" style="transform: translate(2300%, -900%); position: absolute; scale: 20%; display: none;">
+                        </div>
                         <p>Races are built by a series of checkpoints, these checkpoints determine where racers will respawn, and help accurately determine racer placement.</p>
                     </div>
                     <div style="text-align: center; padding: 10%;">
