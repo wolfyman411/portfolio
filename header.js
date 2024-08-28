@@ -80,14 +80,14 @@ function toggleGif(event) {
     {
         alterItem = clickedItem.parentElement.children[1]
         pause.style.display = "none";
-        play.style.display = "flex";
+        play.style.display = "block";
     }
     else
     {
         alterItem = clickedItem.parentElement.children[0]
-        pause.style.display = "flex";
+        pause.style.display = "block";
         play.style.display = "none";
     }
-    alterItem.style.display = "flex";
+    alterItem.style.display = "block";
     clickedItem.style.display = "none";
 }
