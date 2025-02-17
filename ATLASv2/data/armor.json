@@ -1,0 +1,115 @@
+{
+"armor":
+[
+{
+    "name":"Nothing",
+    "ac":0,
+    "glance":0,
+    "minor":0,
+    "major":0,
+    "resistant":"",
+    "bonus":"",
+    "speed":0,
+    "upkeep":0
+},
+{
+    "name":"Simple Leathers",
+    "ac":1,
+    "glance":2,
+    "minor":2,
+    "major":4,
+    "resistant":"Laser, Slashing",
+    "bonus":"",
+    "speed":5,
+    "upkeep":10
+},
+{
+    "name":"Padded Leathers",
+    "ac":2,
+    "glance":1,
+    "minor":2,
+    "major":3,
+    "resistant":"Laser, Slashing",
+    "bonus":"",
+    "speed":0,
+    "upkeep":15
+},
+{
+    "name":"Blackened Leathers",
+    "ac":1,
+    "glance":2,
+    "minor":3,
+    "major":3,
+    "resistant":"Laser, Slashing",
+    "bonus":"Gain 1 Prowess when sneaking.",
+    "speed":5,
+    "upkeep":15
+},
+{
+    "name":"Scout Armor",
+    "ac":2,
+    "glance":2,
+    "minor":2,
+    "major":4,
+    "resistant":"Laser",
+    "bonus":"Gain 60ft of Night Vision",
+    "speed":5,
+    "upkeep":15
+},
+{
+    "name":"Combat Armor",
+    "ac":3,
+    "glance":1,
+    "minor":2,
+    "major":3,
+    "resistant":"Laser, Bludgeoning",
+    "bonus":"",
+    "speed":0,
+    "upkeep":15
+},
+{
+    "name":"Marine Armor",
+    "ac":4,
+    "glance":1,
+    "minor":2,
+    "major":2,
+    "resistant":"Laser",
+    "bonus":"",
+    "speed":0,
+    "upkeep":20
+},
+{
+    "name":"Plated Armor",
+    "ac":4,
+    "glance":1,
+    "minor":2,
+    "major":3,
+    "resistant":"Slashing, Bludgeoning",
+    "bonus":"",
+    "speed":0,
+    "upkeep":25
+},
+{
+    "name":"Welded Armor",
+    "ac":5,
+    "glance":1,
+    "minor":2,
+    "major":2,
+    "resistant":"Slashing",
+    "bonus":"",
+    "speed":-10,
+    "upkeep":35
+},
+{
+    "name":"Energy Armor",
+    "ac":3,
+    "glance":1,
+    "minor":2,
+    "major":3,
+    "resistant":"Laser, Fire",
+    "bonus":"Each successful attack against the user increases the user’s AC by 1, until the start of their turn.",
+    "speed":0,
+    "upkeep":35
+}
+]
+}

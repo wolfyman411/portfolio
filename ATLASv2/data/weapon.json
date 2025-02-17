@@ -1,0 +1,335 @@
+{
+"weapon":
+[
+{
+    "name":"Nothing",
+    "range":"",
+    "skill":"",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":0,
+    "basic":"",
+    "special":"",
+    "crit":""
+},
+{
+    "name":"Scrap Blaster",
+    "range":"5/30",
+    "skill":"Agility",
+    "malfunction":3,
+    "repair":4,
+    "upkeep":25,
+    "basic":"[1 - SP]: Roll a d6, if the result is 4+ deal 1 Minor Laser Damage. On a failure deal 1 Glance Laser Damage.",
+    "special":"",
+    "crit":"No SP is depleted."
+},
+{
+    "name":"Stun Blaster",
+    "range":"10/60",
+    "skill":"Agility",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":50,
+    "basic":"[1 - SP]: Deal 1 Glance Stun Damage.",
+    "special":"[2 - SP]: Roll a d6, if the result is higher than the target HP, apply the unconscious condition.",
+    "crit":"Increase damage threshold."
+},
+{
+    "name":"Junker",
+    "range":"25",
+    "skill":"Anger",
+    "malfunction":3,
+    "repair":4,
+    "upkeep":25,
+    "basic":"[1 - SP]: Deal 2 Minor Slashing Damage.",
+    "special":"[3 - SP]: Deal 1 Minor Slashing Damage and apply the bleeding condition.",
+    "crit":"Knock the target prone."
+},
+{
+    "name":"Flintlock",
+    "range":"10/45",
+    "skill":"Agility",
+    "malfunction":2,
+    "repair":4,
+    "upkeep":25,
+    "basic":"[2 - SP]: Deal 1 Minor Slashing Damage.",
+    "special":"[3 - SP]: Deal 1 Major Slashing Damage, but the weapon malfunctions.",
+    "crit":"Knock the target prone."
+},
+{
+    "name":".33 Blaster",
+    "range":"10/45",
+    "skill":"Agility",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":35,
+    "basic":"[1 - SP]: Deal 1 Glance Laser Damage.",
+    "special":"",
+    "crit":"No SP is used."
+},
+{
+    "name":".66 Blaster",
+    "range":"10/60",
+    "skill":"Agility",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":50,
+    "basic":"[2 - SP]: Deal 1 Major Laser Damage.",
+    "special":"[3 - SP]: Roll a d6, on a 4+ deal 2 Major Laser Damage. On a failure deal 1 Major Laser Damage.",
+    "crit":"No SP is used."
+},
+{
+    "name":".99 Blaster",
+    "range":"10/60",
+    "skill":"Anger",
+    "malfunction":1,
+    "repair":4,
+    "upkeep":0,
+    "basic":"[2 - SP]: Deal 2 Major Laser Damage.",
+    "special":"",
+    "crit":"Apply the burning condition."
+},
+{
+    "name":".33 Crankshot",
+    "range":"5/25",
+    "skill":"Anger",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":45,
+    "basic":"[2 - SP]: Deal 1 Glance Laser Damage, and roll a d6. If the result is 3+ make another basic attack expending no SP. This action repeats until the roll fails.",
+    "special":"",
+    "crit":"Increase damage threshold."
+},
+{
+    "name":".33 Gauss Revolver",
+    "range":"5/35",
+    "skill":"Luck",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":45,
+    "basic":"[1 - SP]: Deal 1 Glance Laser Damage.",
+    "special":"[3 - SP]: Roll a d6, on a 3+ deal 1 Minor Laser Damage. On a failure deal 1 Glance Laser Damage.",
+    "crit":"Laser bounces to a hostile target within 15 ft of the original target dealing 1 Minor Laser Damage."
+},
+{
+    "name":".66 Gauss Revolver",
+    "range":"5/45",
+    "skill":"Luck",
+    "malfunction":1,
+    "repair":3,
+    "upkeep":50,
+    "basic":"[1 - SP]: Deal 1 Minor Laser Damage.",
+    "special":"[2 - SP]: Laser ricochets to an additional hostile target within 15 ft. Make another attack roll, on a success deal 1 Minor Laser Damage. This effect will repeat until the laser misses a target.",
+    "crit":"Deal an additional 1 Glance Burn Damage."
+},
+{
+    "name":".66 Repeater",
+    "range":"10/35",
+    "skill":"Agility",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":75,
+    "basic":"[2 - SP]: Deal 1 Minor Laser Damage.",
+    "special":"[3 - SP]: Roll a d6, on a 3+ deal 2 Minor Laser Damage. On a failure deal 1 Glance Laser Damage.",
+    "crit":"Expend no SP."
+},
+{
+    "name":".66 Sharpshooter",
+    "range":"10/90",
+    "skill":"Luck",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":60,
+    "basic":"[3 - SP]: Deal 1 Major Laser Damage.",
+    "special":"[4 - SP]: Deal 2 Major Laser Damage.",
+    "crit":"Expend no SP."
+},
+{
+    "name":".99 Sharpshooter",
+    "range":"15/120",
+    "skill":"Luck",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":75,
+    "basic":"[3 - SP]: Deal 1 Major Laser Damage.",
+    "special":"[5 - SP]: Ignore cover bonuses and deal 2 Major Laser Damage.",
+    "crit":"Apply the burning condition."
+},
+{
+    "name":".33 Splitter",
+    "range":"25",
+    "skill":"Anger",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":45,
+    "basic":"[1 - SP]: Roll 1d6, on a 3+ deal 1 Minor Laser Damage. On a failure deal 1 Glance Laser Damage.",
+    "special":"Special [3 - SP]: Deal 1 Minor Laser Damage and push the target back 5 ft.",
+    "crit":"Increase Threshold Damage."
+},
+{
+    "name":".66 Splitter",
+    "range":"35",
+    "skill":"Anger",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":0,
+    "basic":"Basic [2 - SP]: Roll 1d6, on a 3+ deal 2 Minor Laser Damage. On a failure deal 1 Minor Laser Damage.",
+    "special":"Special [4 - SP]: Deal 1 Major Laser Damage.",
+    "crit":"Deal an additional 1 Minor Laser Damage."
+},
+{
+    "name":"Gatling Laser",
+    "range":"35",
+    "skill":"Anger",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":100,
+    "basic":"[2 - SP]: Roll 1d6, if the result is 3+ deal 3 Minor Laser Damage. On a failure, deal 1 Minor Laser Damage.",
+    "special":"[5 - SP]: Deal 2 Minor Laser Damage, and knock the target prone.",
+    "crit":"Expend no SP."
+},
+{
+    "name":"Annhilaser",
+    "range":"45",
+    "skill":"Anger",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":125,
+    "basic":"[2 - SP]: Roll 1d6, if the result is 3+ deal 2 Major Laser Damage. On a failure, deal 1 Major Laser Damage.",
+    "special":"[5 - SP]: Deal 1 Major Laser Damage, and knock the target prone.",
+    "crit":"Deal 1 additional Minor Laser Damage"
+},
+{
+    "name":"Plasma Spewer",
+    "range":"15",
+    "skill":"Anger",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":0,
+    "basic":"[1 - SP]: Deal 1 Minor Burn Damage.",
+    "special":"[2 - SP]: Deal 2 Minor Burn Damage to a target within 30 ft from you.",
+    "crit":"Apply the burning condition."
+},
+{
+    "name":"HV-PB",
+    "range":"10/120",
+    "skill":"Luck",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":150,
+    "basic":"[5 - SP]: Deal 3 Major Laser Damage. All targets in a 15 ft radius of the target must make an Agility Check of 3+ or higher or take 1 Minor Laser damage.",
+    "special":"[8 - SP]: Deal 4 Major Laser Damage.",
+    "crit":"Deal 1 Minor Burn Damage to all targets within 15 ft of the blast."
+},
+{
+    "name":"Fists",
+    "range":"5",
+    "skill":"Anger",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":0,
+    "basic":"[1 - SP]: Deal 1 Glance Bludgeoning Damage.",
+    "special":"[3 - SP]: Deal 1 Minor Bludgeoning Damage.",
+    "crit":"Disarm the target."
+},
+{
+    "name":"Dagger",
+    "range":"5",
+    "skill":"Agility",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":5,
+    "basic":"[1 - SP]: Deal 1 Glance Slashing Damage.",
+    "special":"[3 - SP]: Deal 1 Minor Slashing Damage.",
+    "crit":"Apply the Bleeding Condition."
+},
+{
+    "name":"Steel Knuckles",
+    "range":"5",
+    "skill":"Anger",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":15,
+    "basic":"[2 - SP]: Deal 1 Minor Bludgeoning Damage.",
+    "special":"",
+    "crit":"Apply the Brittle Condition until the end of your next turn."
+},
+{
+    "name":"Stun Stick",
+    "range":"5",
+    "skill":"Anger",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":15,
+    "basic":"[1 - SP]: Deal 1 Glance Stun Damage.",
+    "special":"[3 - SP]: Deal 1 Minor Stun Damage.",
+    "crit":" If the creature has fewer than 4 hitpoints, apply the unconscious condition."
+},
+{
+    "name":"Crowbar",
+    "range":"5",
+    "skill":"Anger",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":15,
+    "basic":"[3 - SP]: Deal 2 Minor Bludgeoning Damage.",
+    "special":"",
+    "crit":"Apply the Crippled Condition until the end of your next turn."
+},
+{
+    "name":"Claw Gauntlet",
+    "range":"5",
+    "skill":"Agility",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":15,
+    "basic":"[1 - SP]: Deal 1 Glance Slashing Damage.",
+    "special":"[3 - SP]: Roll a d6, on a 4+ deal 2 Minor Slashing Damage. On a failure, deal 1 Glance Slashing Damage",
+    "crit":"Apply the Bleeding Condition to the target."
+},
+{
+    "name":"Pole",
+    "range":"10",
+    "skill":"Agility",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":15,
+    "basic":"[2 - SP]: Deal 1 Glance Bludgeoning Damage.",
+    "special":"[3 - SP]: Deal 1 Minor Bludgeoning Damage.",
+    "crit":"Target is knocked prone."
+},
+{
+    "name":"Spear",
+    "range":"10",
+    "skill":"Anger",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":15,
+    "basic":"[2 - SP]: Deal 1 Glance Slashing Damage.",
+    "special":"[3 - SP]: Deal 1 Minor Slashing Damage.",
+    "crit":"Target is Impaled and grappled by you."
+},
+{
+    "name":"Sledgehammer",
+    "range":"10",
+    "skill":"Anger",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":15,
+    "basic":"[2 - SP]: Deal 1 Minor Damage.",
+    "special":"",
+    "crit":"Target is knocked prone."
+},
+{
+    "name":"Plasma Glaive",
+    "range":"10",
+    "skill":"Agility",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":35,
+    "basic":"[2 - SP]: Deal 1 Minor Laser Damage.",
+    "special":"[3 - SP]: Ignore resistances and deal 1 Minor Laser Damage.",
+    "crit":"Increase Damage Threshold."
+}
+]
+}

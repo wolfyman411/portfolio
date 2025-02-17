@@ -1,0 +1,100 @@
+input {
+    background-color: rgba(0, 0, 0, 0.06);
+    border-color: transparent;
+    position: absolute;
+    font-family:'Impact';
+    font-size: xx-large;
+}
+
+input.smaller {
+    background-color: rgba(0, 0, 0, 0.06);
+    border-color: transparent;
+    position: absolute;
+    font-family:'Impact';
+    font-size: large;
+}
+
+input[type="number"] {
+    appearance: textfield;
+  }
+  
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+select {
+    position: absolute;
+    font-family:'Impact';
+    font-size: x-large;
+    background-color: rgba(0, 0, 0, 0.06);
+    border-color: transparent;
+}
+
+textarea {
+    position: absolute;
+    resize: none;
+}
+
+h2 {
+    position: absolute;
+    font-family:'Impact';
+    font-size: xx-large;
+    font-weight: 5;
+    text-shadow: 1px 1px #0000003f;
+}
+
+h1 {
+    position: absolute;
+    font-family:'Impact';
+    font-size: x-large;
+    font-weight: 1;
+    text-shadow: 2px 2px #0000003f;
+}
+
+h3 {
+    position: absolute;
+    font-family:'Impact';
+    font-size: large;
+    font-weight: 1;
+    color: transparent;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke: 2px;
+}
+
+h4 {
+    font-family:'Arial';
+    font-size: medium;
+    font-weight: 10;
+    position: absolute;
+    text-shadow: 1px 1px #ffffff;
+}
+
+h5 {
+    font-family:'Arial';
+    font-size: small;
+    font-weight: 1;
+    position: absolute;
+}
+
+body {
+    overflow: hidden
+}
+
+.scrollable-container {
+    width: 10%;
+    height: 5%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 0px solid #ccc;
+    background-color: rgba(0, 0, 0, 0.06);
+    position: absolute;
+}
+
+.scrollable-container h4 {
+    margin: 0;
+    white-space: normal;
+    word-wrap: break-word;
+    position: relative;
+}

@@ -1,0 +1,54 @@
+{
+"capstone":
+[
+{
+    "name":"Nothing",
+    "hp":0,
+    "sp":0,
+    "cp":0,
+    "speed":0,
+    "data":[]
+},
+{
+    "name":"Bloodlust",
+    "hp":4,
+    "sp":0,
+    "cp":0,
+    "speed":0,
+    "data":["[Battle Fuel]: When you drop a creature to 0 HP, gain 1d4 HP and 1 CP.","[Field Practice]: All attacks deal 1 additional damage."]
+},
+{
+    "name":"Paladin",
+    "hp":0,
+    "sp":0,
+    "cp":3,
+    "ac":1,
+    "speed":0,
+    "data":["[Rending Smite - 1 CP]: On a successful melee attack, the creature will gain the Brittle Condition for 1 hour, and be knocked prone.","[Vengeful Guardian]: When an ally within 60 ft of you is knocked into critical condition, immediately take a turn restoring all your SP."]
+},
+{
+    "name":"Generator",
+    "hp":2,
+    "sp":2,
+    "cp":0,
+    "speed":0,
+    "data":["[Paradoxal Packing]: You no longer need to pay for upkeep."]
+},
+{
+    "name":"Slayer",
+    "hp":1,
+    "sp":2,
+    "cp":0,
+    "speed":10,
+    "data":["[Exploiter]: You ignore all weaknesses.","[Slayer’s Mark]: Every short rest you may mark a creature. When this creature is defeated, regain TP equal to half your max HP, and mark a new creature."]
+},
+{
+    "name":"Brutalist",
+    "hp":2,
+    "sp":0,
+    "cp":2,
+    "speed":0,
+    "data":["[Corpse Beater - 1 CP]: Grab a creature that has perished or is in critical condition, and deal 2 Major bludgeoning damage to a target within 10 ft of you. The corpse is destroyed after use.","[Brutalizer]: When a creature drops to 0 HP, they are brutalized and all creatures in a 15 ft radius must make a Smarts check of 4+ or gain the Scared Condition for 1 turn."]
+}
+]
+}
