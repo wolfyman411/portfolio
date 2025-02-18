@@ -2,14 +2,14 @@
 "armor":
 [
 {
-    "name":"Nothing",
+    "name":"Unarmored",
     "ac":0,
-    "glance":0,
-    "minor":0,
-    "major":0,
+    "glance":2,
+    "minor":3,
+    "major":4,
     "resistant":"",
     "bonus":"",
-    "speed":0,
+    "speed":10,
     "upkeep":0
 },
 {

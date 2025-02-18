@@ -7,166 +7,168 @@
         <script src="logic.js" defer></script>
     </head>
 
-    <body style="background-image: url('images/empty.png'); background-size: 90%; background-repeat: no-repeat; background-position: center; background-attachment: fixed;"></body>
+    <body style="background-image: url('images/empty.png'); background-size:92vw 92vh; background-repeat: no-repeat; background-position: center; background-attachment: fixed;"></body>
 
     <!--Character Name, Lvl, etc.-->
-    <form autocomplete="off">
-        <input type="text" id="chr_name" style="left: 23%; top: 6%; width: 270px;">
-        <input type="number" id="chr_lvl" style="left: 40.5%; top: 6%; width: 30px;" value="1">
-        <input type="text" id="chr_sex" style="left: 25%; top: 11%; width: 60px;">
-        <input type="text" id="chr_build" style="left: 36%; top: 11%; width: 120px;">
-        <input type="number" id="chr_age"  style="left: 25%; top: 17%; width: 60px;">
-        <input type="text" id="chr_height" style="left: 36%; top: 17%; width: 120px;">
-        <input type="text" id="chr_planet" style="left: 29%; top: 24%; width: 250px;">
-    </form>
+    <div style="size: 92vw 92vh;">
+        <form autocomplete="off">
+            <input type="text" id="chr_name" style="left: 22.5%; top: 8%; width: 14%; height: 4%;">
+            <input type="number" id="chr_lvl" style="left: 40.1%; top: 8%; width: 30px; height: 4%;" value="1">
+            <input type="text" id="chr_sex" style="left: 24.6%; top: 12.6%; width: 3%; height: 4%;">
+            <input type="text" id="chr_build" style="left: 36%; top: 12.6%; width: 6%; height: 4%;">
+            <input type="number" id="chr_age"  style="left: 24.6%; top: 18.6%; width: 3%; height: 4%;">
+            <input type="text" id="chr_height" style="left: 36%; top: 18.6%; width: 6%; height: 4%;">
+            <input type="text" id="chr_planet" style="left: 28%; top: 24%; width: 14%; height: 4%;">
+        </form>
 
-    <!--ATLAS Stats and Talents-->
-    <form autocomplete="off">
-        <input type="number" id="chr_agl" style="left: 52.4%; top: 6%; width: 55px; height: 120px;" value="0">
-        <input type="number" id="chr_trk" style="left: 62%; top: 6%; width: 55px; height: 120px;" value="0">
-        <input type="number" id="chr_lck" style="left: 71.3%; top: 6%; width: 55px; height: 120px;" value="0">
-        <input type="number" id="chr_ang" style="left: 80.8%; top: 6%; width: 55px; height: 120px;" value="0">
-        <input type="number" id="chr_smt" style="left: 90.1%; top: 6%; width: 55px; height: 120px;" value="0">
+        <!--ATLAS Stats and Talents-->
+        <form autocomplete="off">
+            <input type="number" id="chr_agl" style="left: 52.4%; top: 8%; width: 3%; height: 12%;" value="0">
+            <input type="number" id="chr_trk" style="left: 62%; top: 8%; width: 3%; height: 12%;" value="0">
+            <input type="number" id="chr_lck" style="left: 71.6%; top: 8%; width: 3%; height: 12%;" value="0">
+            <input type="number" id="chr_ang" style="left: 81.2%; top: 8%; width: 3%; height: 12%;" value="0">
+            <input type="number" id="chr_smt" style="left: 90.8%; top: 8%; width: 3%; height: 12%;" value="0">
 
-        <input type="text" id="chr_agl_tal1" style="left: 48%; top: 19%; width: 130px;" class="smaller">
-        <input type="text" id="chr_agl_tal2" style="left: 48%; top: 23%; width: 130px;" class="smaller">
-        <input type="text" id="chr_agl_tal3" style="left: 48%; top: 27.5%; width: 130px;" class="smaller">
+            <input type="text" id="chr_agl_tal1" style="left: 47.5%; top: 21.5%; width: 7%; height: 2%;" class="smaller">
+            <input type="text" id="chr_agl_tal2" style="left: 47.5%; top: 25%; width: 7%; height: 2%;" class="smaller">
+            <input type="text" id="chr_agl_tal3" style="left: 47.5%; top: 29%; width: 7%; height: 2%;" class="smaller">
 
-        <input type="text" id="chr_trk_tal1" style="left: 58%; top: 19%; width: 130px;" class="smaller">
-        <input type="text" id="chr_trk_tal2" style="left: 58%; top: 23%; width: 130px;" class="smaller">
-        <input type="text" id="chr_trk_tal3" style="left: 58%; top: 27.5%; width: 130px;" class="smaller">
+            <input type="text" id="chr_trk_tal1" style="left: 57%; top: 21.5%; width: 7%; height: 2%;" class="smaller">
+            <input type="text" id="chr_trk_tal2" style="left: 57%; top: 25%; width: 7%; height: 2%;" class="smaller">
+            <input type="text" id="chr_trk_tal3" style="left: 57%; top: 29%; width: 7%; height: 2%;" class="smaller">
 
-        <input type="text" id="chr_lck_tal1" style="left: 66.5%; top: 19%; width: 130px;" class="smaller">
-        <input type="text" id="chr_lck_tal2" style="left: 66.5%; top: 23%; width: 130px;" class="smaller">
-        <input type="text" id="chr_lck_tal3" style="left: 66.5%; top: 27.5%; width: 130px;" class="smaller">
+            <input type="text" id="chr_lck_tal1" style="left: 66.5%; top: 21.5%; width: 7%; height: 2%;" class="smaller">
+            <input type="text" id="chr_lck_tal2" style="left: 66.5%; top: 25.5%; width: 7%; height: 2%;" class="smaller">
+            <input type="text" id="chr_lck_tal3" style="left: 66.5%; top: 29%; width: 7%; height: 2%;" class="smaller">
 
-        <input type="text" id="chr_ang_tal1" style="left: 76%; top: 19%; width: 130px;" class="smaller">
-        <input type="text" id="chr_ang_tal2" style="left: 76%; top: 23%; width: 130px;" class="smaller">
-        <input type="text" id="chr_ang_tal3" style="left: 76%; top: 27.5%; width: 130px;" class="smaller">
+            <input type="text" id="chr_ang_tal1" style="left: 76%; top: 21.5%; width: 7%; height: 2%;" class="smaller">
+            <input type="text" id="chr_ang_tal2" style="left: 76%; top: 25%; width: 7%; height: 2%;" class="smaller">
+            <input type="text" id="chr_ang_tal3" style="left: 76%; top: 29%; width: 7%; height: 2%;" class="smaller">
 
-        <input type="text" id="chr_smt_tal1" style="left: 86%; top: 19%; width: 130px;" class="smaller">
-        <input type="text" id="chr_smt_tal2" style="left: 86%; top: 23%; width: 130px;" class="smaller">
-        <input type="text" id="chr_smt_tal3" style="left: 86%; top: 27.5%; width: 130px;" class="smaller">
+            <input type="text" id="chr_smt_tal1" style="left: 86%; top: 21.5%; width: 7%; height: 2%;" class="smaller">
+            <input type="text" id="chr_smt_tal2" style="left: 86%; top: 25%; width: 7%; height: 2%;" class="smaller">
+            <input type="text" id="chr_smt_tal3" style="left: 86%; top: 29%; width: 7%; height: 2%;" class="smaller">
 
-        <!--Stats-->
-        <h2 id="chr_talent_score"  style="left: 44.2%; top: 2.6%;">1</h2>
-        <h2 id="chr_skillpoints"  style="left: 94.2%; top: 2.6%;">Pnts: 7</h2>
-        <h2 id="chr_talentpoints"  style="left: 94.2%; top: 5.6%;">Tlts: 2</h2>
-    </form>
+            <!--Stats-->
+            <h2 id="chr_talent_score"  style="left: 44.2%; top: 6.2%; height: 4%;">1</h2>
+            <h2 id="chr_skillpoints"  style="left: 95.2%; top: 2.6%;">Pnts: 7</h2>
+            <h2 id="chr_talentpoints"  style="left: 95.2%; top: 5.6%;">Tlts: 2</h2>
+        </form>
 
-    <!--CORE-->
-    <form autocomplete="off">
-        <input type="number" id="chr_curHP" style="left: 9.8%; top: 34%; width: 30px;" value="0">
-        <input type="number" id="chr_curSP" style="left: 17.8%; top: 34%; width: 30px;" value="0">
-        <input type="number" id="chr_curCP" style="left: 25.8%; top: 34%; width: 30px;" value="0">
-        <input type="number" id="chr_TP" style="left: 35.5%; top: 34%; width: 30px;" value="0">
+        <!--CORE-->
+        <form autocomplete="off">
+            <input type="number" id="chr_curHP" style="left: 9.8%; top: 34%; width: 1.3%;" value="0">
+            <input type="number" id="chr_curSP" style="left: 17.8%; top: 34%; width: 1.3%;" value="0">
+            <input type="number" id="chr_curCP" style="left: 25.8%; top: 34%; width: 1.3%;" value="0">
+            <input type="number" id="chr_TP" style="left: 35.5%; top: 34%; width: 1.3%;" value="0">
 
-        <!--Stats-->
-        <h2 id="chr_maxHP"  style="left: 12.5%; top: 31.6%;">0</h2>
-        <h2 id="chr_maxSP"  style="left: 20.5%; top: 31.6%;">0</h2>
-        <h2 id="chr_maxCP"  style="left: 28.5%; top: 31.6%;">0</h2>
-        <h2 id="chr_speed"  style="left: 39.5%; top: 31.6%;">30ft</h2>
-    </form>
+            <!--Stats-->
+            <h2 id="chr_maxHP"  style="left: 12.5%; top: 31.6%;">0</h2>
+            <h2 id="chr_maxSP"  style="left: 20.5%; top: 31.6%;">0</h2>
+            <h2 id="chr_maxCP"  style="left: 28.5%; top: 31.6%;">0</h2>
+            <h2 id="chr_speed"  style="left: 39.5%; top: 31.6%;">30ft</h2>
+        </form>
 
-    <!--Equipped Items-->
-    <select id="chr_wpn" style="left: 7.3%; top: 40%; width: 12.5%;"></select>
-    <select id="chr_arm" style="left: 25.4%; top: 40%; width: 12.5%;"></select>
+        <!--Equipped Items-->
+        <select id="chr_wpn" style="left: 6.2%; top: 41%; width: 12.5%;"></select>
+        <select id="chr_arm" style="left: 25%; top: 41%; width: 12.5%;"></select>
 
-        <!--Weapon-->
-        <h1 id="wpn_upkeep"  style="left: 20.7%; top: 40%;"></h1>
-        <h3 id="wpn_skl"  style="left: 11%; top: 46%;"></h3>
-        <h3 id="wpn_rng"  style="left: 18%; top: 46%;"></h3>
-        <h3 id="wpn_mal"  style="left: 23.5%; top: 46%;"></h3>
-        <h5 id="wpn_atk1"  style="left: 7.5%; top: 49.5%; width: 17%;"></h5>
-        <h5 id="wpn_atk2"  style="left: 7.5%; top: 58%; width: 17%;"></h5>
-        <h5 id="wpn_crit"  style="left: 7.5%; top: 65%; width: 17%;"></h5>
+            <!--Weapon-->
+            <h1 id="wpn_upkeep"  style="left: 20.7%; top: 40%;"></h1>
+            <h3 id="wpn_skl"  style="left: 11%; top: 46%;"></h3>
+            <h3 id="wpn_rng"  style="left: 18%; top: 46%;"></h3>
+            <h3 id="wpn_mal"  style="left: 23.5%; top: 46%;"></h3>
+            <h5 id="wpn_atk1"  style="left: 7.5%; top: 49.5%; width: 17%;"></h5>
+            <h5 id="wpn_atk2"  style="left: 7.5%; top: 58%; width: 17%;"></h5>
+            <h5 id="wpn_crit"  style="left: 7.5%; top: 65%; width: 17%;"></h5>
 
-        <!--Armor-->
-        <h1 id="arm_upkeep"  style="left: 38.5%; top: 40%;"></h1>
-        <h2 id="arm_ac"  style="left: 31%; top: 45%;">0</h2>
-        <h3 id="arm_res"  style="left: 31%; top: 50%;"></h3>
-        <h3 id="arm_weak"  style="left: 31%; top: 53%;"></h3>
-        <h5 id="arm_note"  style="left: 26%; top: 56%; width: 17%;"></h5>
-        <h2 id="arm_glance"  style="left: 27%; top: 64%;"></h2>
-        <h2 id="arm_minor"  style="left: 31%; top: 64%;"></h2>
-        <h2 id="arm_major"  style="left: 35%; top: 64%;"></h2>
+            <!--Armor-->
+            <h1 id="arm_upkeep"  style="left: 38.5%; top: 40%;"></h1>
+            <h2 id="arm_ac"  style="left: 31%; top: 45%;">0</h2>
+            <h3 id="arm_res"  style="left: 31%; top: 49%;"></h3>
+            <h3 id="arm_weak"  style="left: 31%; top: 53%;"></h3>
+            <h5 id="arm_note"  style="left: 26%; top: 56%; width: 17%;"></h5>
+            <h2 id="arm_glance"  style="left: 27%; top: 63%;"></h2>
+            <h2 id="arm_minor"  style="left: 31%; top: 63%;"></h2>
+            <h2 id="arm_major"  style="left: 35%; top: 63%;"></h2>
 
-    <!--Training, Capstone-->
-    <select id="chr_trn1" style="left: 45%; top: 33%; width: 12.5%;"></select>
-    <select id="chr_trn2" style="left: 45%; top: 56.5%; width: 12.5%;"></select>
-    <select id="chr_cap" style="left: 45%; top: 80%; width: 12.5%;"></select>
+        <!--Training, Capstone-->
+        <select id="chr_trn1" style="left: 45%; top: 33.5%; width: 12%;"></select>
+        <select id="chr_trn2" style="left: 45%; top: 55.8%; width: 12%;"></select>
+        <select id="chr_cap" style="left: 45%; top: 78.3%; width: 12%;"></select>
 
-        <!--Training 1-->    
-        <h3 id="train1_hp" style="left: 58%; top: 31%; width: 12.5%;">HP: 0</h3>
-        <h3 id="train1_sp" style="left: 61.5%; top: 31%; width: 12.5%;">SP: 0</h3>
-        <h3 id="train1_cp" style="left: 65%; top: 31%; width: 12.5%;">CP: 0</h3>
-        <h3 id="train1_speed" style="left: 68.5%; top: 31%; width: 12.5%;">0ft</h3>
-        <div class="scrollable-container" style="left: 43.5%; top: 37%; width: 30%; height: 19%;">
-            <h4 id="train1_info"></h4>
-        </div>
+            <!--Training 1-->    
+            <h3 id="train1_hp" style="left: 58%; top: 32.5%; width: 12.5%;">HP: 0</h3>
+            <h3 id="train1_sp" style="left: 61.5%; top: 32.5%; width: 12.5%;">SP: 0</h3>
+            <h3 id="train1_cp" style="left: 65%; top: 32.5%; width: 12.5%;">CP: 0</h3>
+            <h3 id="train1_speed" style="left: 68.5%; top: 32.5%; width: 12.5%;">0ft</h3>
+            <div class="scrollable-container" style="left: 43.5%; top: 37.5%; width: 30.6%; height: 17.8%;">
+                <h4 id="train1_info"></h4>
+            </div>
 
-        <!--Training 2-->    
-        <h3 id="train2_hp" style="left: 58%; top: 55%; width: 12.5%;">HP: 0</h3>
-        <h3 id="train2_sp" style="left: 61.5%; top: 55%; width: 12.5%;">SP: 0</h3>
-        <h3 id="train2_cp" style="left: 65%; top: 55%; width: 12.5%;">CP: 0</h3>
-        <h3 id="train2_speed" style="left: 68.5%; top: 55%; width: 12.5%;">0ft</h3>
-        <div class="scrollable-container" style="left: 43.5%; top: 60.3%; width: 30%; height: 19%;">
-            <h4 id="train2_info"></h4>
-        </div>
+            <!--Training 2-->    
+            <h3 id="train2_hp" style="left: 58%; top: 54.5%; width: 12.5%;">HP: 0</h3>
+            <h3 id="train2_sp" style="left: 61.5%; top: 54.5%; width: 12.5%;">SP: 0</h3>
+            <h3 id="train2_cp" style="left: 65%; top: 54.5%; width: 12.5%;">CP: 0</h3>
+            <h3 id="train2_speed" style="left: 68.5%; top: 54.5%; width: 12.5%;">0ft</h3>
+            <div class="scrollable-container" style="left: 43.5%; top: 59.7%; width: 30.6%; height: 18%;">
+                <h4 id="train2_info"></h4>
+            </div>
 
-        <!--Capstone-->    
-        <h3 id="cap_hp" style="left: 58%; top: 79.3%; width: 12.5%;">HP: 0</h3>
-        <h3 id="cap_sp" style="left: 61.5%; top: 79.3%; width: 12.5%;">SP: 0</h3>
-        <h3 id="cap_cp" style="left: 65%; top: 79.3%; width: 12.5%;">CP: 0</h3>
-        <h3 id="cap_speed" style="left: 68.5%; top: 79.3%; width: 12.5%;">0ft</h3>
-        <div class="scrollable-container" style="left: 43.5%; top: 84%; width: 30%; height: 10%;">
-            <h4 id="cap_info"></h4>
-        </div>
+            <!--Capstone-->    
+            <h3 id="cap_hp" style="left: 58%; top: 77.2%; width: 12.5%;">HP: 0</h3>
+            <h3 id="cap_sp" style="left: 61.5%; top: 77.2%; width: 12.5%;">SP: 0</h3>
+            <h3 id="cap_cp" style="left: 65%; top: 77.2%; width: 12.5%;">CP: 0</h3>
+            <h3 id="cap_speed" style="left: 68.5%; top: 77.2%; width: 12.5%;">0ft</h3>
+            <div class="scrollable-container" style="left: 43.5%; top: 82%; width: 30.6%; height: 10%;">
+                <h4 id="cap_info"></h4>
+            </div>
 
-    <!--Skills-->
-    <select id="chr_skl1" style="left: 76%; top: 32.4%; width: 9.5%;"></select>
-    <select id="chr_skl2" style="left: 76%; top: 48.4%; width: 9.5%;"></select>
-    <select id="chr_skl3" style="left: 76%; top: 63.4%; width: 9.5%;"></select>
-    <select id="chr_skl4" style="left: 76%; top: 79.4%; width: 9.5%;"></select>
+        <!--Skills-->
+        <select id="chr_skl1" style="left: 76.5%; top: 32.8%; width: 9.5%;"></select>
+        <select id="chr_skl2" style="left: 76.5%; top: 48.1%; width: 9.5%;"></select>
+        <select id="chr_skl3" style="left: 76.5%; top: 62.9%; width: 9.5%;"></select>
+        <select id="chr_skl4" style="left: 76.5%; top: 77.8%; width: 9.5%;"></select>
 
-        <!--Skill1-->
-        <h3 id="skill1_hp" style="left: 85.7%; top: 31%; width: 12.5%;">HP: 0</h3>
-        <h3 id="skill1_sp" style="left: 87.7%; top: 31%; width: 12.5%;">SP: 0</h3>
-        <h3 id="skill1_cp" style="left: 89.5%; top: 31%; width: 12.5%;">CP: 0</h3>
-        <h3 id="skill1_speed" style="left: 91.4%; top: 31%; width: 12.5%;">0ft</h3>
-        <div class="scrollable-container" style="left: 74.9%; top: 37%; width: 18%; height: 10%;">
-            <h4 id="skill1_info"></h4>
-        </div>
-        <!--Skill2-->
-        <h3 id="skill2_hp" style="left: 85.7%; top: 47%; width: 12.5%;">HP: 0</h3>
-        <h3 id="skill2_sp" style="left: 87.7%; top: 47%; width: 12.5%;">SP: 0</h3>
-        <h3 id="skill2_cp" style="left: 89.5%; top: 47%; width: 12.5%;">CP: 0</h3>
-        <h3 id="skill2_speed" style="left: 91.4%; top: 47%; width: 12.5%;">0ft</h3>
-        <div class="scrollable-container" style="left: 74.9%; top: 52%; width: 18%; height: 10%;">
-            <h4 id="skill2_info"></h4>
-        </div>
-        <!--Skill3-->
-        <h3 id="skill3_hp" style="left: 85.7%; top: 63%; width: 12.5%;">HP: 0</h3>
-        <h3 id="skill3_sp" style="left: 87.7%; top: 63%; width: 12.5%;">SP: 0</h3>
-        <h3 id="skill3_cp" style="left: 89.5%; top: 63%; width: 12.5%;">CP: 0</h3>
-        <h3 id="skill3_speed" style="left: 91.4%; top: 63%; width: 12.5%;">0ft</h3>
-        <div class="scrollable-container" style="left: 74.9%; top: 68%; width: 18%; height: 10%;">
-            <h4 id="skill3_info"></h4>
-        </div>
-        <!--Skill4-->
-        <h3 id="skill4_hp" style="left: 85.7%; top: 78.5%; width: 12.5%;">HP: 0</h3>
-        <h3 id="skill4_sp" style="left: 87.7%; top: 78.5%; width: 12.5%;">SP: 0</h3>
-        <h3 id="skill4_cp" style="left: 89.5%; top: 78.5%; width: 12.5%;">CP: 0</h3>
-        <h3 id="skill4_speed" style="left: 91.4%; top: 78.5%; width: 12.5%;">0ft</h3>
-        <div class="scrollable-container" style="left: 74.9%; top: 84%; width: 18%; height: 10%;">
-            <h4 id="skill4_info"></h4>
-        </div>
-    <!--Inventory/Notes-->
-    <textarea id="chr_note1" style="left: 7.5%; top: 76%; width: 17%; max-width: 17%; height: 17.5%; max-height: 17.5%;"></textarea>
-    <textarea id="chr_note2" style="left: 25%; top: 76%; width: 17%; max-width: 17%; height: 17.5%; max-height: 17.5%;"></textarea>
+            <!--Skill1-->
+            <h3 id="skill1_hp" style="left: 86.4%; top: 32%; width: 12.5%;">HP: 0</h3>
+            <h3 id="skill1_sp" style="left: 88.4%; top: 32%; width: 12.5%;">SP: 0</h3>
+            <h3 id="skill1_cp" style="left: 90.5%; top: 32%; width: 12.5%;">CP: 0</h3>
+            <h3 id="skill1_speed" style="left: 92.7%; top: 32%; width: 12.5%;">0ft</h3>
+            <div class="scrollable-container" style="left: 74.9%; top: 37%; width: 19%; height: 10%;">
+                <h4 id="skill1_info"></h4>
+            </div>
+            <!--Skill2-->
+            <h3 id="skill2_hp" style="left: 86.4%; top: 47%; width: 12.5%;">HP: 0</h3>
+            <h3 id="skill2_sp" style="left: 88.4%; top: 47%; width: 12.5%;">SP: 0</h3>
+            <h3 id="skill2_cp" style="left: 90.5%; top: 47%; width: 12.5%;">CP: 0</h3>
+            <h3 id="skill2_speed" style="left: 92.7%; top: 47%; width: 12.5%;">0ft</h3>
+            <div class="scrollable-container" style="left: 74.9%; top: 52%; width: 19%; height: 10%;">
+                <h4 id="skill2_info"></h4>
+            </div>
+            <!--Skill3-->
+            <h3 id="skill3_hp" style="left: 86.4%; top: 62%; width: 12.5%;">HP: 0</h3>
+            <h3 id="skill3_sp" style="left: 88.4%; top: 62%; width: 12.5%;">SP: 0</h3>
+            <h3 id="skill3_cp" style="left: 90.5%; top: 62%; width: 12.5%;">CP: 0</h3>
+            <h3 id="skill3_speed" style="left: 92.7%; top: 62%; width: 12.5%;">0ft</h3>
+            <div class="scrollable-container" style="left: 74.9%; top: 67%; width: 19%; height: 10%;">
+                <h4 id="skill3_info"></h4>
+            </div>
+            <!--Skill4-->
+            <h3 id="skill4_hp" style="left: 86.4%; top: 77%; width: 12.5%;">HP: 0</h3>
+            <h3 id="skill4_sp" style="left: 88.4%; top: 77%; width: 12.5%;">SP: 0</h3>
+            <h3 id="skill4_cp" style="left: 90.5%; top: 77%; width: 12.5%;">CP: 0</h3>
+            <h3 id="skill4_speed" style="left: 92.7%; top: 77%; width: 12.5%;">0ft</h3>
+            <div class="scrollable-container" style="left: 74.9%; top: 82%; width: 19%; height: 10%;">
+                <h4 id="skill4_info"></h4>
+            </div>
+        <!--Inventory/Notes-->
+        <textarea id="chr_note1" style="left: 6.3%; top: 74.8%; width: 17.5%; max-width: 17.5%; height: 16.5%; max-height: 17.5%;"></textarea>
+        <textarea id="chr_note2" style="left: 24.5%; top: 74.8%; width: 17.5%; max-width: 17.5%; height: 16.5%; max-height: 17.5%;"></textarea>
 
-    <!--Save/Load-->
-    <button id="save">SAVE</button>
-    <button id="load">LOAD</button>
-    <input type="file" id="fileInput" accept=".json" style="visibility: hidden;"/>
+        <!--Save/Load-->
+        <button id="save">SAVE</button>
+        <button id="load">LOAD</button>
+        <input type="file" id="fileInput" accept=".json" style="visibility: hidden;"/>
+    </div>
 </html>

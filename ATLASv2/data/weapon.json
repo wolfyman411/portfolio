@@ -2,15 +2,15 @@
 "weapon":
 [
 {
-    "name":"Nothing",
-    "range":"",
-    "skill":"",
+    "name":"Fists",
+    "range":"5",
+    "skill":"Anger",
     "malfunction":0,
     "repair":0,
     "upkeep":0,
-    "basic":"",
-    "special":"",
-    "crit":""
+    "basic":"[1 - SP]: Deal 1 Glance Bludgeoning Damage.",
+    "special":"[3 - SP]: Deal 1 Minor Bludgeoning Damage.",
+    "crit":"Disarm the target."
 },
 {
     "name":"Scrap Blaster",
@@ -118,8 +118,8 @@
     "malfunction":1,
     "repair":3,
     "upkeep":50,
-    "basic":"[1 - SP]: Deal 1 Minor Laser Damage.",
-    "special":"[2 - SP]: Laser ricochets to an additional hostile target within 15 ft. Make another attack roll, on a success deal 1 Minor Laser Damage. This effect will repeat until the laser misses a target.",
+    "basic":"[2 - SP]: Deal 1 Minor Laser Damage.",
+    "special":"[3 - SP]: Laser ricochets to an additional hostile target within 15 ft. Make another attack roll, on a success deal 1 Minor Laser Damage. This effect will repeat until the laser misses a target.",
     "crit":"Deal an additional 1 Glance Burn Damage."
 },
 {
@@ -220,17 +220,6 @@
     "basic":"[5 - SP]: Deal 3 Major Laser Damage. All targets in a 15 ft radius of the target must make an Agility Check of 3+ or higher or take 1 Minor Laser damage.",
     "special":"[8 - SP]: Deal 4 Major Laser Damage.",
     "crit":"Deal 1 Minor Burn Damage to all targets within 15 ft of the blast."
-},
-{
-    "name":"Fists",
-    "range":"5",
-    "skill":"Anger",
-    "malfunction":0,
-    "repair":0,
-    "upkeep":0,
-    "basic":"[1 - SP]: Deal 1 Glance Bludgeoning Damage.",
-    "special":"[3 - SP]: Deal 1 Minor Bludgeoning Damage.",
-    "crit":"Disarm the target."
 },
 {
     "name":"Dagger",
