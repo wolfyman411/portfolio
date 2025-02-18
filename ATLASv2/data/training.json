@@ -18,7 +18,7 @@
     "cp":4,
     "speed":0,
     "data1":["[Inspire - 1 CP; 30ft; Sight]: Give an ally 1 Prowess on their next roll for 1 hour.","[Priority Target - 1 CP; 60ft; Sight]: Give an enemy the marked condition for 1 hour.","[Reposition - 2 CP; 60ft; Sight]: Allow an ally to move a distance less than or equal to their movement speed on your turn."],
-    "data2":["[Rattle - 1 CP; 30ft; Sight]: Deal damage to a creature equal to your Anger modifier. This ability can only be used once per turn.","[Fate Stitcher; 60ft; Sight]: Once per long rest you may allow an ally to reroll a skill check. This may be reused at the cost of 1 CP."],
+    "data2":["[Rattle - 1 CP; 30ft; Sight]: A creature gains 2 Faults on their next attack.","[Fate Stitcher; 60ft; Sight]: Once per long rest you may allow an ally to reroll a skill check. This may be reused at the cost of 1 CP."],
     "data3":["[Rally - 1 CP; 30ft; Sight]: A creature gains 1d4 TP. If that creature is in critical condition, return them to 1 HP and remove the critical condition effect.","[Killshot - 2 CP; 30ft; Sight]: The next attack against a creature increases the threshold of damage."]
 },
 {
@@ -27,7 +27,7 @@
     "sp":3,
     "cp":3,
     "speed":0,
-    "data1":["[Cripple Shot - 1 CP]: On a successful ranged attack, give the target the crippled condition for 1 hour.","[Bouncing Shot - 1 CP]: On a successful ranged attack, you may use this ability to make an additional attack on a creature within 30 ft of your target with the same shot.","[Target Practice]: You no longer gain a Fault when a target is within melee range of you. You also ignore all cover bonuses to AC other than full cover."],
+    "data1":["[Cripple Shot - 1 CP]: On a successful ranged attack, give the target the crippled condition for 1 hour.","[Bouncing Shot - 1 CP]: On a successful ranged attack, you may use this ability to make an additional attack on a creature within 30 ft of your target with the same shot.","[Close Quarters]: You no longer gain a Fault when a target is too close."],
     "data2":["[Nimble Hands - 1 CP]: Start at the beginning of initiative.","[Brutal Critical]: Crits increase threshold damage."],
     "data3":["[Trained Shot - 1 CP]: Gain 2 Prowess on your next shot.","[Brittle Shot - 2 CP]: On a successful ranged attack, give the target the brittle condition for 1 hour."]
 },
@@ -68,8 +68,8 @@
     "cp":3,
     "speed":0,
     "data1":["[Improvised Tools - 1 CP]: Craft a single tool worth less than 150 Credits. Once used, roll a 1d6. If the result is higher than your current level, then the tool will break.","[Skilled Repaired - 1 CP]: Instantly fix a malfunction, double a repair healing amount, or fix a targeted item."],
-    "data2":["[Automated Turret - 2 CP]: Create an automated turret that is hostile to creatures of your choice. The Turret cannot be moved, and will break an hour after its creation. During combat, this turret will attack on your turn.","[Makeshift Weapon]: Once per long rest you may salvage a weapon and replicate a primary attack, special attack, or crit effect. The range of the attack will be based on the weapon it was salvaged from. The weapon will use either Smarts, Agility, or Anger to attack. The upkeep cost of the weapon is based on the highest of the weapon salvaged."],
-    "data3":["[Weapon Engineering - 2 CP]: You may craft a weapon worth less than 500 Credits. The weapon now gains a malfunction of 2, and will break when it malfunctions.","[Skilled Engineering]: The cost limit for items is now tripled allowing the creation of more expensive items.","[Improved Turret]: Your automated turret is now considered a heavy turret."]
+    "data2":["[Laser Turret - 2 CP]: Create a laser turret that is hostile to creatures of your choice. The Turret cannot be moved, and will break an hour after its creation. During combat, this turret will attack on your turn.","[Makeshift Weapon]: Once per long rest you may salvage a weapon and replicate a primary attack, special attack, or crit effect. The range of the attack will be based on the weapon it was salvaged from. The weapon will use either Smarts, Agility, or Anger to attack. The upkeep cost of the weapon is based on the highest of the weapon salvaged."],
+    "data3":["[Weapon Engineering - 2 CP]: You may craft a weapon worth less than 500 Credits. The weapon now gains a malfunction of 2, and will break when it malfunctions.","[Skilled Engineering]: The cost limit for items is now tripled allowing the creation of more expensive items.","[Improved Turret]: Your automated turret is now considered a heavy laser turret."]
 },
 {
     "name":"Technopath",
@@ -78,7 +78,7 @@
     "cp":5,
     "speed":0,
     "data1":["[Psionic Lash - 1 CP; 30ft; Sight]: Deal 1 Minor psychic damage. This ability can only be used once per turn.","[Psionic Shove - 1 CP; 30ft; Sight]: Push a creature 30 ft in a direction of your choice.","[Strengthened Mind]: You are now resistant to psychic damage, and psychic damage cannot bring you to critical condition."],
-    "data2":["[Telekinesis - 1 CP; 30ft; Sight]: Move an object 60 ft in a direction of your choice that weighs less than 100 lbs. If the object collides with a creature, deal 1 Minor Bludgeoning damage.","[Mind Shield - 1 CP]: As a response you may use this ability to create a telekinetic shield within 30 ft of you. The shield will negate all damage under 10, and will dissipate after the attack."],
+    "data2":["[Telekinesis - 1 CP; 30ft; Sight]: Move an object 60 ft in a direction of your choice that weighs less than 100 lbs. If the object collides with a creature, deal 1 Minor Bludgeoning damage.","[Mind Shield - 2 CP]: As a response you may use this ability to create a telekinetic shield within 30 ft of you. This may only be used once per turn."],
     "data3":["[Mind Control - 2 CP; 30ft; Sight]: Take the movement action of a creature.","[Brain Leech]: When you kill a creature with a technopath ability, gain 1 CP."]
 },
 {
@@ -107,7 +107,7 @@
     "sp":3,
     "cp":4,
     "speed":10,
-    "data1":["[Vehicle Sapper - 1 CP]: On a successful attack against a vehicle, increase damage threshold.","[Hotwire Expert]: Once per long rest you may hotwire a vehicle and take complete control over it.","[Lucky] Once per long rest you may reroll a check and take the higher of the 2 outcomes."],
+    "data1":["[Vehicle Sapper - 1 CP]: On a successful attack against a vehicle, increase damage threshold.","[Hotwire Expert]: Once per long rest you may hotwire a vehicle and take complete control over it.","[Lucky]: Once per long rest you may reroll a check and take the higher of the 2 outcomes."],
     "data2":["[Luckier]: Lucky may now be used twice per long rest.","[Vehicle Overclock - 1 CP]: Until the end of your next turn, all vehicle EP costs are reduced by half.","[Dogfighter]: When you drop a vehicle to 0 HP, regain all SP. If you are in a vehicle, it regains all EP as well."],
     "data3":["[Luckiest]: Lucky may now be used three times per long rest.","[Vehicle Tampering]: While piloting a vehicle, the movement speed is increased by half of its current max speed. When using a weapon of the vehicle, the range is doubled and you gain 1 Prowess while making attacks with it."]
 },
@@ -117,7 +117,7 @@
     "sp":2,
     "cp":2,
     "speed":0,
-    "data1":["[Shrug it Off - 1 CP]: When you take any damage you can instead choose to take no damage at the cost of CP.","[Ram - 1 CP]: Pick a target within movement distance and knock the target prone dealing 1 Minor Bludgeoning Damage.","[Fury]: Twice per long rest you may gain the fury condition for 1 hour or until you release the effect."],
+    "data1":["[Shrug it Off - 1 CP]: When you take any damage you can instead choose to take no damage at the cost of CP.","[Ram - 2 CP]: Move to a space 15ft from you, if you overlap any hostile creature they will take 1 Minor Bludgeoning damage.","[Fury]: Twice per long rest you may gain the fury condition for 1 hour or until you release the effect."],
     "data2":["[Taunt - 1 CP; 30ft; Sight]: Give a creature the taunted condition.","[Rage Conversion]: When you are hit by an attack and take damage, your next melee attack will increase by 1 threshold.","[Empowered Fury]: Once per long rest you may enter the empowered fury condition for 1 hour or until you release the effect."],
     "data3":["[Reckless Attack]: Gain 2 Prowess on your next attack, but gain the reckless condition until the start of your next turn. This can only be used once per turn.","[Indomitable]: At the start of your turn, regain half of the hp you have lost since the end of your last turn as TP."]
 },

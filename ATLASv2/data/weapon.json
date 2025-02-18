@@ -119,7 +119,7 @@
     "repair":3,
     "upkeep":50,
     "basic":"[2 - SP]: Deal 1 Minor Laser Damage.",
-    "special":"[3 - SP]: Laser ricochets to an additional hostile target within 15 ft. Make another attack roll, on a success deal 1 Minor Laser Damage. This effect will repeat until the laser misses a target.",
+    "special":"[3 - SP]: Deal 1 Minor Laser Damage and roll a d6, on a 5+ the shot will bounce and hit an additional creature 15ft from the target. This effect will continue until a 5+ is not rolled.",
     "crit":"Deal an additional 1 Glance Burn Damage."
 },
 {

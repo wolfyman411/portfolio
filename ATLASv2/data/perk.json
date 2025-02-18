@@ -15,7 +15,7 @@
     "sp":0,
     "cp":2,
     "speed":0,
-    "data":["[Vitals - 1 CP]: Learn the exact hitpoints, and AC of a target that you can see within 60 ft.","[Know Your Enemy - 1 CP]: Know the weaknesses and resistances of a target that you can see within 60 ft.","[Crowd Sense - 1 CP]: Know exactly how many hostile creatures are within 60 ft of you."]
+    "data":["[Vitals - 1 CP]: Learn the exact hitpoints, and AC of a target that you can see within 60 ft.","[Know Your Enemy - 1 CP]: Know the weaknesses and resistances of a target that you can see within 60 ft.","[Crowd Sense]: You always know how many creatures are within 30 ft of you, and you cannot be surprised."]
 },
 {
     "name":"Martial Adept",
@@ -31,7 +31,7 @@
     "sp":1,
     "cp":0,
     "speed":0,
-    "data":["[Quarry]: Once per long rest you may pick a creature to track that has left tracks or evidence of its existence. When this creature is killed or captured, you may pick a new target. This effect lasts until a new creature is picked.","[Tracking Sense]: When you are within 30 ft of your target, you will know the general direction of them."]
+    "data":["[Quarry]: Once per long rest you may pick a creature to track that has left tracks or evidence of its existence. When this creature is killed or captured, you may pick a new target. This effect lasts until a new creature is picked.","[Tracking Sense]: When you are within 30 ft of your target, you will know the general direction of them.","[Hunter]: Gain 1 Prowess when attacking your target."]
 },
 {
     "name":"Wanderer",
@@ -40,7 +40,7 @@
     "cp":0,
     "speed":0,
     "talent":1,
-    "data":["[Barter Expert]: Once per long rest you may half the price of an object.","[Judge of Character]: Gain 2 Prowess when discerning the true intentions of a creature."]
+    "data":["[Barter Expert]: Once per long rest you may half the price of an object.","[Judge of Character]: Gain 2 Prowess when discerning the true intentions of a creature.","[Utilitarian]: Upkeep cost is reduced by half."]
 },
 {
     "name":"Ruffian",
