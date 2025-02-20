@@ -114,7 +114,7 @@
     "sp":1,
     "cp":1,
     "speed":0,
-    "data":["[Battle Survey - 1 CP]: Give 3 creatures that you can see within 60 ft, the marked condition. This condition lasts until the start of your next turn.","[Cover Sniper]: You ignore the benefits of half and ¾ cover."]
+    "data":["[Battle Survey - 1 CP]: Give 3 creatures that you can see within 60 ft, the marked condition. This condition lasts until the start of your next turn.","[Cover Sniper]: You ignore the benefits of ¼ and half cover."]
 },
 {
     "name":"Prepper",

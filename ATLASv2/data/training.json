@@ -89,7 +89,7 @@
     "speed":5,
     "data1":["[Stealth Attack]: When you attack an unaware creature, you deal an additional 1 Minor damage.","[Barrage]: When you attack the same creature, you’ll deal an additional 1 Glance damage. This can stack up to 5 times. All stacks are dropped when a different creature is targeted."],
     "data2":["[Analyze - 1 CP]: Learn the weaknesses, and resistances, and the stats of a target.","[Camouflage - 1 CP]: When you are not within melee range of an enemy, immediately hide from all creatures making them unaware of your presence.","[Tracker]: Gain +2 Prowess when tracking targets."],
-    "data3":["[Disable Vitals - 2 CP]: On a successful attack apply cripple, brittle, and the blind condition to a creature for 2 turns.","[Piercer]: Attack damage is no longer reduced by a creature’s resistances.","[Priority Down]: When you drop a creature to 0 HP, regain all SP."]
+    "data3":["[Disable Vitals - 2 CP]: On a successful attack apply cripple, brittle, and the blind condition to a creature for 1 turn.","[Piercer - 2 CP]: On a successful attack, ignore the creature’s resistances.","[Priority Down]: When you drop a creature to 0 HP, regain half your max SP."]
 },
 {
     "name":"Swarm Survivor",
@@ -117,7 +117,7 @@
     "sp":2,
     "cp":2,
     "speed":0,
-    "data1":["[Shrug it Off - 1 CP]: When you take any damage you can instead choose to take no damage at the cost of CP.","[Ram - 2 CP]: Move to a space 15ft from you, if you overlap any hostile creature they will take 1 Minor Bludgeoning damage.","[Fury]: Twice per long rest you may gain the fury condition for 1 hour or until you release the effect."],
+    "data1":["[Shrug it Off - 2 CP]: When you take any damage you can instead choose to take no damage at the cost of CP.","[Ram - 2 CP]: Move to a space 15ft from you, if you overlap any hostile creature they will take 1 Minor Bludgeoning damage.","[Fury]: Twice per long rest you may gain the fury condition for 1 hour or until you release the effect."],
     "data2":["[Taunt - 1 CP; 30ft; Sight]: Give a creature the taunted condition.","[Rage Conversion]: When you are hit by an attack and take damage, your next melee attack will increase by 1 threshold.","[Empowered Fury]: Once per long rest you may enter the empowered fury condition for 1 hour or until you release the effect."],
     "data3":["[Reckless Attack]: Gain 2 Prowess on your next attack, but gain the reckless condition until the start of your next turn. This can only be used once per turn.","[Indomitable]: At the start of your turn, regain half of the hp you have lost since the end of your last turn as TP."]
 },
