@@ -37,9 +37,9 @@
     "sp":2,
     "cp":3,
     "speed":5,
-    "data1":["[Opportune Attack]: When an enemy chooses to move out of your melee range, you may make a single melee attack without expending additional SP.","[Fisticuffs]: Your melee attacks deal 1 additional Glance damage.","[Fast Reflexes - 1 CP]: As a response, you may negate any ranged attack that you could see coming."],
+    "data1":["[Opportune Attack]: When an enemy chooses to move out of your melee range, you may make a single melee attack without expending additional SP.","[Fisticuffs]: Your melee attacks deal 1 additional Minor damage.","[Fast Reflexes - 1 CP]: As a response, you may negate any ranged attack that you could see coming."],
     "data2":["[Brutal Strike - 1 CP]: On a successful melee attack, increase the damage threshold.","[Range Resistance]: You are resistant to all ranged attacks.","[Blood Engine]: When you reduce a creature to 0 HP, gain 1 SP and an additional 15 ft of movement."],
-    "data3":["[Iron Hands]: Your melee attacks now deal an additional 1 Minor damage.","[Shockwave - 1 CP]: All creatures in 15 ft of you must roll 5+ Anger check or take 1 Minor Bludgeoning Damage."]
+    "data3":["[Iron Hands]: Your melee attacks deal an additional 2 Minor damage.","[Shockwave - 1 CP]: All creatures in 15 ft of you must roll 5+ Anger check or take 1 Minor Bludgeoning Damage."]
 },
 {
     "name":"Field Medic",
@@ -97,8 +97,8 @@
     "sp":4,
     "cp":2,
     "speed":0,
-    "data1":["[Shove - 1 CP]: Push all creatures within 10ft of you 10ft back, and knock all creatures of medium size or smaller prone.","[Blood Fuel]: When dropping a creature to 0 HP with a ranged attack, SP will not be expended.","[Sweeping Strike]: Melee attacks now target all enemies in the radius of your melee weapon’s range."],
-    "data2":["[Overwhelmed - 1 CP]: Every creature within 15 ft of you will give you 2 TP, and an additional 1 Prowess to your next attack.","[Push Through]: When moving through creature spaces, your movement will not be halved."],
+    "data1":["[Shove - 2 CP]: Push all creatures within 10ft of you 10ft back, and knock all creatures of medium size or smaller prone.","[Blood Fuel]: When dropping a creature to 0 HP with a ranged attack, SP will not be expended.","[Sweeping Strike]: Melee attacks now target all enemies in the radius of your melee weapon’s range."],
+    "data2":["[Overwhelmed - 2 CP]: Every creature within 15 ft of you will give you 2 TP, and an additional 1 Prowess to your next attack.","[Push Through]: When moving through creature spaces, your movement will not be halved."],
     "data3":["[Minion Cleaver]: Your attacks now ignore resistances against targets with max HP less than half your max HP.","[Horde Resistance]: When you strike multiple enemies with a sweeping strike, you gain 1 TP equal to each additional enemy you hit other than the target."]
 },
 {
@@ -138,7 +138,7 @@
     "cp":3,
     "speed":0,
     "data1":["[Guard - 1 CP]: Swap places with an ally within 5 ft of and give yourself and your ally 1 AC until the start of your next turn.","[Protector]: If an ally within 10 ft of you is attacked, swap places with them and take the attack instead. This can only be done once per turn."],
-    "data2":["[Friend Zone - 1 CP]: All allies within 15ft of you gain 1d4 TP.","[Eternal Guardian - 1 CP]: Give an ally you can touch the Soul Guard condition.","[Sworn Protector]: When an enemy hits an ally, gain 1 Prowess on your next attack."],
+    "data2":["[Friend Zone - 2 CP]: All allies within 15ft of you gain 1d4 TP.","[Eternal Guardian - 1 CP]: Give an ally you can touch the Soul Guard condition.","[Sworn Protector]: When an enemy hits an ally, gain 1 Prowess on your next attack."],
     "data3":["[Battle Savior]: Every ally within 60 ft of you in critical condition increases your movement by 15 ft and max SP by 1."]
 }
 ]
