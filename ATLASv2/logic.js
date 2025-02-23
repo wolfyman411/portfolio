@@ -304,6 +304,7 @@ function handleArmor(){
         {
             document.getElementById("arm_upkeep").innerHTML = item.upkeep
             addAC += item.ac
+            addSpeed += item.speed
             document.getElementById("arm_res").innerHTML = item.resistant
             document.getElementById("arm_glance").innerHTML = item.glance
             document.getElementById("arm_minor").innerHTML = item.minor

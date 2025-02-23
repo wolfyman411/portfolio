@@ -222,6 +222,50 @@
     "crit":"Deal 1 Minor Burn Damage to all targets within 15 ft of the blast."
 },
 {
+    "name":"Compound Bow",
+    "range":"10/45",
+    "skill":"Agility",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":10,
+    "basic":"[2 - SP]: Deal 1 Minor Slashing Damage.",
+    "special":"[4 - SP]: Gain 1 Prowess on the attack, and deal 1 Minor Slashing Damage.",
+    "crit":"Apply the Bleeding Condition."
+},
+{
+    "name":"Energy Bow",
+    "range":"10/60",
+    "skill":"Agility",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":25,
+    "basic":"[2 - SP]: Hold the attack, and increase the damage by 1 Minor Laser Damage.",
+    "special":"[4 - SP]: Fire the weapon and unleash the held damage. If no damage is held, deal 1 Minor Laser Damage.",
+    "crit":"Expend no SP."
+},
+{
+    "name":"Saw Launcher",
+    "range":"30",
+    "skill":"Anger",
+    "malfunction":3,
+    "repair":4,
+    "upkeep":35,
+    "basic":"[3 - SP]: Deal 2 Minor Slashing Damage.",
+    "special":"[4 - SP]: Deal 2 Minor Laser Damage and roll a d6, on a 5+ the shot will bounce and hit an additional creature 15ft from the target. This effect will continue until a 5+ is not rolled.",
+    "crit": "Expend no SP."
+},
+{
+    "name":"Neuro-Bolt",
+    "range":"10/30",
+    "skill":"Smarts",
+    "malfunction":0,
+    "repair":0,
+    "upkeep":50,
+    "basic":"[2 - SP]: Lock onto a target. This resets at the end of your turn.",
+    "special":"[3 - SP]: Deal 1d6 Glance Laser Damage between each locked target.",
+    "crit":"Deal an additional 1d6 Glance Laser Damage between each locket target."
+},
+{
     "name":"Dagger",
     "range":"5",
     "skill":"Agility",
