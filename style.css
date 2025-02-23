@@ -1,25 +1,22 @@
-/* Dropdown Button */
 .dropbtn {
-    background-color: #aa5790;
+    background-color: #212121;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
-    box-shadow: 0px 8px 32px 0px rgba(255, 255, 255, 0.2);
-    outline: auto #6f4261;
+    box-shadow: 0px 8px 32px 0px rgba(30, 30, 30, 0.2);
+    outline: auto;
   }
 
 .skew {
     transform: skew(-5deg);
   }
   
-  /* The container <div> - needed to position the dropdown content */
   .dropdown {
     position: relative;
     display: inline-block;
   }
   
-  /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
     position: absolute;
@@ -30,7 +27,6 @@
     z-index: 100;
   }
   
-  /* Links inside the dropdown */
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -42,8 +38,12 @@
   header {
     position: fixed;
     width: 100%;
+    height: 75px;
     padding: 10px;
     margin: 0 auto;
+    z-index: 1000;
+    background-image: linear-gradient(to bottom, black, rgb(83, 83, 83));
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.421);
   } 
 
   a {
@@ -54,13 +54,10 @@
     color:#ff4d00
   }
   
-  /* Change color of dropdown links on hover */
   .dropdown-content a:hover {background-color: #f0b2b2;}
-  
-  /* Show the dropdown menu on hover */
+
   .dropdown:hover .dropdown-content {display: block;}
   
-  /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: #392539;}
 
   * {box-sizing: border-box}
@@ -68,23 +65,23 @@ body {font-family: Verdana, sans-serif; margin:0; -webkit-text-stroke-color: bla
 p {text-shadow: 0.3vh 0.3vh black; font-size: 2vh;}
 h3 {color: rgb(255, 255, 255); font-size: 2.5vh; font-family:sans-serif;}
 img {vertical-align: middle;}
-h1 {-webkit-text-stroke-width: 0.2vh; text-shadow: 0.3vh 0.3vh black; z-index: 0; font-size: 4.5vh;}
+h1 {-webkit-text-stroke-width: 0.2vh; text-shadow: 0.2vh 0.2vh black; z-index: 0; font-size: 4.5vh;}
 
 button:hover{
   filter: brightness(150%);
 }
 
 .spin-image {
-  width: 150px; /* Adjust the size of the image */
-  animation: spin 30s linear infinite; /* Set the animation to loop infinitely */
+  width: 150px;
+  animation: spin 30s linear infinite;
 }
 
 .left-image {
-  animation: left 90s linear infinite; /* Set the animation to loop infinitely */
+  animation: left 90s linear infinite;
 }
 
 .left-image-slower {
-  animation: left 35s linear infinite; /* Set the animation to loop infinitely */
+  animation: left 35s linear infinite;
 }
 
 .img-border{
@@ -110,7 +107,7 @@ button:hover{
 }
 
 .hoverButton:hover{
-  background-color: #392539;
+  background-color: #a6a6a6;
 }
 
 .hoverButton:hover img{

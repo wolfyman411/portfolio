@@ -71,6 +71,10 @@ createDropdown("Projects", [
     //{url: "ATLAS.html", text: "ATLAS"}
 ]);
 
+var dropdownBar = document.createElement("div");
+dropdownBar.classList.add("bar");
+document.getElementById("header").appendChild(dropdownBar);
+
 function toggleGif(event) {
     const clickedItem = event.target
     var alterItem;
