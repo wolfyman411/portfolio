@@ -15,7 +15,7 @@
     "sp":0,
     "cp":0,
     "speed":0,
-    "data":["[Battle Fuel]: When you drop a creature to 0 HP, gain 1d4 HP and 1 CP.","[Field Practice]: All melee attacks deal double damage."]
+    "data":["[Battle Fuel]: When you drop a creature to 0 HP, gain 2 HP and 1 CP.","[Field Practice]: All melee attacks deal double damage."]
 },
 {
     "name":"Paladin",
@@ -24,7 +24,7 @@
     "cp":3,
     "ac":1,
     "speed":0,
-    "data":["[Rending Smite - 2 CP]: On a successful melee attack, the creature will take an additional 1d4 of the same damage.","[Vengeful Guardian]: When an ally within 60 ft of you is knocked into critical condition, immediately take a turn restoring all your SP."]
+    "data":["[Rending Smite - 2 CP]: On a successful melee attack, the creature will take an additional 1d6 of the same damage.","[Vengeful Guardian]: When an ally within 60 ft of you is knocked into critical condition, immediately take a turn restoring all your SP."]
 },
 {
     "name":"Generator",

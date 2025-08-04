@@ -43,6 +43,7 @@ var addSP = 0
 var addCP = 0
 var addSpeed = 0
 var addAC = 0
+var addThresholds = [2,6,12]
 var totalSkillPoints = 0
 var totalTalentPoints = 0
 
@@ -84,6 +85,9 @@ function resetVars(){
     addSP = 0
     addCP = 0
     addSpeed = 30
+    addThresholds = [2,6,12]
+
+    console.log("test")
 
     //Armor
     addAC = 0
@@ -196,6 +200,7 @@ function getInfo(){
     var SP = 0
     var CP = 0
     var SPEED = 0
+
     //Training
     for (const item of training.training)
     {
@@ -207,6 +212,9 @@ function getInfo(){
             SP = "train1_sp"
             CP = "train1_cp"
             SPEED = "train1_speed"
+            addThresholds[0] += item.thresholds[0]
+            addThresholds[1] += item.thresholds[1]
+            addThresholds[2] += item.thresholds[2]
         }
         else if (document.getElementById("chr_trn2").value === item.name && document.getElementById("chr_lvl").value >= 5)
         {
@@ -215,6 +223,9 @@ function getInfo(){
             SP = "train2_sp"
             CP = "train2_cp"
             SPEED = "train2_speed"
+            addThresholds[0] += item.thresholds[0]
+            addThresholds[1] += item.thresholds[1]
+            addThresholds[2] += item.thresholds[2]
         }
         if (matched !== "")
         {
@@ -289,7 +300,9 @@ function handleWeapon(){
             document.getElementById("wpn_upkeep").innerHTML = item.upkeep
             document.getElementById("wpn_skl").innerHTML = item.skill
             document.getElementById("wpn_rng").innerHTML = item.range
-            document.getElementById("wpn_mal").innerHTML = item.malfunction + "/" + item.repair
+            document.getElementById("wpn_eff").innerHTML = item.efficiency
+            document.getElementById("wpn_mal").innerHTML = item.malfunction
+            document.getElementById("wpn_rep").innerHTML = item.repair
             document.getElementById("wpn_atk1").innerHTML = splitAbility(item.basic)
             document.getElementById("wpn_atk2").innerHTML = splitAbility(item.special)
             document.getElementById("wpn_crit").innerHTML = item.crit
@@ -306,10 +319,10 @@ function handleArmor(){
             addAC += item.ac
             addSpeed += item.speed
             document.getElementById("arm_res").innerHTML = item.resistant
-            document.getElementById("arm_glance").innerHTML = item.glance
-            document.getElementById("arm_minor").innerHTML = item.minor
-            document.getElementById("arm_major").innerHTML = item.major
             document.getElementById("arm_note").innerHTML = item.bonus
+            addThresholds[0] += item.thresholds[0]
+            addThresholds[1] += item.thresholds[1]
+            addThresholds[2] += item.thresholds[2]
         }
     }
 }
@@ -330,23 +343,9 @@ function handleInfo(item,matched,HP,SP,CP,SPEED,type=0){
     var info = ""
     if (type == 0)
     {
-        for (const ability of item.data1)
+        for (const ability of item.data)
         {
             info += splitAbility(ability)
-        }
-        if (document.getElementById("chr_lvl").value >= 4)
-        {
-            for (const ability of item.data2)
-            {
-                info += splitAbility(ability)
-            }
-        }
-        if (document.getElementById("chr_lvl").value >= 7)
-        {
-            for (const ability of item.data3)
-            {
-                info += splitAbility(ability)
-            }
         }
     }
     else if (type == 1)
@@ -413,6 +412,10 @@ function updateCore(){
     document.getElementById("chr_maxSP").innerHTML = addSP
     document.getElementById("chr_maxCP").innerHTML = addCP
     document.getElementById("chr_speed").innerHTML = addSpeed + "ft"
+
+    document.getElementById("arm_glance").innerHTML = addThresholds[0]
+    document.getElementById("arm_minor").innerHTML = addThresholds[1]
+    document.getElementById("arm_major").innerHTML = addThresholds[2]
 
     document.getElementById("arm_ac").innerHTML = addAC
 }

@@ -15,7 +15,7 @@
     "sp":0,
     "cp":2,
     "speed":0,
-    "data":["[Vitals - 1 CP]: Learn the exact hitpoints, and AC of a target that you can see within 60 ft.","[Know Your Enemy - 1 CP]: Know the weaknesses and resistances of a target that you can see within 60 ft.","[Crowd Sense]: You always know how many creatures are within 30 ft of you, and you cannot be surprised."]
+    "data":["[Know Your Enemy - 1 CP]: Know the weaknesses and resistances of a target that you can see within 60 ft.","[Crowd Sense]: You always know how many creatures are within 30 ft of you, and you cannot be surprised."]
 },
 {
     "name":"Martial Adept",
@@ -23,7 +23,7 @@
     "sp":0,
     "cp":1,
     "speed":0,
-    "data":["[Retort - 1 CP]: When an enemy misses a melee attack, you may take a reaction to make a melee attack against the creature ignoring the attacker’s AC.","[Disarm - 1 CP]: When an enemy misses a melee attack, you may take a reaction to disarm them and take their weapon."]
+    "data":["[Retort - 1 CP]: When an enemy misses a melee attack, you may take a reaction to make a melee attack against the creature ignoring the attacker’s AC.","[Wide Open]: When an enemy misses a melee attack, you gain 1 Prowess on your next attack when targeting them."]
 },
 {
     "name":"Tracker",
@@ -31,7 +31,7 @@
     "sp":1,
     "cp":0,
     "speed":0,
-    "data":["[Quarry]: Once per long rest you may pick a creature to track that has left tracks or evidence of its existence. When this creature is killed or captured, you may pick a new target. This effect lasts until a new creature is picked.","[Tracking Sense]: When you are within 30 ft of your target, you will know the general direction of them.","[Hunter]: Gain 1 Prowess when attacking your target."]
+    "data":["[Quarry]: Once per long rest you may pick a creature to track that has left tracks or evidence of its existence. When this creature is killed or captured, you may pick a new target. This effect lasts until a new creature is picked.","[Hunting Sense]: When you are within 30 ft of your target, you will know the general direction of them. You also gain 1 Prowess when making checks against your target."]
 },
 {
     "name":"Wanderer",
@@ -40,7 +40,7 @@
     "cp":0,
     "speed":0,
     "talent":1,
-    "data":["[Barter Expert]: Once per long rest you may half the price of an object.","[Judge of Character]: Gain 2 Prowess when discerning the true intentions of a creature.","[Utilitarian]: Upkeep cost is reduced by half."]
+    "data":["[Judge of Character]: Gain 2 Prowess when discerning the true intentions of a creature.","[Utilitarian]: Upkeep cost is reduced by half."]
 },
 {
     "name":"Ruffian",
@@ -48,7 +48,7 @@
     "sp":1,
     "cp":0,
     "speed":10,
-    "data":["[Slippery]: Enemies that attempt to grapple you gain 1 Fault.","[Lucky]: Once per long rest you may reroll a check and take the higher of the 2 outcomes."]
+    "data":["[Slippery]: Enemies that attempt to grapple you gain 1 Fault.","[Deal Maker]: Once per long rest you may half the price of an object."]
 },
 {
     "name":"Scholar",
@@ -57,7 +57,7 @@
     "cp":0,
     "speed":0,
     "talent":2,
-    "data":["[Sense of Direction]: You always know what direction is north.","[Keen Memory]: You can recall any information given to you in the last month."]
+    "data":["[Sixth Sense]: You always know what direction is north, and what time of day it is.","[Keen Memory]: You can recall any information given to you in the last month."]
 },
 {
     "name":"Adrenaline Junky",
@@ -65,7 +65,7 @@
     "sp":0,
     "cp":0,
     "speed":0,
-    "data":["[Reckless Jolt - 1 HP]: Gain 1 SP.","[Blood Shield - 1 HP]: Gain 1 AC until the start of your next turn."]
+    "data":["[Reckless Jolt - 2 HP]: Gain 1 SP.","[Blood Shield - 1 HP]: Gain 1 AC until the start of your next turn."]
 },
 {
     "name":"Blight Bearer",
@@ -82,7 +82,7 @@
     "sp":0,
     "cp":1,
     "speed":0,
-    "data":["[Patch Up - 1 CP]: Heal yourself 1d4 HP.","[Surrounded]: If there are 2 or more enemies within 5 ft of you, you gain 1 AC."]
+    "data":["[Patch Up - 1 CP]: Heal yourself 1d6 HP.","[Surrounded]: If there are 2 or more enemies within 5 ft of you, you gain 1 AC."]
 },
 {
     "name":"Olympian",
@@ -98,7 +98,7 @@
     "sp":0,
     "cp":0,
     "speed":0,
-    "data":["[Beast Companion]: Gain a creature that is danger level 2 or lower, and must be natural to the planet you reside on. The creature in combat will be after you in initiative. The creature will perform any action you tell it to, even if it would harm it. If the creature is killed or lost, at the end of a long rest roll a 6, on the result of a 6, tame a new creature."]
+    "data":["[Beast Companion]: Gain a creature that is danger level 2 or lower, and must be natural to the environment you are in. The creature in combat will be after you in initiative. The creature will perform any action you tell it to, even if it would harm it. If the creature is killed or lost, at the end of a long rest roll a d6, on the result of a 6, tame a new creature."]
 },
 {
     "name":"Battle Worn",
@@ -106,7 +106,7 @@
     "sp":0,
     "cp":0,
     "speed":0,
-    "data":["[Leather Skin]: Gain resistance to laser damage."]
+    "data":["[Leather Skin]: Gain resistance to laser damage.","[Enduring - 2 CP]: When brought into critical condition, you may use this ability to regain 1 HP and come back to consciousness."]
 },
 {
     "name":"Overwatch",

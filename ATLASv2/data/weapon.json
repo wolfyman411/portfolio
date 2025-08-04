@@ -7,6 +7,7 @@
     "skill":"Anger",
     "malfunction":0,
     "repair":0,
+    "efficiency":0,
     "upkeep":0,
     "basic":"[1 - SP]: Deal 1 Glance Bludgeoning Damage.",
     "special":"[3 - SP]: Deal 1 Minor Bludgeoning Damage.",
@@ -18,8 +19,9 @@
     "skill":"Agility",
     "malfunction":3,
     "repair":4,
+    "efficiency":4,
     "upkeep":25,
-    "basic":"[1 - SP]: Roll a d6, if the result is 4+ deal 1 Minor Laser Damage. On a failure deal 1 Glance Laser Damage.",
+    "basic":"[1 - SP]: 1d6+1 Laser Damage.",
     "special":"",
     "crit":"No SP is depleted."
 },
@@ -29,10 +31,11 @@
     "skill":"Agility",
     "malfunction":0,
     "repair":0,
+    "efficiency":1,
     "upkeep":50,
-    "basic":"[1 - SP]: Deal 1 Glance Stun Damage.",
-    "special":"[2 - SP]: Roll a d6, if the result is higher than the target HP, apply the unconscious condition.",
-    "crit":"Increase damage threshold."
+    "basic":"[1 - SP]: Deal 1d6 Stun Damage.",
+    "special":"[3 - SP]: Roll a d6, if the result is higher than the target HP, apply the unconscious condition. On a failure deal 1d6 Stun Damage.",
+    "crit":"Double the damage result."
 },
 {
     "name":"Junker",
@@ -40,9 +43,10 @@
     "skill":"Anger",
     "malfunction":3,
     "repair":4,
+    "efficiency":1,
     "upkeep":25,
-    "basic":"[1 - SP]: Deal 2 Minor Slashing Damage.",
-    "special":"[3 - SP]: Deal 1 Minor Slashing Damage and apply the bleeding condition.",
+    "basic":"[2 - SP]: Deal 2d6 Slashing Damage.",
+    "special":"[3 - SP]: Deal 1d6 Slashing Damage and apply the bleeding condition.",
     "crit":"Knock the target prone."
 },
 {
@@ -51,9 +55,10 @@
     "skill":"Agility",
     "malfunction":2,
     "repair":4,
+    "efficiency":1,
     "upkeep":25,
-    "basic":"[2 - SP]: Deal 1 Minor Slashing Damage.",
-    "special":"[3 - SP]: Deal 1 Major Slashing Damage, but the weapon malfunctions.",
+    "basic":"[2 - SP]: Deal 2d6 Slashing Damage.",
+    "special":"[3 - SP]: Deal 3d6 Slashing Damage, but the weapon malfunctions.",
     "crit":"Knock the target prone."
 },
 {
@@ -62,8 +67,9 @@
     "skill":"Agility",
     "malfunction":0,
     "repair":0,
+    "efficiency":5,
     "upkeep":35,
-    "basic":"[1 - SP]: Deal 1 Glance Laser Damage.",
+    "basic":"[1 - SP]: Deal 1d6 Laser Damage.",
     "special":"",
     "crit":"No SP is used."
 },
@@ -73,9 +79,10 @@
     "skill":"Agility",
     "malfunction":0,
     "repair":0,
+    "efficiency":9,
     "upkeep":50,
-    "basic":"[2 - SP]: Deal 1 Major Laser Damage.",
-    "special":"[3 - SP]: Roll a d6, on a 4+ deal 2 Major Laser Damage. On a failure deal 1 Major Laser Damage.",
+    "basic":"[2 - SP]: Deal 2d6 Laser Damage.",
+    "special":"[3 - SP]: Gain 1 Prowess on the attack, deal 2d6 Laser Damage.",
     "crit":"No SP is used."
 },
 {
@@ -84,8 +91,9 @@
     "skill":"Anger",
     "malfunction":1,
     "repair":4,
+    "efficiency":10,
     "upkeep":0,
-    "basic":"[2 - SP]: Deal 2 Major Laser Damage.",
+    "basic":"[2 - SP]: Deal 2d6+2 Laser Damage.",
     "special":"",
     "crit":"Apply the burning condition."
 },
@@ -95,10 +103,11 @@
     "skill":"Anger",
     "malfunction":0,
     "repair":0,
+    "efficiency":4,
     "upkeep":45,
-    "basic":"[2 - SP]: Deal 1 Glance Laser Damage, and roll a d6. If the result is 3+ make another basic attack expending no SP. This action repeats until the roll fails.",
+    "basic":"[2 - SP]: Deal 1 Laser Damage, and roll a d6. If the result is 3+ deal an additional Laser damage. This action repeats until the roll fails.",
     "special":"",
-    "crit":"Increase damage threshold."
+    "crit":"Deal an additional 1d6 Laser Damage."
 },
 {
     "name":".33 Gauss Revolver",
@@ -106,10 +115,11 @@
     "skill":"Luck",
     "malfunction":0,
     "repair":0,
+    "efficiency":5,
     "upkeep":45,
-    "basic":"[1 - SP]: Deal 1 Glance Laser Damage.",
-    "special":"[3 - SP]: Roll a d6, on a 3+ deal 1 Minor Laser Damage. On a failure deal 1 Glance Laser Damage.",
-    "crit":"Laser bounces to a hostile target within 15 ft of the original target dealing 1 Minor Laser Damage."
+    "basic":"[1 - SP]: Deal 1d6 Laser Damage.",
+    "special":"[3 - SP]: Roll a d6, on a 4+ deal 6 Laser Damage. On a failure deal 1d6 Laser Damage.",
+    "crit":"Laser bounces to a hostile target within 15 ft of the original target dealing 1d6 Laser Damage."
 },
 {
     "name":".66 Gauss Revolver",
@@ -117,10 +127,11 @@
     "skill":"Luck",
     "malfunction":1,
     "repair":3,
+    "efficiency":8,
     "upkeep":50,
-    "basic":"[2 - SP]: Deal 1 Minor Laser Damage.",
-    "special":"[3 - SP]: Deal 1 Minor Laser Damage and roll a d6, on a 5+ the shot will bounce and hit an additional creature 15ft from the target. This effect will continue until a 5+ is not rolled.",
-    "crit":"Deal an additional 1 Glance Burn Damage."
+    "basic":"[2 - SP]: Deal 2d6 Laser Damage.",
+    "special":"[3 - SP]: Deal 2d6 Laser Damage and roll a d6, on a 5+ the shot will bounce and hit an additional creature 15ft from the target. This effect will continue until a 5+ is not rolled.",
+    "crit":"Deal an additional 2 Burn Damage."
 },
 {
     "name":".66 Repeater",
@@ -128,9 +139,10 @@
     "skill":"Agility",
     "malfunction":0,
     "repair":0,
+    "efficiency":6,
     "upkeep":75,
-    "basic":"[2 - SP]: Deal 1 Minor Laser Damage.",
-    "special":"[3 - SP]: Roll a d6, on a 3+ deal 2 Minor Laser Damage. On a failure deal 1 Glance Laser Damage.",
+    "basic":"[2 - SP]: Deal 1d6 Laser Damage.",
+    "special":"[3 - SP]: Make an attack against up to 2 targets, deal 1d6+2 Laser Damage split between targets.",
     "crit":"Expend no SP."
 },
 {
@@ -139,9 +151,10 @@
     "skill":"Luck",
     "malfunction":0,
     "repair":0,
+    "efficiency":8,
     "upkeep":60,
-    "basic":"[3 - SP]: Deal 1 Major Laser Damage.",
-    "special":"[4 - SP]: Deal 2 Major Laser Damage.",
+    "basic":"[3 - SP]: Deal 2d6+2 Laser Damage.",
+    "special":"[4 - SP]: Gain 1 Prowess on the attack, deal 2d6+2 Laser Damage.",
     "crit":"Expend no SP."
 },
 {
@@ -150,9 +163,10 @@
     "skill":"Luck",
     "malfunction":0,
     "repair":0,
+    "efficiency":10,
     "upkeep":75,
-    "basic":"[3 - SP]: Deal 1 Major Laser Damage.",
-    "special":"[5 - SP]: Ignore cover bonuses and deal 2 Major Laser Damage.",
+    "basic":"[4 - SP]: Deal 3d6+2 Laser Damage.",
+    "special":"[5 - SP]: Ignore cover bonuses and deal 3d6+2 Laser Damage.",
     "crit":"Apply the burning condition."
 },
 {
@@ -161,10 +175,11 @@
     "skill":"Anger",
     "malfunction":0,
     "repair":0,
+    "efficiency":8,
     "upkeep":45,
-    "basic":"[1 - SP]: Roll 1d6, on a 3+ deal 1 Minor Laser Damage. On a failure deal 1 Glance Laser Damage.",
-    "special":"Special [3 - SP]: Deal 1 Minor Laser Damage and push the target back 5 ft.",
-    "crit":"Increase Threshold Damage."
+    "basic":"[1 - SP]: Deal 2d6-2 Laser Damage.",
+    "special":"Special [3 - SP]: Deal 1d6 Laser Damage and push the target back 10 ft.",
+    "crit":"Double damage result."
 },
 {
     "name":".66 Splitter",
@@ -172,10 +187,11 @@
     "skill":"Anger",
     "malfunction":0,
     "repair":0,
+    "efficiency":10,
     "upkeep":0,
-    "basic":"Basic [2 - SP]: Roll 1d6, on a 3+ deal 2 Minor Laser Damage. On a failure deal 1 Minor Laser Damage.",
-    "special":"Special [4 - SP]: Deal 1 Major Laser Damage.",
-    "crit":"Deal an additional 1 Minor Laser Damage."
+    "basic":"Basic [2 - SP]: Deal 2d6 Laser Damage",
+    "special":"Special [4 - SP]: Deal 2d6 Laser Damage.",
+    "crit":"Deal an additional 1d6 Laser Damage."
 },
 {
     "name":"Gatling Laser",
@@ -183,9 +199,10 @@
     "skill":"Anger",
     "malfunction":0,
     "repair":0,
+    "efficiency":10,
     "upkeep":100,
-    "basic":"[2 - SP]: Roll 1d6, if the result is 3+ deal 3 Minor Laser Damage. On a failure, deal 1 Minor Laser Damage.",
-    "special":"[5 - SP]: Deal 2 Minor Laser Damage, and knock the target prone.",
+    "basic":"[2 - SP]: Deal 2d6 Laser Damage.",
+    "special":"",
     "crit":"Expend no SP."
 },
 {
@@ -194,10 +211,11 @@
     "skill":"Anger",
     "malfunction":0,
     "repair":0,
+    "efficiency":1,
     "upkeep":125,
-    "basic":"[2 - SP]: Roll 1d6, if the result is 3+ deal 2 Major Laser Damage. On a failure, deal 1 Major Laser Damage.",
-    "special":"[5 - SP]: Deal 1 Major Laser Damage, and knock the target prone.",
-    "crit":"Deal 1 additional Minor Laser Damage"
+    "basic":"[5 - SP]: Deal 6d6 Laser Damage.",
+    "special":"",
+    "crit":"Weapon automatically reloads at no SP cost."
 },
 {
     "name":"Plasma Spewer",
@@ -205,9 +223,10 @@
     "skill":"Anger",
     "malfunction":0,
     "repair":0,
+    "efficiency":8,
     "upkeep":0,
-    "basic":"[1 - SP]: Deal 1 Minor Burn Damage.",
-    "special":"[2 - SP]: Deal 2 Minor Burn Damage to a target within 30 ft from you.",
+    "basic":"[1 - SP]: Deal 2d6 Burn Damage.",
+    "special":"[2 - SP]: Deal 1d6+2 Burn Damage to a target within 30 ft from you.",
     "crit":"Apply the burning condition."
 },
 {
@@ -216,10 +235,11 @@
     "skill":"Luck",
     "malfunction":0,
     "repair":0,
+    "efficiency":1,
     "upkeep":150,
-    "basic":"[5 - SP]: Deal 3 Major Laser Damage. All targets in a 15 ft radius of the target must make an Agility Check of 3+ or higher or take 1 Minor Laser damage.",
-    "special":"[8 - SP]: Deal 4 Major Laser Damage.",
-    "crit":"Deal 1 Minor Burn Damage to all targets within 15 ft of the blast."
+    "basic":"[5 - SP]: All targets in a 15 ft radius of the target must make an Agility Check of 4+ or take 6d6 Laser damage.",
+    "special":"",
+    "crit":"Deal 1d6 Burn Damage to all damaged targets within 15 ft of the blast."
 },
 {
     "name":"Compound Bow",
@@ -227,9 +247,10 @@
     "skill":"Agility",
     "malfunction":0,
     "repair":0,
+    "efficiency":1,
     "upkeep":10,
-    "basic":"[2 - SP]: Deal 1 Minor Slashing Damage.",
-    "special":"[4 - SP]: Gain 1 Prowess on the attack, and deal 1 Minor Slashing Damage.",
+    "basic":"[2 - SP]: Deal 2d6 Slashing Damage.",
+    "special":"[4 - SP]: Gain 2 Prowess on the attack, and deal 2d6 Slashing Damage.",
     "crit":"Apply the Bleeding Condition."
 },
 {
@@ -238,9 +259,10 @@
     "skill":"Agility",
     "malfunction":0,
     "repair":0,
+    "efficiency":10,
     "upkeep":25,
-    "basic":"[2 - SP]: Hold the attack, and increase the damage by 1 Minor Laser Damage.",
-    "special":"[4 - SP]: Fire the weapon and unleash the held damage. If no damage is held, deal 1 Minor Laser Damage.",
+    "basic":"[2 - SP]: Hold the attack, and increase the damage by 1d6.",
+    "special":"[4 - SP]: Fire the weapon and unleash the held damage. If no damage is held, deal 1d6 Laser Damage.",
     "crit":"Expend no SP."
 },
 {
@@ -249,10 +271,11 @@
     "skill":"Anger",
     "malfunction":3,
     "repair":4,
+    "efficiency":1,
     "upkeep":35,
-    "basic":"[3 - SP]: Deal 2 Minor Slashing Damage.",
-    "special":"[4 - SP]: Deal 2 Minor Laser Damage and roll a d6, on a 5+ the shot will bounce and hit an additional creature 15ft from the target. This effect will continue until a 5+ is not rolled.",
-    "crit": "Expend no SP."
+    "basic":"[3 - SP]: Deal 2d6 Slashing Damage.",
+    "special":"[4 - SP]: Deal 2d6 Laser Damage and roll a d6, on a 5+ the shot will bounce and hit an additional creature 15ft from the target. This effect will continue until a 5+ is not rolled.",
+    "crit": "Apply the Bleeding Condition."
 },
 {
     "name":"Neuro-Bolt",
@@ -260,10 +283,11 @@
     "skill":"Smarts",
     "malfunction":0,
     "repair":0,
+    "efficiency":10,
     "upkeep":50,
-    "basic":"[2 - SP]: Lock onto a target. This resets at the end of your turn.",
-    "special":"[3 - SP]: Deal 1d6 Glance Laser Damage between each locked target.",
-    "crit":"Deal an additional 1d6 Glance Laser Damage between each locket target."
+    "basic":"[1 - SP]: Lock onto a target. This resets at the end of your turn. You may lock onto the same target multiple times.",
+    "special":"[2 - SP]: Deal 1d6 Laser Damage for each locked target.",
+    "crit":"Double damage result for each locked target."
 },
 {
     "name":"Dagger",
@@ -272,8 +296,8 @@
     "malfunction":0,
     "repair":0,
     "upkeep":5,
-    "basic":"[1 - SP]: Deal 1 Glance Slashing Damage.",
-    "special":"[3 - SP]: Deal 1 Minor Slashing Damage.",
+    "basic":"[1 - SP]: Deal 1d6 Slashing Damage.",
+    "special":"[2 - SP]: Deal 2d6 Slashing Damage.",
     "crit":"Apply the Bleeding Condition."
 },
 {
@@ -283,7 +307,7 @@
     "malfunction":0,
     "repair":0,
     "upkeep":15,
-    "basic":"[2 - SP]: Deal 1 Minor Bludgeoning Damage.",
+    "basic":"[2 - SP]: Deal 2d6 Bludgeoning Damage.",
     "special":"",
     "crit":"Apply the Brittle Condition until the end of your next turn."
 },
@@ -294,9 +318,9 @@
     "malfunction":0,
     "repair":0,
     "upkeep":15,
-    "basic":"[1 - SP]: Deal 1 Glance Stun Damage.",
-    "special":"[3 - SP]: Deal 1 Minor Stun Damage.",
-    "crit":" If the creature has fewer than 4 hitpoints, apply the unconscious condition."
+    "basic":"[1 - SP]: Deal 1d6 Stun Damage.",
+    "special":"[2 - SP]: Deal 2d6 Stun Damage.",
+    "crit":"If the creature has fewer HP than damage result, apply the unconscious condition."
 },
 {
     "name":"Crowbar",
@@ -305,7 +329,7 @@
     "malfunction":0,
     "repair":0,
     "upkeep":15,
-    "basic":"[3 - SP]: Deal 2 Minor Bludgeoning Damage.",
+    "basic":"[3 - SP]: Deal 2d6+2 Bludgeoning Damage.",
     "special":"",
     "crit":"Apply the Crippled Condition until the end of your next turn."
 },
@@ -316,8 +340,8 @@
     "malfunction":0,
     "repair":0,
     "upkeep":15,
-    "basic":"[1 - SP]: Deal 1 Glance Slashing Damage.",
-    "special":"[3 - SP]: Roll a d6, on a 4+ deal 2 Minor Slashing Damage. On a failure, deal 1 Glance Slashing Damage",
+    "basic":"[1 - SP]: Deal 1d6 Slashing Damage.",
+    "special":"[3 - SP]: Roll a d6, on a 4+ deal 6 Slashing Damage. On a failure, deal no damage.",
     "crit":"Apply the Bleeding Condition to the target."
 },
 {
@@ -327,8 +351,8 @@
     "malfunction":0,
     "repair":0,
     "upkeep":15,
-    "basic":"[2 - SP]: Deal 1 Glance Bludgeoning Damage.",
-    "special":"[3 - SP]: Deal 1 Minor Bludgeoning Damage.",
+    "basic":"[1 - SP]: Deal 1d6 Bludgeoning Damage.",
+    "special":"[3 - SP]: Deal 2d6+2 Bludgeoning Damage.",
     "crit":"Target is knocked prone."
 },
 {
@@ -338,8 +362,8 @@
     "malfunction":0,
     "repair":0,
     "upkeep":15,
-    "basic":"[2 - SP]: Deal 1 Glance Slashing Damage.",
-    "special":"[3 - SP]: Deal 1 Minor Slashing Damage.",
+    "basic":"[2 - SP]: Deal 2d6 Slashing Damage.",
+    "special":"[3 - SP]: Deal 2d6+2 Slashing Damage.",
     "crit":"Target is Impaled and grappled by you."
 },
 {
@@ -349,7 +373,7 @@
     "malfunction":0,
     "repair":0,
     "upkeep":15,
-    "basic":"[2 - SP]: Deal 1 Minor Damage.",
+    "basic":"[3 - SP]: Deal 3d6 Bludgeoning Damage.",
     "special":"",
     "crit":"Target is knocked prone."
 },
@@ -360,9 +384,9 @@
     "malfunction":0,
     "repair":0,
     "upkeep":35,
-    "basic":"[2 - SP]: Deal 1 Minor Laser Damage.",
-    "special":"[3 - SP]: Ignore resistances and deal 1 Minor Laser Damage.",
-    "crit":"Increase Damage Threshold."
+    "basic":"[2 - SP]: Deal 2d6+2 Laser Damage.",
+    "special":"[3 - SP]: Ignore resistances and deal 3d6 Laser Damage.",
+    "crit":"Double damage result."
 }
 ]
 }

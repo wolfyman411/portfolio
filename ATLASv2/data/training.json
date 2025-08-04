@@ -7,9 +7,8 @@
     "sp":0,
     "cp":0,
     "speed":0,
-    "data1":[],
-    "data2":[],
-    "data3":[]
+    "thresholds":[0,0,0],
+    "data":[]
 },
 {
     "name":"Tactician",
@@ -17,9 +16,8 @@
     "sp":2,
     "cp":4,
     "speed":0,
-    "data1":["[Inspire - 1 CP; 30ft; Sight]: Give an ally 1 Prowess on their next roll for 1 hour.","[Priority Target - 1 CP; 60ft; Sight]: Give an enemy the marked condition for 1 hour.","[Reposition - 2 CP; 60ft; Sight]: Allow an ally to move a distance less than or equal to their movement speed on your turn."],
-    "data2":["[Rattle - 1 CP; 30ft; Sight]: A creature gains 2 Faults on their next attack.","[Fate Stitcher; 60ft; Sight]: Once per long rest you may allow an ally to reroll a skill check. This may be reused at the cost of 1 CP."],
-    "data3":["[Rally - 1 CP; 30ft; Sight]: A creature gains 1d4 TP. If that creature is in critical condition, return them to 1 HP and remove the critical condition effect.","[Killshot - 2 CP; 30ft; Sight]: The next attack against a creature increases the threshold of damage."]
+    "thresholds":[0,1,1],
+    "data":["[Commanding Presence - 1 CP; 30ft; Sight]: Give a creature SP equal to your level, no greater than their max. The creature may then immediately use any actions that are free or require an SP cost until they no longer have any additional SP to use. At level 7 if you use this ability on a creature in critical condition, you may bring them back to 1 HP at the cost of 1 additional CP.","[Pinpoint Weaknesses - 2 CP; 60ft; Sight]: Pick 1 effect to apply to a creature: Give the marked condition for 1 hour, give the weakened condition for 1 hour, and give 2 Faults to their next attack. At level 5 you may pick 2 effects.","[Field Domination; 30ft; Sight]: Once per long rest, when a creature rolls, you may choose to force the creature to reroll, then you may choose between the two outcomes. At level 3 you may do this twice, and at level 7 you may do this three times."]
 },
 {
     "name":"Gunslinger",
@@ -27,9 +25,8 @@
     "sp":3,
     "cp":3,
     "speed":0,
-    "data1":["[Cripple Shot - 1 CP]: On a successful ranged attack, give the target the crippled condition for 1 hour.","[Bouncing Shot - 1 CP]: On a successful ranged attack, you may use this ability to make an additional attack on a creature within 30 ft of your target with the same shot.","[Close Quarters]: You no longer gain a Fault when a target is too close."],
-    "data2":["[Nimble Hands - 1 CP]: Start at the beginning of initiative.","[Brutal Critical]: Crits increase threshold damage."],
-    "data3":["[Trained Shot - 1 CP]: Gain 2 Prowess on your next shot.","[Brittle Shot - 2 CP]: On a successful ranged attack, give the target the brittle condition for 1 hour."]
+    "thresholds":[1,1,0],
+    "data":["[Trick Shot - 1 CP; Ranged]: On a successful attack pick 1 of these effects to apply to the shot: Give the target the crippled condition for 1 turn, give the blind condition for 1 turn, ignore cover. At level 5 you may pick 2 effects.","[Bouncing Shot - 1 CP; Ranged]: On a successful ranged attack, you may use this ability to make an additional attack on a creature within 30 ft of your target with the same ranged attack.","[Nimble]: Always start at the beginning of initiative. At level 4, your first action in combat will cost no SP or CP. At level 7, your first action on your turn will cost no SP."]
 },
 {
     "name":"Brawler",
@@ -37,9 +34,8 @@
     "sp":2,
     "cp":3,
     "speed":5,
-    "data1":["[Opportune Attack]: When an enemy chooses to move out of your melee range, you may make a single melee attack without expending additional SP.","[Fisticuffs]: Your melee attacks deal 1 additional Minor damage.","[Fast Reflexes - 1 CP]: As a response, you may negate any ranged attack that you could see coming."],
-    "data2":["[Brutal Strike - 1 CP]: On a successful melee attack, increase the damage threshold.","[Range Resistance]: You are resistant to all ranged attacks.","[Blood Engine]: When you reduce a creature to 0 HP, gain 1 SP and an additional 15 ft of movement."],
-    "data3":["[Iron Hands]: Your melee attacks deal an additional 2 Minor damage.","[Shockwave - 1 CP]: All creatures in 15 ft of you must roll 5+ Anger check or take 1 Minor Bludgeoning Damage."]
+    "thresholds":[1,0,1],
+    "data":["[Fast Reflexes - 1 CP]: As a response, you may negate any ranged attack that you could see coming.","[Brutal Strike - 1 CP; Melee]: On a successful melee attack, double the damage result. At level 15 a 5ft shockwave emit from all your melee attacks, all hostile creatures within range must succeed on an Anger check higher than your Anger skill or take damage equal to the damage result.","[Martial Training]: When an enemy chooses to move out of your melee range, you may make a single melee attack without expending additional SP. At level 4 you now ignore resistances when making melee attacks."]
 },
 {
     "name":"Field Medic",
@@ -47,9 +43,8 @@
     "sp":2,
     "cp":5,
     "speed":10,
-    "data1":["[Cleanse - 1 CP]: On a creature you can touch, remove 1 condition from them.","[Medical Aid - 1 CP]: A creature that you can touch regains HP equal to your Smarts.","[Call to Save]: When an ally within 60 ft of you is in critical condition, your movement is increased by 15 ft."],
-    "data2":["[Medical Jolt - 1 CP]: A creature that you can touch gains 1d4 TP.","[Craft Healing]: Once per long rest you can craft a healing item with components scavenged from plants or animals. The medical item crafted must be worth less than 500 credits."],
-    "data3":["[Resurrect]: Once per long rest resurrect a dead creature that you can touch that has been dead less than an hour. When the creature is revived, they will be returned to 1 HP."]
+    "thresholds":[0,1,1],
+    "data":["[Cleanse - 1 CP; Touch]: Remove 1 condition from them. At level 4 you may remove 2 conditions. At level 7 all conditions of your choice may be removed.","[Medical Aid - 1 CP; Touch]: A creature that you can touch regains HP equal to your Smarts.","[Craft Healing]: Once per long rest you can craft a healing item with components scavenged from plants or animals. The medical item crafted must be worth less than 500 credits. At level 5 you may create 2 items per long rest."]
 },
 {
     "name":"Witch Doctor",
@@ -57,9 +52,8 @@
     "sp":2,
     "cp":6,
     "speed":0,
-    "data1":["[Tonic Crafting]: You can now create tonics via the crafting chart below. If a Tonic provides an effect it will last for 1 turn. Tonics can be thrown or consumed."],
-    "data2":["[Splash Tonics]: At the cost of additional CP, you can give a tonic an AOE effect. Every CP expended increases the AOE by 10 ft."],
-    "data3":["[Power Tonics]: At the cost of 1 CP, you can double the effects of a tonic."]
+    "thresholds":[0,1,1],
+    "data":["[Tonic Crafting]: You can now create tonics via the crafting chart below. If a Tonic provides an effect it will last for 1 turn. Tonics can be thrown or consumed.","[Splash Tonics]: At the cost of additional CP, you can give a tonic an AOE effect. Every CP expended increases the AOE by 10 ft.","[Power Tonics]: At the cost of 1 CP, you can double the effects of a tonic. If the tonic has a duration, double the duration instead."]
 },
 {
     "name":"Engineer",
@@ -67,9 +61,8 @@
     "sp":3,
     "cp":3,
     "speed":0,
-    "data1":["[Improvised Tools - 1 CP]: Craft a single tool worth less than 150 Credits. Once used, roll a 1d6. If the result is higher than your current level, then the tool will break.","[Skilled Repaired - 1 CP]: Instantly fix a malfunction, double a repair healing amount, or fix a targeted item."],
-    "data2":["[Laser Turret - 2 CP]: Create a laser turret that is hostile to creatures of your choice. The Turret cannot be moved, and will break an hour after its creation. During combat, this turret will attack on your turn.","[Makeshift Weapon]: Once per long rest you may salvage a weapon and replicate a primary attack, special attack, or crit effect. The range of the attack will be based on the weapon it was salvaged from. The weapon will use either Smarts, Agility, or Anger to attack. The upkeep cost of the weapon is based on the highest of the weapon salvaged."],
-    "data3":["[Weapon Engineering - 2 CP]: You may craft a weapon worth less than 500 Credits. The weapon now gains a malfunction of 2, and will break when it malfunctions.","[Skilled Engineering]: The cost limit for items is now tripled allowing the creation of more expensive items.","[Improved Turret]: Your automated turret is now considered a heavy laser turret."]
+    "thresholds":[0,1,1],
+    "data":["[Improvised Tools - 1 CP]: Craft a single tool worth less than 150 Credits. Once used, roll a 1d6. If the result is higher or equal than your Smarts, then the tool will break.","[Laser Turret - 2 CP]: Create a laser turret that is hostile to creatures of your choice. The Turret cannot be moved, and will break an hour after its creation. During combat, this turret will attack on your turn. At level 7, your laser turret is considered a heavy laser turret.","[Skilled Repaired]: When you take the repair action, you heal double the result and instantly repair a weapon regardless of the outcome of the roll.","[Makeshift Weapon]: Once per long rest you may salvage a weapon and replicate a primary attack, special attack, or crit effect. The range of the attack will be based on the weapon it was salvaged from. The weapon will use either Smarts, Agility, or Anger to attack. The upkeep cost of the weapon is based on the highest of the weapon salvaged."]
 },
 {
     "name":"Technopath",
@@ -77,9 +70,8 @@
     "sp":2,
     "cp":5,
     "speed":0,
-    "data1":["[Psionic Lash - 1 CP; 30ft; Sight]: Deal 1 Minor psychic damage. This ability can only be used once per turn.","[Psionic Shove - 1 CP; 30ft; Sight]: Push a creature 30 ft in a direction of your choice.","[Strengthened Mind]: You are now resistant to psychic damage, and psychic damage cannot bring you to critical condition."],
-    "data2":["[Telekinesis - 1 CP; 30ft; Sight]: Move an object 60 ft in a direction of your choice that weighs less than 100 lbs. If the object collides with a creature, deal 1 Minor Bludgeoning damage.","[Mind Shield - 2 CP]: As a response you may use this ability to create a telekinetic shield within 30 ft of you. This may only be used once per turn."],
-    "data3":["[Mind Control - 2 CP; 30ft; Sight]: Take the movement action of a creature.","[Brain Leech]: When you kill a creature with a technopath ability, gain 1 CP."]
+    "thresholds":[1,0,1],
+    "data":["[Psionic Lash - 1 CP; 30ft; Sight]: Make a contesting Smarts check against a creature, on a success deal mental damage equal to 2d6 plus your Smarts, on a failure deal half as much.","[Psionic Shove - 2 CP; 30ft; Sight]: Roll a contesting Smarts check against a creature, on a success move the creature feet equal to your Smarts multiplied by 5.","[Telekinesis - 1 CP; 30ft; Sight]: Move an object feet equal to your Smarts multiplied by 5. The object must be less than 20lbs * your Smarts, if the object collides with a creature it must make a Agility check of 4+ or take 2d6 bludgeoning damage."]
 },
 {
     "name":"Assassin",
@@ -87,9 +79,8 @@
     "sp":4,
     "cp":3,
     "speed":5,
-    "data1":["[Stealth Attack]: When you attack an unaware creature, you deal an additional 1 Minor damage.","[Barrage]: When you attack the same creature, you’ll deal an additional 1 Glance damage. This can stack up to 5 times. All stacks are dropped when a different creature is targeted."],
-    "data2":["[Analyze - 1 CP]: Learn the weaknesses, and resistances, and the stats of a target.","[Camouflage - 1 CP]: When you are not within melee range of an enemy, immediately hide from all creatures making them unaware of your presence.","[Tracker]: Gain +2 Prowess when tracking targets."],
-    "data3":["[Disable Vitals - 2 CP]: On a successful attack apply cripple, brittle, and the blind condition to a creature for 1 turn.","[Piercer - 2 CP]: On a successful attack, ignore the creature’s resistances.","[Priority Down]: When you drop a creature to 0 HP, regain half your max SP."]
+    "thresholds":[0,2,0],
+    "data":["[Analyze - 2 CP]: Learn the weaknesses, and resistances, and the stats of a target. At level 5 this ability will allow you to ignore any resistances of the target until the end of combat.","[Camouflage - 1 CP]: When you are not within melee range of an enemy, immediately hide from all creatures making them unaware of your presence.","[Stealth Attack]: When you attack an unaware creature, you deal an additional 1d6 damage. At level 4 it increases to 2d6. At level 7 it increases to 3d6."]
 },
 {
     "name":"Swarm Survivor",
@@ -97,9 +88,8 @@
     "sp":4,
     "cp":2,
     "speed":0,
-    "data1":["[Shove - 2 CP]: Push all creatures within 10ft of you 10ft back, and knock all creatures of medium size or smaller prone.","[Blood Fuel]: When dropping a creature to 0 HP with a ranged attack, SP will not be expended.","[Sweeping Strike]: Melee attacks now target all enemies in the radius of your melee weapon’s range."],
-    "data2":["[Overwhelmed - 2 CP]: Every creature within 15 ft of you will give you 2 TP, and an additional 1 Prowess to your next attack.","[Push Through]: When moving through creature spaces, your movement will not be halved."],
-    "data3":["[Minion Cleaver]: Your attacks now ignore resistances against targets with max HP less than half your max HP.","[Horde Resistance]: When you strike multiple enemies with a sweeping strike, you gain 1 TP equal to each additional enemy you hit other than the target."]
+    "thresholds":[2,0,0],
+    "data":["[Overwhelmed - 2 CP]: Every creature within 15 ft of you will give you 2 TP, and an additional 1 Prowess to your next attack.","[Sweeping Strike]: Melee attacks now target all enemies in the radius of your melee weapon’s range.","[Horde Slayer]: Creatures with max HP less than your max HP take double damage from your attacks. At level 5 these creatures will no longer be resistant to your attacks."]
 },
 {
     "name":"Scoundrel",
@@ -107,9 +97,8 @@
     "sp":3,
     "cp":4,
     "speed":10,
-    "data1":["[Vehicle Sapper - 1 CP]: On a successful attack against a vehicle, increase damage threshold.","[Hotwire Expert]: Once per long rest you may hotwire a vehicle and take complete control over it.","[Lucky]: Once per long rest you may reroll a check and take the higher of the 2 outcomes."],
-    "data2":["[Luckier]: Lucky may now be used twice per long rest.","[Vehicle Overclock - 1 CP]: Until the end of your next turn, all vehicle EP costs are reduced by half.","[Dogfighter]: When you drop a vehicle to 0 HP, regain all SP. If you are in a vehicle, it regains all EP as well."],
-    "data3":["[Luckiest]: Lucky may now be used three times per long rest.","[Vehicle Tampering]: While piloting a vehicle, the movement speed is increased by half of its current max speed. When using a weapon of the vehicle, the range is doubled and you gain 1 Prowess while making attacks with it."]
+    "thresholds":[1,1,0],
+    "data":["[Vehicle Sapper - 1 CP]: On a successful attack against a vehicle, deal an additional 1d6 damage. At level 5 deal 2d6 additional damage.","[Vehicle Overclock - 2 CP]: Until the end of combat increase the EP of the vehicle you are piloting equal to half your level rounded up.","[Never Tell Me The Odds] Once per long rest you may reroll a check and take the higher of the 2 outcomes. At level 4 you may use this ability twice per long rest. At level 7 you may use this ability 3 times."]
 },
 {
     "name":"Warrior",
@@ -117,9 +106,8 @@
     "sp":2,
     "cp":2,
     "speed":0,
-    "data1":["[Shrug it Off - 2 CP]: When you take any damage you can instead choose to take no damage at the cost of CP.","[Ram - 2 CP]: Move to a space 15ft from you, if you overlap any hostile creature they will take 1 Minor Bludgeoning damage.","[Fury]: Twice per long rest you may gain the fury condition for 1 hour or until you release the effect."],
-    "data2":["[Taunt - 1 CP; 30ft; Sight]: Give a creature the taunted condition.","[Rage Conversion]: When you are hit by an attack and take damage, your next melee attack will increase by 1 threshold.","[Empowered Fury]: Once per long rest you may enter the empowered fury condition for 1 hour or until you release the effect."],
-    "data3":["[Reckless Attack]: Gain 2 Prowess on your next attack, but gain the reckless condition until the start of your next turn. This can only be used once per turn.","[Indomitable]: At the start of your turn, regain half of the hp you have lost since the end of your last turn as TP."]
+    "thresholds":[1,0,2],
+    "data":["[Shrug it Off - 1 CP]: When you take any damage you can instead choose to take no damage.","[Taunt - 1 CP; 30ft; Sight]: Give a creature the taunted condition.","[Fury]: Twice per long rest you may gain the fury condition for 1 hour or until you release the effect. At level 5 you may use this ability 3 times per long rest. At level 7 this becomes empowered fury."]
 },
 {
     "name":"Demolitionist",
@@ -127,9 +115,8 @@
     "sp":2,
     "cp":4,
     "speed":0,
-    "data1":["[Explosives Crafting]: You can now create explosives and apply any properties to the device via the chart below.  If a property provides an effect it will last for 1 turn. By default all explosive devices have an AOE of 15 ft. Crafted explosives take 2 turns to detonate, but the time may be increased before being thrown. Effects may also be stacked up to a maximum of 3 times."],
-    "data2":["[Packed Powder]: At the cost of additional CP, you can increase the AOE of your explosive device. Every CP expended increases the AOE by 15 ft."],
-    "data3":["[Remote Detonation - 1 CP]: Instantly detonate a crafted explosive."]
+    "thresholds":[0,1,1],
+    "data":["[Explosives Crafting]: You can now create explosives and apply any properties to the device via the chart below.  If a property provides an effect it will last for 1 turn. By default all explosive devices have an AOE of 15 ft. Crafted explosives take 2 turns to detonate, but the time may be increased before being thrown. Effects may also be stacked up to a maximum of 3 times.","[Packed Powder]: At the cost of additional CP, you can increase the AOE of your explosive device. Every CP expended increases the AOE by 15 ft."]
 },
 {
     "name":"Bodyguard",
@@ -137,9 +124,8 @@
     "sp":2,
     "cp":3,
     "speed":0,
-    "data1":["[Guard - 1 CP]: Swap places with an ally within 5 ft of and give yourself and your ally 1 AC until the start of your next turn.","[Protector]: If an ally within 10 ft of you is attacked, swap places with them and take the attack instead. This can only be done once per turn."],
-    "data2":["[Friend Zone - 2 CP]: All allies within 15ft of you gain 1d4 TP.","[Eternal Guardian - 1 CP]: Give an ally you can touch the Soul Guard condition.","[Sworn Protector]: When an enemy hits an ally, gain 1 Prowess on your next attack."],
-    "data3":["[Battle Savior]: Every ally within 60 ft of you in critical condition increases your movement by 15 ft and max SP by 1."]
+    "thresholds":[1,1,1],
+    "data":["[Guard - 1 CP]: Give all allies within 5ft of you and yourself 1 AC for 1 turn. At level 5 this increases to 2 AC.","[Eternal Defense - 2 CP]: Give an ally you can touch the Soul Guard condition.","[Protector]: If an ally within 10 ft of you is attacked, swap places with them and take the attack instead. This can only be done once per turn. At level 3 this can be done twice. At level 7 this may be done three times."]
 }
 ]
 }
