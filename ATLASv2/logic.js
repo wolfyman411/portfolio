@@ -300,7 +300,8 @@ function handleWeapon(){
             document.getElementById("wpn_upkeep").innerHTML = item.upkeep
             document.getElementById("wpn_skl").innerHTML = item.skill
             document.getElementById("wpn_rng").innerHTML = item.range
-            document.getElementById("wpn_eff").innerHTML = item.efficiency
+            if (item.efficiency)
+                document.getElementById("wpn_eff").innerHTML = item.efficiency
             document.getElementById("wpn_mal").innerHTML = item.malfunction
             document.getElementById("wpn_rep").innerHTML = item.repair
             document.getElementById("wpn_atk1").innerHTML = splitAbility(item.basic)
