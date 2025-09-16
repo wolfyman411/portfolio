@@ -11,29 +11,6 @@
 .skew {
     transform: skew(-5deg);
   }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #ededed;
-    min-width: 220px;
-    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
-    outline: auto;
-    z-index: 100;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    outline: auto;
-  }
 
   header {
     position: fixed;
@@ -62,10 +39,10 @@
 
   * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0; -webkit-text-stroke-color: black; -webkit-text-stroke-width: 0.02vh; font-weight: 800; color: white;}
-p {text-shadow: 0.3vh 0.3vh black; font-size: 2vh;}
+p {text-shadow: 0.3vh 0.3vh black; font-size: 2vh; color:white}
 h3 {color: rgb(255, 255, 255); font-size: 2.5vh; font-family:sans-serif;}
 img {vertical-align: middle;}
-h1 {-webkit-text-stroke-width: 0.2vh; text-shadow: 0.2vh 0.2vh black; z-index: 0; font-size: 4.5vh;}
+h1 {-webkit-text-stroke-width: 0.2vh; text-shadow: 0.2vh 0.2vh black; z-index: 0; font-size: 5.5vh; color:white; font-weight: 800;}
 
 button:hover{
   filter: brightness(150%);

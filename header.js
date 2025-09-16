@@ -1,58 +1,75 @@
-// Create dropdown menu function
+// Nav links
+var navbar = document.createElement("nav");
+navbar.className = "navbar navbar-expand-lg bg-body-tertiary"
+
+var container = document.createElement("div");
+container.className ="container-fluid d-flex flex-row mb-3";
+navbar.appendChild(container)
+
+var collapse = document.createElement("div");
+collapse.className = "collapse navbar-collapse";
+collapse.id = "navbarSupportedContent"
+collapse.appendChild(container)
+
+var list = document.createElement("ul");
+list.className = "navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row mb-3";
+collapse.appendChild(list)
+
+document.getElementById("header").appendChild(list);
+
 function createDropdown(title, links) {
-    // Create dropdown container
-    var dropdown = document.createElement("div");
-    dropdown.classList.add("dropdown");
+    // Create dropdown and header for each title
 
-    // Create button
-    var button = document.createElement("button");
-    button.classList.add("dropbtn");
-    button.textContent = title;
+    var dropdown = document.createElement("li");
+    dropdown.className = "nav-item dropdown "
 
-    // Append button to dropdown container
-    dropdown.appendChild(button);
+    var toggle = document.createElement("a");
+    toggle.className = "nav-link dropdown-toggle p-3"
+    toggle.href = "#"
+    toggle.role = "button"
+    toggle.text = title
+    toggle.ariaExpanded = "false"
+    toggle.setAttribute("data-bs-toggle","dropdown")
+    dropdown.appendChild(toggle)
 
-    // Create dropdown content container
-    var dropdownContent = document.createElement("div");
-    dropdownContent.classList.add("dropdown-content");
+    var dropdownmenu = document.createElement("ul");
+    dropdownmenu.className = "dropdown-menu"
 
-    // Create links and append to dropdown content container
     links.forEach(function(link) {
-        var a = document.createElement("a");
-        a.href = link.url;
-        a.textContent = link.text;
-        dropdownContent.appendChild(a);
+        var dropdownitem = document.createElement("li");
+        var dropdownitemlink = document.createElement("a");
+        dropdownitemlink.href = link.url
+        dropdownitemlink.text = link.text
+        dropdownitemlink.className = "dropdown-item";
+        dropdownitem.appendChild(dropdownitemlink)
 
-        //Check if it contains an indicator
-        if (link.indicator)
-            {
-                var img = document.createElement("img");
-                img.src = link.indicator;
-                img.classList.add("dropdown-indicator");
-                // Append image next to text
-                a.appendChild(img);
-            }
+        dropdownmenu.appendChild(dropdownitem)
     });
 
     // Append dropdown content container to dropdown container
-    dropdown.appendChild(dropdownContent);
+    dropdown.appendChild(dropdownmenu);
 
     // Append dropdown container to body
-    document.getElementById("header").appendChild(dropdown);
+    list.appendChild(dropdown);
 }
 
 // Create dropdown menus
-createDropdown("Pages", [
+createDropdown("Information", [
     {url: "index.html", text: "Home"},
     {url: "contact.html", text: "Contact"}
 ]);
 
+createDropdown("Software", [
+    {url: "#", text: "Electronics Store"},
+]);
+
 createDropdown("Games", [
+    {url: "infinitefinality.html", text: "Infinite Finality"},
+    {url: "SkyJellies.html", text: "Sky Jellies"},
     {url: "bloodfuel.html", text: "Blood Fuel ", indicator: "Media/Indicators/Unity.png"},
     {url: "dungeonbounties.html", text: "Dungeon Bounties ", indicator: "Media/Indicators/UE5.png"},
     {url: "kneecappers.html", text: "Knee Cappers ", indicator: "Media/Indicators/UE5.png"},
     {url: "thruster.html", text: "Thruster ", indicator: "Media/Indicators/Unity.png"},
-    //{url: "poultry.html", text: "Poultry Panic ", indicator: "Media/Indicators/Clickteam.png"}
 ]);
 
 //createDropdown("Software", [
@@ -64,16 +81,6 @@ createDropdown("Games", [
 createDropdown("Experiments", [
     {url: "Procedural.html", text: "Procedural Generation", indicator: "Media/Indicators/UE5.png"}
 ]);
-
-createDropdown("Projects", [
-    {url: "infinitefinality.html", text: "Infinite Finality"},
-    {url: "SkyJellies.html", text: "Sky Jellies"},
-    //{url: "ATLAS.html", text: "ATLAS"}
-]);
-
-var dropdownBar = document.createElement("div");
-dropdownBar.classList.add("bar");
-document.getElementById("header").appendChild(dropdownBar);
 
 function toggleGif(event) {
     const clickedItem = event.target
