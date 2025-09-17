@@ -12,59 +12,124 @@
 
 <header id = "header"></header>
 
-<body style="background-image: url(Media/Projects/IF/background.png); background-repeat: no-repeat; background-color: black; height: 100%; background-size: 100%;">
-    <div style="padding-top: 20%; padding-left: 20%; padding-right: 20%; padding-bottom: 5%;">
-        <h1>
-            <a href="https://www.moddb.com/mods/infinite-finality">Mod:DB</a>
-            <a href="https://www.youtube.com/@Team_Hyperborea" style="padding-left: 5%;">Youtube</a>
-        </h1>
-        <div class="skew">
-            <h1>What Is Infinite Finality?</h1>
+<body>
+    <div style="text-align: center; padding-top:5%;">
+        <div style="background-color: rgb(15, 15, 15); padding: 1%;">
+            <h1>Infinite Finality</h1>
+            <p>
+                Infinite Finality is a modification for the game Half-Life 2, featuring unique mechanics, locations, weapons, and enemies.
+            </p>
+            <br>
+            <h2>What I Did</h2>
+
+            <div style="grid-template-columns: 1fr 1fr 1fr 1fr;" class="d-grid gap-3 row-gap-3">
+                <div>
+                    <div class="card h-100">
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                        <h2 class="card-title">Ice Axe</h2>
+                        <div style="display: flex; justify-content: center;">
+                            <img id="gifImage" src="Media/Projects/IF/iceaxe.gif"class="img-border-white" onclick="toggleGif(event)" style="display: none; cursor: pointer;">
+                            <img id="altImage" src="Media/Projects/IF/iceaxe.png"class="img-border-white" onclick="toggleGif(event)" style="cursor: pointer;">
+                            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: flex;">
+                            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
+                        </div>
+                        <h5 class="card-text">Created a custom melee weapon with prebuilt classes, that features a unique melee charging mechanic.</h5>
+                    </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">HoundEye</h2>
+                        <div style="display: flex; justify-content: center;">
+                            <img id="gifImage" src="Media/Projects/IF/houndeye.gif"class="img-border-white" onclick="toggleGif(event)" style="display: none; cursor: pointer;">
+                            <img id="altImage" src="Media/Projects/IF/houndeye.png"class="img-border-white" onclick="toggleGif(event)" style="cursor: pointer;">
+                            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: flex;">
+                            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
+                        </div>
+                        <h5 class="card-text">Custom enemy NPC that fights in groups. I used prebuilt squad systems to increase enemy capabilities based on how many active members were in the current squad.</h5>
+                    </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Bullsquid</h2>
+                        <div style="display: flex; justify-content: center;">
+                            <img id="gifImage" src="Media/Projects/IF/houndeye.gif"class="img-border-white" onclick="toggleGif(event)" style="display: none; cursor: pointer;">
+                            <img id="altImage" src="Media/Projects/IF/houndeye.png"class="img-border-white" onclick="toggleGif(event)" style="cursor: pointer;">
+                            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: flex;">
+                            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
+                        </div>
+                        <h5 class="card-text">Custom enemy NPC that can charge at the player, and fires projectiles in an arc.</h5>
+                    </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card h-100">
+                    <div class="card-body">
+                        <img src="Media/Main/git.png" class="w-25">
+                        <h2 class="card-title">Leadership</h2>
+                        <h5 style="text-align: left; padding: 7%;" class="card-text">Along with programming, I was in charge of leading the team. My responsibilities had me creating and delegating task, managing public relations, creating videos for team and public use, keeping asset and programming repositories up to date, onboarding, and handling internal disputes.</h5>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <h2>Accomplishments</h2>
+            <div style="grid-template-columns: 1fr 1fr 1fr 1fr;" class="d-grid gap-3 row-gap-3">
+                <div>
+                    <div class="card h-100">
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                        <h2 class="card-title">Community Vote</h2>
+                        <div style="display: flex; justify-content: center;">
+                            <img src="Media/Projects/IF/popular.png" class="img-border-white">
+                        </div>
+                        <h5 class="card-text">Our modification reached 4th place in 2023 for best upcoming mods. In 2024 we were 5th place for "Player's Choice Mod of the Year". Both of these were in competition with thousands of other modifications released during those years.</h5>
+                    </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Youtube Channel</h2>
+                        <div style="display: flex; justify-content: center;">
+                            <img src="Media/Projects/IF/youtube.png" class="img-border-white">
+                        </div>
+                        <h5 class="card-text">Our youtube channel has 4k subscribers and 220k views. I personally manage and upload videos to the channel for our community to watch.</h5>
+                    </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Downloads</h2>
+                        <div style="display: flex; justify-content: center;">
+                            <img src="Media/Projects/IF/youtube.png" class="img-border-white">
+                        </div>
+                        <h5 class="card-text">In 2024 we released an hour long snippet of the full modification, we've achieved 4.4k downloads since the initial release.</h5>
+                    </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Popularity</h2>
+                        <div style="display: flex; justify-content: center;">
+                            <img src="Media/Projects/IF/youtube.png" class="img-border-white">
+                        </div>
+                        <h5 class="card-text">In 2024 we released along side of 3 other large modifications, and our mod was reviewed and played by larger youtube channels.</h5>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <h3>
+                <a href="https://www.moddb.com/mods/infinite-finality">Development Blog</a>
+                <a href="https://www.youtube.com/@Team_Hyperborea" style="padding-left: 5%;">Public Youtube</a>
+            </h3>
         </div>
-        <p>
-            A community driven mod for Half-Life 2 Episode 2 that attempts to retell the story of the cut expansion Half-Life 2 Episode 3. The team's current size is 22 volunteers who spend their free time working on the project when they can.
-        </p>
-        <div class="skew">
-            <h1>What I Did</h1>
-        </div>
-        <h3>Leadership</h3>
-        I was the overall lead of the project, making sure that people know what they needed to do, and what we had left to complete. I was also responsible for keeping the team friendly with one another, and taking members aside in private in order to prevent potential infighting.
-        <h3>IceAxe</h3>
-        <div style="display: flex; justify-content: center;">
-            <img id="gifImage" src="Media/Projects/IF/iceaxe.gif"class="img-border-white" onclick="toggleGif(event)" style="display: none; cursor: pointer;">
-            <img id="altImage" src="Media/Projects/IF/iceaxe.png"class="img-border-white" onclick="toggleGif(event)" style="cursor: pointer;">
-            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: flex;">
-            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
-        </div>
-        <p>Programmed a melee weapon with a charging secondary attack. I integrated the animations and model into the game as well.</p>
-        <h3>HoundEye</h3>
-        <div style="display: flex; justify-content: center;">
-            <img id="gifImage" src="Media/Projects/IF/houndeye.gif"class="img-border-white" onclick="toggleGif(event)" style="display: none; cursor: pointer;">
-            <img id="altImage" src="Media/Projects/IF/houndeye.png"class="img-border-white" onclick="toggleGif(event)" style="cursor: pointer;">
-            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: flex;">
-            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
-        </div>
-        <p>Ported an NPC from an older version of the engine, fixed older bugs from the npc, and gave it additional functionality so that mappers could setup additional sequences with them.</p>
-        <h3>Task Management</h3>
-        <p>I was in charge of making sure everyone knew what they were doing, keeping tabs on tasks and their progress, as well as keeping everyone focused on a central vision.</p>
-        <h3>Articles</h3>
-        <p>Every 2-3 months the team creates a developer article to keep the fan base up to date with progress. I was in charge of collecting everything we had done as a team, and writing the first draft of the article.</p>
-        <div style="display: flex; justify-content: center;">
-            <img src="Media/Projects/IF/progress.png" class="img-border-white">
-        </div>
-        <div class="skew">
-            <h1>Accomplishments</h1>
-        </div>
-        <div style="display: flex; justify-content: center;">
-            <img src="Media/Projects/IF/popular.png" class="img-border-white">
-        </div>
-        <p>We came in 4th place on "Best Upcoming Mods" on Mod:DB. This was voted on by the community.</p>
-        <div style="display: flex; justify-content: center;">
-            <img src="Media/Projects/IF/youtube.png" class="img-border-white" style="scale: 80%;">
-        </div>
-        <p>Our channel has reached over 2.5k subscribers, with one of our videos reaching over 85k views.</p>
-        <h1 style="text-align: center;">
-            <a href="SkyJellies.html">Sky Jellies</a>
-        </h1>
     </div>
 </body>

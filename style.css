@@ -63,12 +63,13 @@ button:hover{
 
 .img-border{
   border: 2px solid black;
-  box-shadow: 4px 4px rgba(0, 0, 0, 0.421);
+  box-shadow: 1px 0px 3px 0px rgb(18, 18, 18)
 }
 
 .img-border-white{
   border: 3px solid rgb(255, 255, 255);
-  box-shadow: 4px 4px 10px 4px rgb(18, 18, 18)
+  box-shadow: 1px 0px 3px 0px rgb(18, 18, 18);
+  max-width: 100%;
 }
 
 .tilt{
