@@ -146,3 +146,8 @@ h2 {-webkit-text-stroke-width: 0.2vh; text-shadow: 0.2vh 0.2vh black; z-index: 0
   background-clip: border-box;
   border-radius: 5px;
 }
+
+.card img {
+  max-width: 175vh;
+  align-self: center;
+}

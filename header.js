@@ -66,10 +66,10 @@ createDropdown("Software", [
 createDropdown("Games", [
     {url: "infinitefinality.html", text: "Infinite Finality"},
     {url: "SkyJellies.html", text: "Sky Jellies"},
-    {url: "bloodfuel.html", text: "Blood Fuel ", indicator: "Media/Indicators/Unity.png"},
     {url: "dungeonbounties.html", text: "Dungeon Bounties ", indicator: "Media/Indicators/UE5.png"},
     {url: "kneecappers.html", text: "Knee Cappers ", indicator: "Media/Indicators/UE5.png"},
     {url: "thruster.html", text: "Thruster ", indicator: "Media/Indicators/Unity.png"},
+    {url: "bloodfuel.html", text: "Blood Fuel ", indicator: "Media/Indicators/Unity.png"},
 ]);
 
 //createDropdown("Software", [
