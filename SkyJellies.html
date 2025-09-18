@@ -12,56 +12,74 @@
 
 <header id = "header"></header>
 
-<body style="background-image: url(Media/Projects/skyjellies/background.png); background-repeat: no-repeat; background-color: black; height: 100%; background-size: 100%;">
-    <div style="padding-top: 20%; padding-left: 20%; padding-right: 20%; padding-bottom: 5%;">
-        <div class="skew">
-            <h1>What Is Sky Jellies?</h1>
+<body>
+    <div style="text-align: center; padding-top:5%;">
+        <div style="background-color: rgb(15, 15, 15); padding: 1%;">
+            <h1>Sky Jellies</h1>
+            <p>
+                An experimental unity game about exploring and taking care of cuddly creatures called Jellies. This prototype was created by P1-OC, and I had a hand in assisting in development along with many other developers.
+            </p>
+
+            <div style="text-align: left; padding-left:5%; padding-right:5%;">
+                <div class="card p-1 mt-3">
+                    <img id="gifImage" src="Media/Projects/skyjellies/toss.gif" class="card-img">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Item Tossing</h2>
+                        <ul class="mt-auto">
+                            <li>Using already created inventory systems, I developed a way for players to drop items in their inventory.</li>
+                            <li>Developed an item removal system to ensure that items would get removed from the inventory when tossed.</li>
+                            <li>Integrated the item collection system so that when dropped items were walked over, the same item and amount would be returned to the player.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card p-1 mt-3">
+                    <img id="gifImage" src="Media/Projects/skyjellies/rigid.gif" class="card-img">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Player Rigidbody</h2>
+                        <ul class="mt-auto">
+                            <li>Transformed the CharacterController into RigidBody to improve player movement to make physics feel less floaty and more responsive.</li>
+                            <li>Reworked the jump systems to allow for coyote time.</li>
+                            <li>Additionally added a system that would detect if the jump input was pressed while airborn to allow for a delayed jump if the player was going to hit the ground within a certain time.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card p-1 mt-3">
+                    <img id="gifImage" src="Media/Projects/skyjellies/hotbar.png" class="card-img">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Item Holding</h2>
+                        <ul class="mt-auto">
+                            <li>Created a hotbar so that players could drag items from their inventory to the hotbar in order to interact with the environment.</li>
+                            <li>Pressing the number keys 1,2, and 3 would select items within that slot.</li>
+                            <li>Item model and texture automatically display when the item is held in the hotbar.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card p-1 mt-3">
+                    <img id="gifImage" src="Media/Projects/skyjellies/place.gif" class="card-img">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Block placement</h2>
+                        <ul class="mt-auto">
+                            <li>Developed a grid system that detects ground collisions and other blocks to prevent overlap.</li>
+                            <li>Blocks use the inventory and hotbar systems, blocks subtract when placed.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card p-1 mt-3">
+                    <img id="gifImage" src="Media/Projects/skyjellies/feed.gif" class="card-img">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Item Interaction</h2>
+                        <ul class="mt-auto">
+                            <li>Rather than dragging and dropping items onto interactables, players now can have a selected item on their hotbar and press the interact key to directly interact with these items.</li>
+                            <li>For Jellies, players can feed them by holding food out in their hand and interacting with them.</li>
+                            <li>Additionally, players can also pet Jellies by having nothing equipped and interacting with them.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p>
-            A Unity game made by P1-Open Collective that is about taking care of Jellies, and impacting the world positively around you. The project has been in development for over a year, and has been worked on by many volunteers.
-        </p>
-        <div class="skew">
-            <h1>What I Did</h1>
-        </div>
-        <h2>Item Tossing</h2>
-        <div style="display: flex; justify-content: center;">
-            <img id="gifImage" src="Media/Projects/skyjellies/toss.gif"class="img-border-white" onclick="toggleGif(event)" style="display: none; cursor: pointer;">
-            <img id="altImage" src="Media/Projects/skyjellies/toss.png"class="img-border-white" onclick="toggleGif(event)" style="cursor: pointer;">
-            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: flex;">
-            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
-        </div>
-        <p>I programmed the ability for the player to drag items out of their inventory in order to free up space.</p>
-        <h2>Player Rigidbody</h2>
-        <div style="display: flex; justify-content: center;">
-            <img id="gifImage" src="Media/Projects/skyjellies/rigid.gif"class="img-border-white" onclick="toggleGif(event)" style="display: none; cursor: pointer;">
-            <img id="altImage" src="Media/Projects/skyjellies/rigid.png"class="img-border-white" onclick="toggleGif(event)" style="cursor: pointer;">
-            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: flex;">
-            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
-        </div>
-        <p>I reprogrammed the player movement to use a rigidbody instead of using a character controller.</p>
-        <h2>Item Holding</h2>
-        <div style="display: flex; justify-content: center;">
-            <img id="gifImage" src="Media/Projects/skyjellies/hotbar.png"class="img-border-white" style="width: 50%;">
-        </div>
-        <p>I added a hotbar to the player so that players could hold out items to interact with the world. Pressing the 1,2, and 3 keys allows the user to swap between items, and the model and textures change automatically based on the prefab of the item.</p>
-        <h2>Simple Block Placement</h2>
-        <div style="display: flex; justify-content: center;">
-            <img id="gifImage" src="Media/Projects/skyjellies/place.gif"class="img-border-white" onclick="toggleGif(event)" style="display: none; cursor: pointer;">
-            <img id="altImage" src="Media/Projects/skyjellies/place.png"class="img-border-white" onclick="toggleGif(event)" style="cursor: pointer;">
-            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: flex;">
-            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
-        </div>
-        <p>I programmed the ability for players to place whitelisted items in a grid, in a small area infront of them.</p>
-        <h2>Item Interaction</h2>
-        <div style="display: flex; justify-content: center;">
-            <img id="gifImage" src="Media/Projects/skyjellies/feed.gif"class="img-border-white" onclick="toggleGif(event)" style="display: none; cursor: pointer;">
-            <img id="altImage" src="Media/Projects/skyjellies/feed.png"class="img-border-white" onclick="toggleGif(event)" style="cursor: pointer;">
-            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: flex;">
-            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
-        </div>
-        <p>Instead of opening a menu on the HUD, the player can now directly interact with the Jellies. They can feed them by holding food in their hotbar and pressing interact, or pet them by having nothing in their hand and pressing interact.</p>
-        <h1 style="text-align: center;">
-            <a href="contact.html">Contact</a>
-        </h1>
     </div>
 </body>
