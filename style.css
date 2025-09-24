@@ -157,3 +157,10 @@ h2 {-webkit-text-stroke-width: 0.2vh; text-shadow: 0.2vh 0.2vh black; z-index: 0
   max-height: 75vh;
   align-self: center;
 }
+
+.front img {
+  max-width: 125vw;
+  min-height: auto;
+  max-height: auto;
+  align-self: center;
+}
