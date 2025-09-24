@@ -11,74 +11,64 @@
 </head>
 <header id = "header"></header>
 
-<body style="background-image: url(Media/Games/bloodfuel/background.png); background-size: cover; background-attachment: fixed; background-repeat: repeat; margin: 0; padding: 0; height: 100vh; width: 100vw;">
+<body>
+    <div style="text-align: center; padding-top:5%;">
+        <div style="background-color: rgb(15, 15, 15); padding: 1%;">
+            <h1>Bloodfuel</h1>
+            <p>
+                Bloodfuel is an Unity game developed entirely by me. It is a roguelite bullet-hell game with the central mechanic of tying your health with your abilities.
+            </p>
+            <br>
 
-<div style="display: flex; justify-content: space-between; align-items: center; scale: 93%;">
-    <div style="display: flex; justify-content: center; align-items: center; padding-left: 15%; padding-right: 15%;">
-        <!--Other Half-->
-        <div style="background-color: rgb(15, 15, 15); padding-left: 15%; padding-right: 15%;">
-            <div style="width: 100%; text-align: left;">
-                <div>
-                    <h1 style="text-align: center;">What I did</h1>
-                    <p>I programmed everything in Unity, created all the art assets and integrated them, made music and sound effects, implemented UI, and designed the game.</p>
-                </div>
-                <div>
-                    <h1 style="text-align: center;">What is Bloodfuel</h1>
-                    <div style="display: flex; justify-content: center;">
-                        <img id="gifImage" src="Media/Games/bloodfuel/gameplay2.gif"style="display: none; cursor: pointer;" onclick="toggleGif(event)">
-                        <img id="altImage" src="Media/Games/bloodfuel/gameplay2.png"style="display: block; cursor: pointer;" onclick="toggleGif(event)">
-                        <img src="Media/Main/play.png" style="transform: translate(720%, -150%); position: absolute; scale: 20%; display: block;">
-                        <img src="Media/Main/pause.png" style="transform: translate(720%, -150%); position: absolute; scale: 20%; display: none;">
+            <div style="text-align: left; padding-left:5%; padding-right:5%;">
+                <div class="card p-1 mt-3">
+                    <img id="gifImage" src="Media/Games/bloodfuel/gameplay1.gif" class="card-img">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Card System</h2>
+                        <ul class="mt-auto">
+                            <li>Cards are shuffled before a game starts and dealed out to the player.</li>
+                            <li>Cards give the player different abilities and upgrades they can use throughout the run. When a player has 5 abilities and/or attacks, the game will only give upgrade cards.</li>
+                        </ul>
                     </div>
-                    <p>Bloodfuel is a roguelite arcade bullet-hell game, where your health is tied to your attacks and abilities.</p>
                 </div>
-                <div>
-                    <h1 style="text-align: center;">Enemy Types</h1>
-                    <img src="Media/Games/bloodfuel/enemies.png" style="display: flex; margin: 0 auto; width: 70%;">
-                    <p>There are 5 unique enemy types in the game, each used to test a specific skill of the player. Pitchforks come in groups, and attempt to melee the player. Trappers are similar to pitchforks, but run faster, have less health, and deal more damage. Archers stay on the edges of the screen firing projectiles at the player. Torchers attempt to charge at the player, and shoot a spread of projectiles. Priests attempt to stay further away from the player, and create large high damaging AOEs that the player must move quickly out of.</p>
-                </div>
-                <h1 style="text-align: center;">Elite System</h1>
-                    <img src="Media/Games/bloodfuel/icons.png" style="display: flex; margin: 0 auto; width: 50%;">
-                    <p>Elites spawn during certain phases of a wave, and provide special abilities to stats or can provide buffs to nearby enemies. Elites can be any regular enemy, and are distinguished by their increased size, an icon next to their head, and a slight color tint.</p>
-                <div>
-                    <h1 style="text-align: center;">Boss System</h1>
-                    <div style="display: flex; justify-content: center;">
-                        <img id="gifImage" src="Media/Games/bloodfuel/gameplay3.gif"style="display: none; cursor: pointer;" onclick="toggleGif(event)">
-                        <img id="altImage" src="Media/Games/bloodfuel/gameplay3.png"style="display: block; cursor: pointer;" onclick="toggleGif(event)">
-                        <img src="Media/Main/play.png" style="transform: translate(720%, -150%); position: absolute; scale: 20%; display: block;">
-                        <img src="Media/Main/pause.png" style="transform: translate(720%, -150%); position: absolute; scale: 20%; display: none;">
+                <div class="card p-1 mt-3">
+                    <img id="gifImage" src="Media/Games/bloodfuel/gameplay2.gif" class="card-img">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Wave System</h2>
+                        <ul class="mt-auto">
+                            <li>Enemies will spawn in defined positions around the player just out of view. These positions follow the player, and ensure that enemies don't spawn in objects or outside the map.</li>
+                            <li>Waves are broken into 4 periods that determine how many enemies can spawn, how many elites spawn, and how fast enemies spawn.</li>
+                            <li>If an enemy gets too far from the player they will be teleported to a valid spawn position.</li>
+                            <li>As the wave number gets higher enemies increase in damage, number, and overall health.</li>
+                        </ul>
                     </div>
-                    <p>At the end of a wave, a difficult boss will spawn, testing the abilities and loadout of the player. Each boss has unique attack patterns that can be mastered, and they have their own audio cue so that a player knows who they are facing before they see them.</p>
                 </div>
-                <div>
-                    <h1 style="text-align: center;">Shop System</h1>
-                    <img src="Media/Games/bloodfuel/shop.jpg" style="display: flex; margin: 0 auto; width: 50%;">
-                    <p>The player is awarded when they die an amount of death tokens relative to their score. The player can then spend these tokens on lasting upgrades and boons to make the game easier.</p>
-                </div>
-                <div>
-                    <h1 style="text-align: center;">Card System</h1>
-                    <div style="display: flex; justify-content: center;">
-                        <img id="gifImage" src="Media/Games/bloodfuel/gameplay1.gif"style="display: none; cursor: pointer;" onclick="toggleGif(event)">
-                        <img id="altImage" src="Media/Games/bloodfuel/gameplay1.png"style="display: block; cursor: pointer;" onclick="toggleGif(event)">
-                        <img src="Media/Main/play.png" style="transform: translate(720%, -150%); position: absolute; scale: 20%; display: block;">
-                        <img src="Media/Main/pause.png" style="transform: translate(720%, -150%); position: absolute; scale: 20%; display: none;">
+                <div class="card p-1 mt-3">
+                    <img id="gifImage" src="Media/Games/bloodfuel/gameplay3.gif" class="card-img">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Bosses</h2>
+                        <ul class="mt-auto">
+                            <li>At the end of a wave, a boss will spawn. These bosses have more complicated attack patterns.</li>
+                            <li>Before a boss is visible, specific music tied to the boss allowing the player to better prepare for that specific boss.</li>
+                        </ul>
                     </div>
-                    <p>Cards are randomly chosen from a pool, and players can only pick 2 attacks and 3 abilities. The player can also pick upgrade cards, which permanently increase their stats for a run. Each card is unique, and changes how the game is played.</p>
                 </div>
-                <div>
-                    <h1 style="text-align: center;">Wave Periods</h1>
-                    <img src="Media/Games/bloodfuel/wheel.png"style="display: flex; margin: 0 auto; width: 30%;">
-                    <p>There are 4 periods in a wave, each period occurs after a short time and determines what kinds of enemies spawn, how many spawn, and how many elites spawn. Each period has their own timer, and they get longer and longer based on what the current wave is.</p>
+                <div class="card p-1 mt-3">
+                    <img id="gifImage" src="Media/Games/bloodfuel/shop.jpg" class="card-img">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Meta Progression</h2>
+                        <ul class="mt-auto">
+                            <li>During a game, players get points for each enemy killed.</li>
+                            <li>On death or game end, the points are converted into tokens that can be used in the shop.</li>
+                            <li>Items purchased can be used every run, and give the player additional upgrades to make the game easier.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div style="text-align: center; padding: 10%;">
-                    <a href="https://wolfy411.itch.io/bloodfuel">Download on Itch.io</a>
-                </div>
-                <h1 style="text-align: center;">
-                    <a href="dungeonbounties.html">Dungeon Bounties</a>
-                </h1>
             </div>
+            <h3>
+                <a href="https://wolfy411.itch.io/bloodfuel">Download on Itch.io</a>
+            </h3>
         </div>
     </div>
-</div>
-
+    
 </body>

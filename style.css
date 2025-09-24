@@ -139,6 +139,10 @@ h2 {-webkit-text-stroke-width: 0.2vh; text-shadow: 0.2vh 0.2vh black; z-index: 0
   content:"> ";
 }
 
+.card h2 {
+  color: white;
+}
+
 .card ul {
   background-color: #000000d5;
   padding-top: 1%;
@@ -148,6 +152,8 @@ h2 {-webkit-text-stroke-width: 0.2vh; text-shadow: 0.2vh 0.2vh black; z-index: 0
 }
 
 .card img {
-  max-width: 175vh;
+  max-width: 125vw;
+  min-height: 75vh;
+  max-height: 75vh;
   align-self: center;
 }
