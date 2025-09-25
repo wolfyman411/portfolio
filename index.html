@@ -4,55 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="header.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 
 <header id = "header"></header>
 
-<body style="background-image: url(Media/Main/background.png); background-size: cover; background-attachment: fixed; background-repeat: repeat; margin: 0; padding: 0; height: 100vh; width: 100vw;" class="left-image">
-    <div style="text-align: center; padding-top: 2%;">
+<body>
+    <div style="text-align: center; padding-top:5%;">
         <div style="background-color: rgb(15, 15, 15); padding: 1%;">
-            <h1>Eli Huffman - Game Programmer - Project Lead</h1>
+            <h1>Eli Huffman - Software Engineer</h1>
             <img src="Media/Main/me2.png" class="img-border" style="width: 25%;">
-            <h1>Skills:</h1>
-            <div style="width:85%; align-items: center; margin: auto; text-align: left; background-color: rgb(11, 11, 11);">
-                <div style="padding: 1%; display: flex; flex-direction: row; max-width: 80%; align-items: center; margin: auto;">
-                    <div style="max-width: 33%; min-width: 33%; padding: 5%;">
-                        <img src="Media/Main/ue5.png" width="70%">
-                        <p>2 years of experience using Unreal Engine 5's blueprints.</p>
+
+            <div style="grid-template-columns: 1fr 1fr 1fr 1fr;" class="d-grid gap-3 row-gap-3 pt-5">
+                <div>
+                    <div class="card h-100 front">
+                    <div class="card-body">
+                        <img src="Media/Main/react.png" class="w-25">
+                        <h2 class="card-title">Frontend Technologies</h2>
+                        <h5 class="card-text">HTML, CSS, Bootstrap, JavaScript, TypeScript, Angular, React</h5>
                     </div>
-                    <div style="max-width: 33%; min-width: 33%; padding: 5%;">
-                        <img src="Media/Main/unity.png" width="70%">
-                        <p>3 years of experience programming in Unity.</p>
-                    </div>
-                    <div style="max-width: 33%; min-width: 33%; padding: 5%;">
-                        <img src="Media/Main/handshake.png" width="70%">
-                        <p>Excellent communication skills, and I am able to both lead and work in teams.</p>
                     </div>
                 </div>
-                <div style="padding: 1%; display: flex; flex-direction: row; max-width: 80%; align-items: center; margin: auto;">
-                    <div style="max-width: 33%; min-width: 33%; padding: 5%;">
-                        <img src="Media/Main/c.png" width="70%">
-                        <p>Fluent in Javascript, CSS, HTML, C, C++, C#, Java, .Net, SQL, and Python.</p>
+                <div>
+                    <div class="card h-100 front">
+                    <div class="card-body">
+                        <img src="Media/Main/c.png" class="w-25">
+                        <h2 class="card-title">Backend Technologies</h2>
+                        <h5 class="card-text">Java SE, JDBC, MySQL, Spring Core, Spring AOP, Spring boot, Spring REST, Spring JPA, Spring Security, Python, C, C++, C#</h5>
                     </div>
-                    <div style="max-width: 33%; min-width: 33%; padding: 5%;">
-                        <img src="Media/Main/notes.png" width="70%">
-                        <p>Skills in project management, and working in AGILE. With experience in leading teams, hitting deadlines, and setting up tasks.</p>
                     </div>
-                    <div style="max-width: 33%; min-width: 33%; padding: 5%;">
-                        <img src="Media/Main/git.png" width="70%">
-                        <p>Experience in Git and Github Desktop, and have experience working with multi-team codebases.</p>
+                </div>
+                <div>
+                    <div class="card h-100 front">
+                    <div class="card-body">
+                        <img src="Media/Main/postman.png" class="w-25">
+                        <h2 class="card-title">Automation Tools</h2>
+                        <h5 class="card-text">Selenium WebDriver, RestAssured, Postman</h5>
+                    </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card h-100 front">
+                    <div class="card-body">
+                        <img src="Media/Main/git.png" class="w-25">
+                        <h2 class="card-title">Other Technologies</h2>
+                        <h5 class="card-text">JUnit, SDLC, GIT, AWS, Docker, Microservices, SQL</h5>
+                    </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card h-100 front">
+                    <div class="card-body">
+                        <img src="Media/Main/vscode.png" class="w-25">
+                        <h2 class="card-title">Development Tools</h2>
+                        <h5 class="card-text">Eclipse, Visual Studio, Visual Studio Code</h5>
+                    </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card h-100 front">
+                    <div class="card-body">
+                        <img src="Media/Main/ue5.png" class="w-25">
+                        <h2 class="card-title">Game Development Tools</h2>
+                        <h5 class="card-text">Unreal Engine, Unity, Godot, Source SDK2013</h5>
+                    </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card h-100 front">
+                    <div class="card-body">
+                        <img src="Media/Main/clickup.png" class="w-25">
+                        <h2 class="card-title">Management Tools</h2>
+                        <h5 class="card-text">Trello, Miro, Clickup</h5>
+                    </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card h-100 front">
+                    <div class="card-body">
+                        <img src="Media/Main/microsoft365.png" class="w-25">
+                        <h2 class="card-title">Other Tools</h2>
+                        <h5 class="card-text">Microsoft 365 Suite, Google Workspace</h5>
+                    </div>
                     </div>
                 </div>
             </div>
-            <h1>About Me:</h1>
-            <p style="padding-left: 10%; padding-right: 10%; padding-bottom:5%; text-align: left" >My name is Eli Huffman, I live in the state of North Carolina. I am a self motivated, critical thinker who loves all things when it comes to creation and development. I've led many great teams to success, and have a wide skillset when it comes to programming.
-                I love learning new things, and even doing the things nobody wants to. If you're missing a piece of your puzzle, fit me right in.
-            </p>
-            <h1>
-                <a href="bloodfuel.html">Bloodfuel</a>
-            </h1>
+            <h3>
+                <a href="contact.html">Contact</a>
+            </h3>
         </div>
     </div>
 </body>

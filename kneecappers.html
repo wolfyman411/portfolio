@@ -3,88 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="header.js" defer></script>
-    <script src="Scripts/Games/bloodfuel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <header id = "header"></header>
 
-<body style="background-image: url(Media/Games/kneecappers/selectorbackground.png); background-size: cover; background-attachment: fixed; background-repeat: repeat; margin: 0; padding: 0; height: 100vh; width: 100vw;">
-    <div style="display: flex; justify-content: space-between; align-items: center; scale: 93%;">
-        <div style="display: flex; justify-content: center; align-items: center; padding-left: 15%; padding-right: 15%;">
-            <!--Other Half-->
-            <div style="background-color: rgb(15, 15, 15); padding-left: 15%; padding-right: 15%;">
-                <div style="width: 100%; text-align: left;">
-                    <div>
-                        <h1 style="text-align: center;">What I did</h1>
-                        <p>I programmed everything in UE5, created all the art assets and integrated them, made music and sound effects, implemented UI, and designed the game.</p>
+<body>
+    <div style="text-align: center; padding-top:5%;">
+        <div style="background-color: rgb(15, 15, 15); padding: 1%;">
+            <h1>KneeCappers</h1>
+            <p>
+                KneeCappers is an Unreal Engine 5 game developed entirely by me. It is a sidescrolller co-op heist game where players take on the role as mafia members to commit organized crime around a city.
+            </p>
+
+            <div style="text-align: left; padding-left:5%; padding-right:5%;">
+                <div class="card p-1 mt-3">
+                    <img id="gifImage" src="Media/Games/kneecappers/multi.gif" class="card-img">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Peer to Peer</h2>
+                        <ul class="mt-auto">
+                            <li>Actions are replicated for both players to allow players to play remotely on their own devices.</li>
+                            <li>Players can indepently perform actions allowing each member to complete the main objective.</li>
+                        </ul>
                     </div>
-                    <div>
-                        <h1 style="text-align: center;">What is KneeCappers</h1>
-                        <div style="display: flex; justify-content: center;">
-                            <img id="gifImage" src="Media/Games/kneecappers/gameplay.gif"style="display: none; cursor: pointer;" onclick="toggleGif(event)">
-                            <img id="altImage" src="Media/Games/kneecappers/gameplay.png"style="display: block; cursor: pointer;" onclick="toggleGif(event)">
-                            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: block;">
-                            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
+                </div>
+
+                <div class="card p-1 mt-3">
+                    <img id="gifImage" src="Media/Games/kneecappers/selection.gif" class="card-img">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Character Selection</h2>
+                        <ul class="mt-auto">
+                            <li>Before each level, players can select a character and a skin for that character. This is replicated between players as well.</li>
+                            <li>After a time, all players will be sent to a level with their selected characters and skins.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card p-1 mt-3">
+                    <div id="carousel2" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="Media/Games/kneecappers/ai.gif" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Games/kneecappers/beh5.png" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Games/kneecappers/beh4.png" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Games/kneecappers/beh3.png" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Games/kneecappers/beh2.png" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Games/kneecappers/beh1.png" class="d-block w-100 card-img" alt="...">
+                            </div>
                         </div>
-                        <p>KneeCappers is a couch co-op heist game, where players take the roles of Mafia members to commit organized crime around a city.</p>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div>
-                        <h1 style="text-align: center;">Character Selection</h1>
-                        <div style="display: flex; justify-content: center;">
-                            <img id="gifImage" src="Media/Games/kneecappers/selection.gif"style="display: none; cursor: pointer;" onclick="toggleGif(event)">
-                            <img id="altImage" src="Media/Games/kneecappers/selection.png"style="display: block; cursor: pointer;" onclick="toggleGif(event)">
-                            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: block;">
-                            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
-                        </div>
-                        <p>Players can select characters, each with their own set of abilities and color schemes.</p>
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Engaging Enemies</h2>
+                        <ul class="mt-auto">
+                            <li>Enemies patrol and navigate around the map in an attempt to spot the player.</li>
+                            <li>Enemies are broken into classes that use Unreal Engine behavior trees. These classes determine if they'll go into cover, chase the player, or flee.</li>
+                            <li>When an enemy is alerted they'll make a call to all nearby enemies in a radius and put them in an alert state to find and attack the player.</li>
+                        </ul>
                     </div>
-                    <div>
-                        <h1 style="text-align: center;">Peer to Peer</h1>
-                        <div style="display: flex; justify-content: center;">
-                            <img id="gifImage" src="Media/Games/kneecappers/multi.gif"style="display: none; cursor: pointer;" onclick="toggleGif(event)">
-                            <img id="altImage" src="Media/Games/kneecappers/multi.png"style="display: block; cursor: pointer;" onclick="toggleGif(event)">
-                            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: block;">
-                            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
-                        </div>
-                        <p>All actions are replicated on the host and the client, allowing people to play together without the need of servers.</p>
-                    </div>
-                    <div>
-                        <h1 style="text-align: center;">Engaging Enemies</h1>
-                        <div style="display: flex; justify-content: center;">
-                            <img id="gifImage" src="Media/Games/kneecappers/ai.gif"style="display: none; cursor: pointer;" onclick="toggleGif(event)">
-                            <img id="altImage" src="Media/Games/kneecappers/ai.png"style="display: block; cursor: pointer;" onclick="toggleGif(event)">
-                            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: block;">
-                            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
-                        </div>
-                        <p>Enemies patrol, and scout out for players, each enemy type reacts differently to spotting a player. Some enemies can also call the aid of nearby allies in a small radius.</p>
-                    </div>
-                    <div>
-                        <h1 style="text-align: center;">Scoring System</h1>
-                        <div style="display: flex; justify-content: center;">
-                            <img id="gifImage" src="Media/Games/kneecappers/score.gif"style="display: none; cursor: pointer;" onclick="toggleGif(event)">
-                            <img id="altImage" src="Media/Games/kneecappers/score.png"style="display: block; cursor: pointer;" onclick="toggleGif(event)">
-                            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: block;">
-                            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
-                        </div>
-                        <p>At the end of a game, players are scored based off the objectives they've completed.</p>
-                    </div>
-                    <div>
-                        <h1 style="text-align: center;">Traversal Options</h1>
-                        <div style="display: flex; justify-content: center;">
-                            <img id="gifImage" src="Media/Games/kneecappers/zipline.gif"style="display: none; cursor: pointer;" onclick="toggleGif(event)">
-                            <img id="altImage" src="Media/Games/kneecappers/zipline.png"style="display: block; cursor: pointer;" onclick="toggleGif(event)">
-                            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: block;">
-                            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
-                        </div>
-                        <p>Levels are filled with unique ways to traverse throughout the map.</p>
-                    </div>
-                    <h1 style="text-align: center;">
-                        <a href="thruster.html">Thruster</a>
-                    </h1>
                 </div>
             </div>
+            <h3>
+                <a href="thruster.html">Thruster</a>
+            </h3>
         </div>
     </div>
 </body>

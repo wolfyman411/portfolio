@@ -11,29 +11,6 @@
 .skew {
     transform: skew(-5deg);
   }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #ededed;
-    min-width: 220px;
-    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
-    outline: auto;
-    z-index: 100;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    outline: auto;
-  }
 
   header {
     position: fixed;
@@ -62,10 +39,10 @@
 
   * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0; -webkit-text-stroke-color: black; -webkit-text-stroke-width: 0.02vh; font-weight: 800; color: white;}
-p {text-shadow: 0.3vh 0.3vh black; font-size: 2vh;}
+p {text-shadow: 0.3vh 0.3vh black; font-size: 2vh; color:white}
 h3 {color: rgb(255, 255, 255); font-size: 2.5vh; font-family:sans-serif;}
 img {vertical-align: middle;}
-h1 {-webkit-text-stroke-width: 0.2vh; text-shadow: 0.2vh 0.2vh black; z-index: 0; font-size: 4.5vh;}
+h1 {-webkit-text-stroke-width: 0.2vh; text-shadow: 0.2vh 0.2vh black; z-index: 0; font-size: 5.5vh; color:white; font-weight: 800;}
 
 button:hover{
   filter: brightness(150%);
@@ -86,12 +63,13 @@ button:hover{
 
 .img-border{
   border: 2px solid black;
-  box-shadow: 4px 4px rgba(0, 0, 0, 0.421);
+  box-shadow: 1px 0px 3px 0px rgb(18, 18, 18)
 }
 
 .img-border-white{
   border: 3px solid rgb(255, 255, 255);
-  box-shadow: 4px 4px 10px 4px rgb(18, 18, 18)
+  box-shadow: 1px 0px 3px 0px rgb(18, 18, 18);
+  max-width: 100%;
 }
 
 .tilt{
@@ -152,4 +130,68 @@ html, body {
   35% {opacity: 1;}
   70% {opacity: 1;}
   100% {opacity: 0;}
+}
+
+h2 {-webkit-text-stroke-width: 0.2vh; text-shadow: 0.2vh 0.2vh black; z-index: 0; font-size: 3.5vh; color:white; font-weight: 800;}
+.card li {-webkit-text-stroke-width: 0.01vh; text-shadow: 0.2vh 0.2vh 0.1vh black; z-index: 0; font-size: 2.5vh; color:white; font-weight: 400;}
+
+.card li::marker {
+  content:"> ";
+}
+
+.card h2 {
+  color: white;
+}
+
+.card ul {
+  background-color: #000000d5;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-clip: border-box;
+  border-radius: 5px;
+}
+
+.card img {
+  max-width: 125vw;
+  min-height: 75vh;
+  max-height: 75vh;
+  align-self: center;
+}
+
+.front img {
+  max-width: 125vw;
+  min-height: auto;
+  max-height: auto;
+  align-self: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: #aeaeae;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #444444;
+    opacity: 1;
+}
+
+.carousel-control-prev {
+    left: 15px;
+}
+
+.carousel-control-next {
+    right: 15px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 25px;
+    height: 25px;
 }

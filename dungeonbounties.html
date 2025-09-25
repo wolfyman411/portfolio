@@ -3,102 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dungeon Bounties</title>
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="header.js" defer></script>
-    <script src="Scripts/Games/bloodfuel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <header id = "header"></header>
 
-<body style="background-repeat: no-repeat; background-attachment: fixed; background-color:rgba(0, 0, 0, 0.901);">
 
-    <div style="display: flex; justify-content: space-between; align-items: center; scale: 93%;">
-        <div style="display: flex; justify-content: center; align-items: center; padding-left: 15%; padding-right: 15%;">
-            <!--Other Half-->
-            <div style="background-color: rgb(15, 15, 15); padding-left: 15%; padding-right: 15%;">
-                <div style="width: 100%; text-align: left;">
-                    <div>
-                        <h1 style="text-align: center;">What I did</h1>
-                        <p>I programmed everything in UE5, created all the art assets and integrated them, made music and sound effects, implemented UI, and designed the game.</p>
-                    </div>
-                    <div>
-                        <h1 style="text-align: center;">What is Dungeon Bounties</h1>
-                        <div style="display: flex; justify-content: center;">
-                            <img id="gifImage" src="Media/Games/dungeonbounties/gameplay.gif"style="display: none; cursor: pointer;" onclick="toggleGif(event)">
-                            <img id="altImage" src="Media/Games/dungeonbounties/gameplay.png"style="display: block; cursor: pointer;" onclick="toggleGif(event)">
-                            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: block;">
-                            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
+<body>
+    <div style="text-align: center; padding-top:5%;">
+        <div style="background-color: rgb(15, 15, 15); padding: 1%;">
+            <h1>Dungeon Bounties</h1>
+            <p>
+                Dungeon Bounties is an Unreal Engine 5 game developed entirely by me. It is an isometric procedural dungeon crawler with a complex inventory and upgrade system.
+            </p>
+            <br>
+
+            <div style="text-align: left; padding-left:5%; padding-right:5%;">
+                <div class="card p-1 mt-3">
+                    <div id="carousel3" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="Media/Games/dungeonbounties/dungeon.gif" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Games/dungeonbounties/dungeon1.jpg" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Games/dungeonbounties/dungeon2.jpg" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Games/dungeonbounties/dungeon3.jpg" class="d-block w-100 card-img" alt="...">
+                            </div>
                         </div>
-                        <p>Dungeon Bounties is an isometric procedural dungeon crawler, where the focus is about dodging instead of attacking.</p>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div>
-                        <h1 style="text-align: center;">Dungeon Generator</h1>
-                        <div style="display: flex; justify-content: center;">
-                            <img id="gifImage" src="Media/Games/dungeonbounties/dungeon.gif"style="display: none; cursor: pointer;" onclick="toggleGif(event)">
-                            <img id="altImage" src="Media/Games/dungeonbounties/dungeon.png"style="display: block; cursor: pointer;" onclick="toggleGif(event)">
-                            <img src="Media/Main/play.png" style="transform: translate(700%, -150%); position: absolute; scale: 20%; display: block;">
-                            <img src="Media/Main/pause.png" style="transform: translate(700%, -150%); position: absolute; scale: 20%; display: none;">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Dungeon Generator</h2>
+                        <ul class="mt-auto">
+                            <li>Dungeons are generated one room at a time in a gridlike pattern. Once a room is picked and it doesn't collide with any other rooms, it is placed immediately.</li>
+                            <li>Dungeon walls, floors, enemies, and props are picked from a bounty in order to make each dungeon feel unique.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card p-1 mt-3">
+                    <div id="carousel4" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="Media/Games/dungeonbounties/enemies.gif" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Games/dungeonbounties/gameplay.gif" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Games/dungeonbounties/gameplay2.gif" class="d-block w-100 card-img" alt="...">
+                            </div>
                         </div>
-                        <p>Dungeons are generated using attributes based on the bounty the player chooses. This can control what types of rooms spawn, the decoration, the enemies, the amount of rooms, what the rooms look like, and more.</p>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div>
-                        <h1 style="text-align: center;">Enemies</h1>
-                        <div style="display: flex; justify-content: center;">
-                            <img id="gifImage" src="Media/Games/dungeonbounties/enemies.gif"style="display: none; cursor: pointer;" onclick="toggleGif(event)">
-                            <img id="altImage" src="Media/Games/dungeonbounties/enemies.png"style="display: block; cursor: pointer;" onclick="toggleGif(event)">
-                            <img src="Media/Main/play.png" style="transform: translate(700%, -150%); position: absolute; scale: 20%; display: block;">
-                            <img src="Media/Main/pause.png" style="transform: translate(700%, -150%); position: absolute; scale: 20%; display: none;">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Enemies</h2>
+                        <ul class="mt-auto">
+                            <li>Enemies are generated with hats and outfits based on a bounty.</li>
+                            <li>Enemies use a queue system so that they don't all attack at once and overwhelm the player.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card p-1 mt-3">
+                    <img id="gifImage" src="Media/Games/dungeonbounties/loadout.gif" class="card-img">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Inventory System</h2>
+                        <ul class="mt-auto">
+                            <li>The inventory system supports adding and removing items in bulk.</li>
+                            <li>The player may also drag items around in order to shift their positioning.</li>
+                            <li>If the player right clicks an item they can equip, destroy, or upgrade the item.</li>
+                            <li>Inventory is saved between dungeon runs, and when the game is closed and reopened.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card p-1 mt-3">
+                    <div id="carousel2" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="Media/Games/dungeonbounties/loadout.jpg" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Games/dungeonbounties/equip.gif" class="d-block w-100 card-img" alt="...">
+                            </div>
                         </div>
-                        <p>Each enemy is easily distinguishable from the other, and functions differently. Enemy outfits can be controlled by the bounty, allowing them to wear only red armor if the developer chooses.</p>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div>
-                        <h1 style="text-align: center;">Inventory System</h1>
-                        <div style="display: flex; justify-content: center;">
-                            <img id="gifImage" src="Media/Games/dungeonbounties/loadout.gif"style="display: none; cursor: pointer;" onclick="toggleGif(event)">
-                            <img id="altImage" src="Media/Games/dungeonbounties/loadout.png"style="display: block; cursor: pointer;" onclick="toggleGif(event)">
-                            <img src="Media/Main/play.png" style="transform: translate(700%, -150%); position: absolute; scale: 20%; display: block;">
-                            <img src="Media/Main/pause.png" style="transform: translate(700%, -150%); position: absolute; scale: 20%; display: none;">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Loadouts</h2>
+                        <ul class="mt-auto">
+                            <li>Players can equip multiple different armors, abilities, and weapons.</li>
+                            <li>Armors provide stat bonuses that can increase various player stats.</li>
+                            <li>Weapons change the attack animation of the player, and some can be used at a distance like guns, bows, or wands.</li>
+                            <li>Abilities can be activated in order to provide a special effect for the player.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card p-1 mt-3">
+                    <div id="carousel1" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="Media/Games/dungeonbounties/contracttable.png" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Games/dungeonbounties/contract.gif" class="d-block w-100 card-img" alt="...">
+                            </div>
                         </div>
-                        <p>Players have an inventory system that uses slots. Items can be easily moved around and selected in the inventory. Players can also equip an armor, a weapon, and an ability to help them throughout their dungeon diving.</p>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div>
-                        <h1 style="text-align: center;">Loadout System</h1>
-                        <div style="display: flex; justify-content: center;">
-                            <img id="gifImage" src="Media/Games/dungeonbounties/selectingitems.gif" style="display: none; cursor: pointer; width: 400px; height: auto;" onclick="toggleGif(event)">
-                            <img id="altImage" src="Media/Games/dungeonbounties/selectingitems.png" style="display: block; cursor: pointer; width: 400px; height: auto;" onclick="toggleGif(event)">
-                            <img src="Media/Main/play.png" style="transform: translate(600%, -150%); position: absolute; scale: 20%; display: block;">
-                            <img src="Media/Main/pause.png" style="transform: translate(600%, -150%); position: absolute; scale: 20%; display: none;">
-                        </div>
-                        <p>Players can pick armors, weapons, and abilities that suit their playstyle. Each weapon is unique in attributes, and some items may even change how the player interacts with the game.</p>
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Bounties</h2>
+                        <ul class="mt-auto">
+                            <li>Bounties are predined using Unreal Engine Data Tables allowing for quick and easy creation of new bounties.</li>
+                            <li>Bounties define many attributes such as, what enemies spawn, the amount of rooms the dungeon creates, what kind of rooms can spawn, what the dungeon looks like, and what rewards the dungeon gives.</li>
+                            <li>Bounty levels passively increase with the player based on how strong their equipment is, allowing for replayability.</li>
+                        </ul>
                     </div>
-                    <div>
-                        <h1 style="text-align: center;">Upgrading Items</h1>
-                        <div style="display: flex; justify-content: center;">
-                            <img id="gifImage" src="Media/Games/dungeonbounties/upgrade.gif"style="display: none; cursor: pointer;" onclick="toggleGif(event)">
-                            <img id="altImage" src="Media/Games/dungeonbounties/upgrade.png"style="display: block; cursor: pointer;" onclick="toggleGif(event)">
-                            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: block;">
-                            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
-                        </div>
-                        <p>The difficulty level of the bounty determines entirely on the player's equipment level. The higher the level the more unique bounties the player can take on. Players can upgrade their weapons by using materials they get from scrapping other weapons, or by getting them from chests and enemies.</p>
-                    </div>
-                    <div>
-                        <h1 style="text-align: center;">Bounty Selector</h1>
-                        <div style="display: flex; justify-content: center;">
-                            <img id="gifImage" src="Media/Games/dungeonbounties/contract.gif"style="display: none; cursor: pointer;" onclick="toggleGif(event)">
-                            <img id="altImage" src="Media/Games/dungeonbounties/contract.png"style="display: block; cursor: pointer;" onclick="toggleGif(event)">
-                            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: block;">
-                            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
-                        </div>
-                        <p>Bounties are selected in the main menu, and they control the attributes of the mission, making no 2 missions identical. These can be setup easily using a DataTable and changing the attributes of the bounty.</p>
-                    </div>
-                    <div style="text-align: center; padding: 10%;">
-                        <a href="https://wolfy411.itch.io/dungeon-bounties">Download on Itch.io</a>
-                    </div>
-                    <h1 style="text-align: center;">
-                        <a href="kneecappers.html">Knee Cappers</a>
-                    </h1>
                 </div>
             </div>
+            <h3>
+                <a href="https://wolfy411.itch.io/dungeon-bounties">Download on Itch.io</a>
+                <a href="kneecappers.html" style="padding-left: 5%;">Kneecappers</a>
+            </h3>
         </div>
     </div>
     

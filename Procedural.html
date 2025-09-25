@@ -3,40 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="header.js" defer></script>
-    <script src="Scripts/Games/bloodfuel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <header id = "header"></header>
 
-<body style="background-image: url(Media/Programming/procedural/replication.jpg); background-size: cover; background-attachment: fixed; background-repeat: repeat; margin: 0; padding: 0; height: 100vh; width: 100vw;">
-    <div style="display: flex; justify-content: space-between; align-items: center;">
-        <div style="display: flex; justify-content: space-between; align-items: center; padding-left: 15%; padding-right: 15%;">
-            <!--Other Half-->
-            <div style="background-color: rgb(15, 15, 15); padding: 15%;">
-                <div style="width: 100%; text-align: left;">
-                    <div>
-                        <h1 style="text-align: center;">The Goal</h1>
-                        <p>The goal of this experiment was to see if I could procedurally decorate and place hallways and cooridors as if they were placed by hand using blueprints and level instances in UE5.</p>
-                        <h1 style="text-align: center;">How It Works</h1>
-                        <p>The generator is given a list of level instances that have decoration spawners inside of them. When a room is generated it creates decals, wall props, rubble, and furniture based off of a whitelist.</p>
-                        <h1 style="text-align: center;">Results</h1>
-                        <img src="Media/Programming/procedural/1.jpg"style="display: flex; margin: 0 auto; width: 70%; padding-top: 1%;">
-                        <img src="Media/Programming/procedural/2.jpg"style="display: flex; margin: 0 auto; width: 70%; padding-top: 1%;">
-                        <img src="Media/Programming/procedural/3.jpg"style="display: flex; margin: 0 auto; width: 70%; padding-top: 1%;">
-                        <img src="Media/Programming/procedural/4.jpg"style="display: flex; margin: 0 auto; width: 70%; padding-top: 1%;">
-                        <img src="Media/Programming/procedural/5.jpg"style="display: flex; margin: 0 auto; width: 70%; padding-top: 1%;">
-                        <img src="Media/Programming/procedural/6.jpg"style="display: flex; margin: 0 auto; width: 70%; padding-top: 1%;">
-                        <img src="Media/Programming/procedural/7.jpg"style="display: flex; margin: 0 auto; width: 70%; padding-top: 1%;">
-                        <h1 style="text-align: center;">Outcome</h1>
-                        <p>The results were promising, as with enough props and rooms you could make a map look unique with minimal effort.</p>
+<body>
+    <div style="text-align: center; padding-top:5%;">
+        <div style="background-color: rgb(15, 15, 15); padding: 1%;">
+            <h1>The Goal</h1>
+            <p>
+                The goal of this experiment was to see if I could procedurally decorate and place hallways and cooridors as if they were placed by hand using blueprints and level instances in Unreal Engine 5.
+            </p>
+            <br>
+
+            <div style="text-align: left; padding-left:5%; padding-right:5%;">
+                <div class="card p-1 mt-3">
+                    <div id="carousel1" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="Media/Programming/procedural/1.jpg" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Programming/procedural/2.jpg" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Programming/procedural/3.jpg" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Programming/procedural/4.jpg" class="d-block w-100 card-img" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <h1 style="text-align: center;">
-                        <a href="infinitefinality.html">Infinite Finality</a>
-                    </h1>
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Decoration System</h2>
+                        <ul class="mt-auto">
+                            <li>Helper nodes are placed around nodes that specify what kind of props and decals could be placed.</li>
+                            <li>Prop categories have a list of valid props that can be placed based on the node. A TV should never be placed on the ground for example.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card p-1 mt-3">
+                    <div id="carousel2" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="Media/Programming/procedural/5.jpg" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Programming/procedural/6.jpg" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Programming/procedural/7.jpg" class="d-block w-100 card-img" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Generation System</h2>
+                        <ul class="mt-auto">
+                            <li>The generator picks a starting room and creates a path. This path continues until a specified amount of rooms generated is reached.</li>
+                            <li>When a room is placed it checks if it is colliding with another, if so it is deleted and a new room is placed. If this fails multiple times the end is closed and a new continuation point is picked.</li>
+                            <li>After the end room is placed, the rest of the openings are filled with random rooms or closed off. This continues until all rooms are closed off.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    
 </body>

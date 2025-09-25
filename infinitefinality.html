@@ -3,66 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infinite Finality</title>
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="header.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 
 <header id = "header"></header>
 
-<body style="background-image: url(Media/Projects/IF/background.png); background-repeat: no-repeat; background-color: black; height: 100%; background-size: 100%;">
-    <div style="padding-top: 20%; padding-left: 20%; padding-right: 20%; padding-bottom: 5%;">
-        <h1>
-            <a href="https://www.moddb.com/mods/infinite-finality">Mod:DB</a>
-            <a href="https://www.youtube.com/@Team_Hyperborea" style="padding-left: 5%;">Youtube</a>
-        </h1>
-        <div class="skew">
-            <h1>What Is Infinite Finality?</h1>
+<body>
+    <div style="text-align: center; padding-top:5%;">
+        <div style="background-color: rgb(15, 15, 15); padding: 1%;">
+            <h1>Infinite Finality</h1>
+            <p>
+                Infinite Finality is a modification for the game Half-Life 2, featuring unique mechanics, locations, weapons, and enemies. It is built on Source SDK2013, and is primarily programmed using C++. I serve as a programmer and overall leader of the project.
+            </p>
+            <br>
+
+            <div style="text-align: left; padding-left:5%; padding-right:5%;">
+                <h1>Programming</h1>
+                <div class="card p-1 mt-3">
+                    <div id="carousel1" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="Media/Projects/IF/bullsquid.jpg" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Projects/IF/bullsquid.gif" class="d-block w-100 card-img" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Bullsquid</h2>
+                        <ul class="mt-auto">
+                            <li>Bullsquids fire projectiles in an arc if they are a certain distance away from the player.</li>
+                            <li>Bullsquids have a ramming mechanic that causes them to run straight at the player in an attempt to slam into them and launch the player back a short distance.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card p-1 mt-3">
+                    <div id="carousel2" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="Media/Projects/IF/houndeye.jpg" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Projects/IF/houndeye.gif" class="d-block w-100 card-img" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Houndeye</h2>
+                        <ul class="mt-auto">
+                            <li>I used prebuilt squad systems to prevent houndeyes from attack all at once. Instead they use a queue system that waits until the next squadmate can attack.</li>
+                            <li>Implemented a feature to make houndeye attacks stronger the more active squadmates there are.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card p-1 mt-3">
+                    <img id="gifImage" src="Media/Projects/IF/iceaxe.gif" class="card-img">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Iceaxe</h2>
+                        <ul class="mt-auto">
+                            <li>I programmed a player melee with prebuilt classes.</li>
+                            <li>I implemented a unique charging mechanic that increases the damage the weapon deals the longer the player holds the attack button.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: left; padding-left:5%; padding-right:5%;">
+                <h1>Accomplishments</h1>
+
+                <div class="card p-1 mt-3">
+                    <img id="gifImage" src="Media/Projects/IF/popular.png" class="card-img">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Community Awards</h2>
+                        <ul class="mt-auto">
+                            <li>In 2023 we won 4th place for "Best Upcoming Mods".</li>
+                            <li>In 2024 we won 5th place for "Player's Choice Mod of the Year".</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card p-1 mt-3">
+                    <img id="gifImage" src="Media/Projects/IF/youtube.png" class="card-img">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Youtube Channel</h2>
+                        <ul class="mt-auto">
+                            <li>Our channel has over 4k subscribers.</li>
+                            <li>We've reached over 220k views.</li>
+                            <li>The channel is monetized and earning ad revenue.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card p-1 mt-3">
+                    <img id="gifImage" src="Media/Projects/IF/progress.png" class="card-img">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Releases</h2>
+                        <ul class="mt-auto">
+                            <li>A demo of our mod released in December 2024.</li>
+                            <li>The download has reached over 4k downloads</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3>
+                <a href="https://www.moddb.com/mods/infinite-finality">Development Blog</a>
+                <a href="https://www.youtube.com/@Team_Hyperborea" style="padding-left: 5%;">Public Youtube</a>
+                <a href="SkyJellies.html" style="padding-left: 5%;">SkyJellies</a>
+            </h3>
         </div>
-        <p>
-            A community driven mod for Half-Life 2 Episode 2 that attempts to retell the story of the cut expansion Half-Life 2 Episode 3. The team's current size is 22 volunteers who spend their free time working on the project when they can.
-        </p>
-        <div class="skew">
-            <h1>What I Did</h1>
-        </div>
-        <h3>Leadership</h3>
-        I was the overall lead of the project, making sure that people know what they needed to do, and what we had left to complete. I was also responsible for keeping the team friendly with one another, and taking members aside in private in order to prevent potential infighting.
-        <h3>IceAxe</h3>
-        <div style="display: flex; justify-content: center;">
-            <img id="gifImage" src="Media/Projects/IF/iceaxe.gif"class="img-border-white" onclick="toggleGif(event)" style="display: none; cursor: pointer;">
-            <img id="altImage" src="Media/Projects/IF/iceaxe.png"class="img-border-white" onclick="toggleGif(event)" style="cursor: pointer;">
-            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: flex;">
-            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
-        </div>
-        <p>Programmed a melee weapon with a charging secondary attack. I integrated the animations and model into the game as well.</p>
-        <h3>HoundEye</h3>
-        <div style="display: flex; justify-content: center;">
-            <img id="gifImage" src="Media/Projects/IF/houndeye.gif"class="img-border-white" onclick="toggleGif(event)" style="display: none; cursor: pointer;">
-            <img id="altImage" src="Media/Projects/IF/houndeye.png"class="img-border-white" onclick="toggleGif(event)" style="cursor: pointer;">
-            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: flex;">
-            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
-        </div>
-        <p>Ported an NPC from an older version of the engine, fixed older bugs from the npc, and gave it additional functionality so that mappers could setup additional sequences with them.</p>
-        <h3>Task Management</h3>
-        <p>I was in charge of making sure everyone knew what they were doing, keeping tabs on tasks and their progress, as well as keeping everyone focused on a central vision.</p>
-        <h3>Articles</h3>
-        <p>Every 2-3 months the team creates a developer article to keep the fan base up to date with progress. I was in charge of collecting everything we had done as a team, and writing the first draft of the article.</p>
-        <div style="display: flex; justify-content: center;">
-            <img src="Media/Projects/IF/progress.png" class="img-border-white">
-        </div>
-        <div class="skew">
-            <h1>Accomplishments</h1>
-        </div>
-        <div style="display: flex; justify-content: center;">
-            <img src="Media/Projects/IF/popular.png" class="img-border-white">
-        </div>
-        <p>We came in 4th place on "Best Upcoming Mods" on Mod:DB. This was voted on by the community.</p>
-        <div style="display: flex; justify-content: center;">
-            <img src="Media/Projects/IF/youtube.png" class="img-border-white" style="scale: 80%;">
-        </div>
-        <p>Our channel has reached over 2.5k subscribers, with one of our videos reaching over 85k views.</p>
-        <h1 style="text-align: center;">
-            <a href="SkyJellies.html">Sky Jellies</a>
-        </h1>
     </div>
 </body>

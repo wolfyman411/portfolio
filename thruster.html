@@ -3,155 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="header.js" defer></script>
-    <script src="Scripts/Games/thruster.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <header id = "header"></header>
 
-<body style="background-image: url(Media/Games/thruster/Background.png); background-size: cover; background-attachment: fixed; background-repeat: repeat; margin: 0; padding: 0; height: 100vh; width: 100vw;">
-    <div style="display: flex; justify-content: space-between; align-items: center; scale: 93%;">
-        <div style="display: flex; justify-content: center; align-items: center; padding-left: 15%; padding-right: 15%;">
-            <!--Other Half-->
-            <div style="background-color: rgb(15, 15, 15); padding: 15%;">
-                <div style="width: 100%; text-align: left;">
-                    <div>
-                        <h1 style="text-align: center;">What I did</h1>
-                        <p>I programmed everything in UE5, created all the art assets and integrated them; made music and sound effects, implemented UI, and designed the game.</p>
+<body>
+    <div style="text-align: center; padding-top:5%;">
+        <div style="background-color: rgb(15, 15, 15); padding: 1%;">
+            <h1>Thruster</h1>
+            <p>
+                Thruster is an Unity game developed entirely by me. It is an arcade racer with complex AI racers.
+            </p>
+            <br>
+
+            <div style="text-align: left; padding-left:5%; padding-right:5%;">
+                <div class="card p-1 mt-3">
+                    <img id="gifImage" src="Media/Games/thruster/gameplay.gif" class="card-img">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Basic Mechanics</h2>
+                        <ul class="mt-auto">
+                            <li>The Player and AI are capable of moving forwards and backwards, as well as turning.</li>
+                            <li>In order to take sharp corners racers can drift giving them a stronger turn.</li>
+                        </ul>
                     </div>
-                    <div>
-                        <h1 style="text-align: center;">What is Thruster</h1>
-                        <div style="display: flex; justify-content: center;">
-                            <img id="gifImage" src="Media/Games/thruster/gameplay.gif"style="display: none; cursor: pointer;" onclick="toggleGif(event)">
-                            <img id="altImage" src="Media/Games/thruster/gameplay.png"style="display: block; cursor: pointer;" onclick="toggleGif(event)">
-                            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: block;">
-                            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
-                        </div>
-                        <p>Thruster is a faster paced arcade racing game with a focus on more intelligent AI racers.</p>
+                </div>
+                <div class="card p-1 mt-3">
+                    <img id="gifImage" src="Media/Games/thruster/item.gif" class="card-img">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Items</h2>
+                        <ul class="mt-auto">
+                            <li>Both the player and AI can grab item boxes around the track in order to give them an advantage.</li>
+                            <li>If the racers collect boxes of the same color, their currently held item upgrades.</li>
+                            <li>AI racers will favor certain colored boxes based on whatever position they are in. For example, racers in the front will favor defensive and supportive items while racers in the back prefer attack items.</li>
+                        </ul>
                     </div>
-                    <div>
-                        <h1 style="text-align: center;">Racers</h1>
-                        <p>Racers have the same abilities as the player, and have a logic system that determines when they use items.</p>
+                </div>
+                <div class="card p-1 mt-3">
+                    <img id="gifImage" src="Media/Games/thruster/checkpoints2.gif" class="card-img">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Race Logic</h2>
+                        <ul class="mt-auto">
+                            <li>Maps are made up of checkpoints that must be passed in order to complete a lap. When a racer has hit all checkpoints their lap counter will increase by 1.</li>
+                            <li>When determining what race position racers are in, internal logic will place racers based on how many laps and checkpoints the racer has completed. If racers have the same number of checkpoints and laps, it will put the racer closest to the current checkpoint in front.</li>
+                            <li>When a race is completed by the player, racers will get points based on their position and their scores will carry onto the next race.</li>
+                            <li>Along with racers saved points, AI personalities will also carry over to the next race.</li>
+                        </ul>
                     </div>
-                    <div>
-                        <h3 style="text-align: center;">Randomization</h3>
-                        <p>Colors and names are randomly generated at the start of a race cup, and carry on between races. This allows players to form nemeses throughout the race.</p>
+                </div>
+                <div class="card p-1 mt-3">
+                    <img id="gifImage" src="Media/Games/thruster/item.gif" class="card-img">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>AI Personalities</h2>
+                        <ul class="mt-auto">
+                            <li>Before a race starts, the game will generate AI racers to compete against the player.</li>
+                            <li>The name of a racer is made up of 2 parts, each part of the name is randomly selected from a JSON file and put together.</li>
+                            <li>Racer colors are picked by selecting a primary, and a secondary color, then a tertiary color will be picked based off both the primary and secondary.</li>
+                            <li>The skill of a racer determines how fast they are, before a race starts 1 racer will be given a very high speed and another is given a very low speed.</li>
+                        </ul>
                     </div>
-                    <div>
-                        <h3 style="text-align: center;">Drifting</h3>
-                        <div style="display: flex; justify-content: center;">
-                            <img id="gifImage" src="Media/Games/thruster/drift.gif"style="display: none; cursor: pointer;" onclick="toggleGif(event)">
-                            <img id="altImage" src="Media/Games/thruster/drift.png"style="display: block; cursor: pointer;" onclick="toggleGif(event)">
-                            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: block;">
-                            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
-                        </div>
-                        <p>Racers are capable of taking sharp turns around corners. After completing a drift, a small boost will activate launching the racer forwards.</p>
+                </div>
+                <div class="card p-1 mt-3">
+                    <img id="gifImage" src="Media/Games/thruster/checkpoints.gif" class="card-img">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>AI Pathing</h2>
+                        <ul class="mt-auto">
+                            <li>Racers use Unity's built in navigation system and attempt to face an invisible box. Inputs are then fed using dot products using the same controller the player uses.</li>
+                            <li>Racers also use invisible rays that detect if they are getting ready to collide with a wall or a racer and attempt to navigate away from them.</li>
+                        </ul>
                     </div>
-                    <div>
-                        <h3 style="text-align: center;">Health</h3>
-                        <p>Racers have a certain amount of health that is reduced when smashing into walls or getting hit by lasers. When HP drops to 0 the racer will explode and be placed at a race checkpoint.</p>
-                    </div>
-                    <div>
-                        <h3 style="text-align: center;">Quips</h3>
-                        <div style="display: flex; justify-content: center;">
-                            <img id="gifImage" src="Media/Games/thruster/taunt.gif"style="display: none; cursor: pointer;" onclick="toggleGif(event)">
-                            <img id="altImage" src="Media/Games/thruster/taunt.png"style="display: block; cursor: pointer;" onclick="toggleGif(event)">
-                            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: block;">
-                            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
-                        </div>
-                        <p>When racers pass a another racer, hurt a racer, or finish a race, they will exchange dialogue and taunt.</p>
-                    </div>
-                    <div>
-                        <h1 style="text-align: center;">Items</h1>
-                        <div style="display: flex; justify-content: center;">
-                            <img id="gifImage" src="Media/Games/thruster/item.gif"style="display: none; cursor: pointer;" onclick="toggleGif(event)">
-                            <img id="altImage" src="Media/Games/thruster/item.png"style="display: block; cursor: pointer;" onclick="toggleGif(event)">
-                            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: block;">
-                            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
-                        </div>
-                        <p>Colored item boxes are scattered around the race track. Collecting the same color increases the level of the item by 1.</p>
-                    </div>
-                    <div>
-                        <h3 style="text-align: center;">Attack Items</h3>
-                        <p id="AtkName">LASER</p> 
-                        <p id="AtkBio">Fires a homing laser at the racer in front, dealing a moderate amount of damage.</p>
-                        <div style="display: flex; justify-content: center;">
-                            <button type="button" onclick="moveIndex(-1)" style="background: transparent; border: none;">
-                                <img src="Media/Games/bloodfuel/arrowleft.png">
-                            </button>
-                            <img src="Media/Games/thruster/laser.png" id="AtkImg">
-                            <button type="button" onclick="moveIndex(1)" style="background: transparent; border: none;">
-                                <img src="Media/Games/bloodfuel/arrowright.png">
-                            </button>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 style="text-align: center;">Defense Items</h3>
-                        <p id="DefName">LANDMINE</p> 
-                        <p id="DefBio">Places a landmine behind the racer, which explodes when it comes into contact with another racer.</p>
-                        <div style="display: flex; justify-content: center;">
-                            <button type="button" onclick="moveDefIndex(-1)" style="background: transparent; border: none;">
-                                <img src="Media/Games/bloodfuel/arrowleft.png">
-                            </button>
-                            <img src="Media/Games/thruster/landmine.png" id="DefImg">
-                            <button type="button" onclick="moveDefIndex(1)" style="background: transparent; border: none;">
-                                <img src="Media/Games/bloodfuel/arrowright.png">
-                            </button>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 style="text-align: center;">Boost Items</h3>
-                        <p id="BstName">BOOST</p> 
-                        <p id="BstBio">A short boost that carries the racer forwards a distance.</p>
-                        <div style="display: flex; justify-content: center;">
-                            <button type="button" onclick="moveBstIndex(-1)" style="background: transparent; border: none;">
-                                <img src="Media/Games/bloodfuel/arrowleft.png">
-                            </button>
-                            <img src="Media/Games/thruster/boost.png" id="BstImg">
-                            <button type="button" onclick="moveBstIndex(1)" style="background: transparent; border: none;">
-                                <img src="Media/Games/bloodfuel/arrowright.png">
-                            </button>
-                        </div>
-                    </div>
-                    <div>
-                        <h1 style="text-align: center;">Race</h1>
-                        <p>Races are a simple 3 laps and are part of a cup. Cups are 3 races long, and at the end of a cup, the racer with the least points wins.</p>
-                    </div>
-                    <div>
-                        <h3 style="text-align: center;">Leaderboard</h3>
-                        <div style="display: flex; justify-content: center;">
-                            <img id="gifImage" src="Media/Games/thruster/leaderboard.gif"style="display: none; cursor: pointer;" onclick="toggleGif(event)">
-                            <img id="altImage" src="Media/Games/thruster/leaderboard.png"style="display: block; cursor: pointer;" onclick="toggleGif(event)">
-                            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: block;">
-                            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
-                        </div>
-                        <p>Leaderboards award points based on finished position, they carry between races until the end of the cup. They also determine placement in the next race.</p>
-                    </div>
-                    <div>
-                        <h3 style="text-align: center;">Race Logic</h3>
-                        <div style="display: flex; justify-content: center;">
-                            <img id="gifImage" src="Media/Games/thruster/checkpoints.gif"style="display: none; cursor: pointer;" onclick="toggleGif(event)">
-                            <img id="altImage" src="Media/Games/thruster/checkpoints.png"style="display: block; cursor: pointer;" onclick="toggleGif(event)">
-                            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: block;">
-                            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
-                        </div>
-                        <div style="display: flex; justify-content: center;">
-                            <img id="gifImage" src="Media/Games/thruster/checkpoints2.gif"style="display: none; cursor: pointer;" onclick="toggleGif(event)">
-                            <img id="altImage" src="Media/Games/thruster/checkpoints2.png"style="display: block; cursor: pointer;" onclick="toggleGif(event)">
-                            <img src="Media/Main/play.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: block;">
-                            <img src="Media/Main/pause.png" style="transform: translate(900%, -150%); position: absolute; scale: 20%; display: none;">
-                        </div>
-                        <p>Races are built by a series of checkpoints, these checkpoints determine where racers will respawn, and help accurately determine racer placement.</p>
-                    </div>
-                    <div style="text-align: center; padding: 10%;">
-                        <a href="https://wolfy411.itch.io/thruster">Download on Itch.io</a>
-                    </div>
-                    <h1 style="text-align: center;">
-                        <a href="Procedural.html">Experimental Procedural Generation</a>
-                    </h1>
                 </div>
             </div>
+            <h3>
+                <a href="https://wolfy411.itch.io/thruster">Download on Itch.io</a>
+                <a href="bloodfuel.html" style="padding-left: 5%;">Blood Fuel</a>
+            </h3>
         </div>
     </div>
+    
 </body>
