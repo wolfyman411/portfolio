@@ -48,7 +48,7 @@
                         <h2>Race Logic</h2>
                         <ul class="mt-auto">
                             <li>Maps are made up of checkpoints that must be passed in order to complete a lap. When a racer has hit all checkpoints their lap counter will increase by 1.</li>
-                            <li>When determining what race position racers are in, internal logic will place racers based on how many laps and checkpoints the racer has completed. If racers have the same number of checkpoints, it will put the racer closest to the current checkpoint in front.</li>
+                            <li>When determining what race position racers are in, internal logic will place racers based on how many laps and checkpoints the racer has completed. If racers have the same number of checkpoints and laps, it will put the racer closest to the current checkpoint in front.</li>
                             <li>When a race is completed by the player, racers will get points based on their position and their scores will carry onto the next race.</li>
                             <li>Along with racers saved points, AI personalities will also carry over to the next race.</li>
                         </ul>
@@ -71,7 +71,7 @@
                     <div class="card-img-overlay  d-flex flex-column">
                         <h2>AI Pathing</h2>
                         <ul class="mt-auto">
-                            <li>Racers use Unity's built in navigation system and attempt to face an invisible box using the same racer controller the player uses.</li>
+                            <li>Racers use Unity's built in navigation system and attempt to face an invisible box. Inputs are then fed using dot products using the same controller the player uses.</li>
                             <li>Racers also use invisible rays that detect if they are getting ready to collide with a wall or a racer and attempt to navigate away from them.</li>
                         </ul>
                     </div>
