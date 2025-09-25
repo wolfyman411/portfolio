@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="header.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<header id = "header"></header>
+
+<body>
+    <div style="text-align: center; padding-top:5%;">
+        <div style="background-color: rgb(15, 15, 15); padding: 1%;">
+            <h1>Electronics Store</h1>
+            <p>
+                I created an online storefront using a variety of tools and software. The project is made up of three core components, the webpage, the microservice, and the MySQL database. The webpage was made using Javascript and ReactJS, the microservice was built using Java, Spring Framework, and JDBC. I used Postman to make API calls and to test that the webpage was correctly interacting with both the database and the microservice.
+            </p>
+            <br>
+
+            <div style="text-align: left; padding-left:5%; padding-right:5%;">
+                <div class="card p-1 mt-3">
+                    <div id="carousel1" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="Media/Software/ElectronicsStore/signin.png" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Software/ElectronicsStore/register.png" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Software/ElectronicsStore/home.png" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Software/ElectronicsStore/category.png" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Software/ElectronicsStore/cart.png" class="d-block w-100 card-img" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Pages</h2>
+                        <ul class="mt-auto">
+                            <li>Users can log into their personal storefront and add items to their individual cart.</li>
+                            <li>If a user wants to wishlist an item they can press the heart, and it will be displayed on their homepage.</li>
+                            <li>Once a user adds an item to their cart they can checkout. When the purchase is successful, it will be removed from the storefront for all users.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card p-1 mt-3">
+                    <img id="gifImage" src="Media/Software/ElectronicsStore/search.gif" class="card-img">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Search</h2>
+                        <ul class="mt-auto">
+                            <li>Users can search for items in individual categories. Rather than forcing the user to type the item correctly, they just need to get most of the letters correctly.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card p-1 mt-3">
+                    <div id="carousel2" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="Media/Software/ElectronicsStore/adminuser.png" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Software/ElectronicsStore/adminproduct.png" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Software/ElectronicsStore/adminsale.png" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Software/ElectronicsStore/adminsale2.png" class="d-block w-100 card-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="Media/Software/ElectronicsStore/admincoupon.png" class="d-block w-100 card-img" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Admin</h2>
+                        <ul class="mt-auto">
+                            <li>Admins gain access to their own panel not visible to regular users. Here they can adjust or delete users and products.</li>
+                            <li>Admins may also upload a CSV in order to bulk add items.</li>
+                            <li>Order history may also be viewed, allowing admins to filter orders to a specific range.</li>
+                            <li>Coupons may also be created and given to specific users.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card p-1 mt-3">
+                    <img id="gifImage" src="Media/Software/ElectronicsStore/couponuse.png" class="card-img">
+                    <div class="card-img-overlay  d-flex flex-column">
+                        <h2>Coupons</h2>
+                        <ul class="mt-auto">
+                            <li>Before checkout, a user is able to input a coupon name they can see on their homepage and get a certain discount. This is correctly reflected in the order history for admins as well.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>

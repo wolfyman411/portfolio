@@ -60,7 +60,7 @@ createDropdown("Information", [
 ]);
 
 createDropdown("Software", [
-    {url: "#", text: "Electronics Store"},
+    {url: "electronics.html", text: "Electronics Store"},
 ]);
 
 createDropdown("Games", [
