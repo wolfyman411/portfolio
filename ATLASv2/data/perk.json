@@ -11,15 +11,15 @@
 },
 {
     "name":"Scout",
-    "hp":2,
+    "hp":1,
     "sp":0,
-    "cp":2,
+    "cp":1,
     "speed":0,
     "data":["[Know Your Enemy - 1 CP]: Know the weaknesses and resistances of a target that you can see within 60 ft.","[Crowd Sense]: You always know how many creatures are within 30 ft of you, and you cannot be surprised."]
 },
 {
     "name":"Martial Adept",
-    "hp":3,
+    "hp":1,
     "sp":0,
     "cp":1,
     "speed":0,
@@ -27,7 +27,7 @@
 },
 {
     "name":"Tracker",
-    "hp":3,
+    "hp":1,
     "sp":1,
     "cp":0,
     "speed":0,
@@ -35,8 +35,8 @@
 },
 {
     "name":"Wanderer",
-    "hp":2,
-    "sp":1,
+    "hp":1,
+    "sp":0,
     "cp":0,
     "speed":0,
     "talent":1,
@@ -44,7 +44,7 @@
 },
 {
     "name":"Ruffian",
-    "hp":2,
+    "hp":1,
     "sp":1,
     "cp":0,
     "speed":10,
@@ -52,16 +52,16 @@
 },
 {
     "name":"Scholar",
-    "hp":2,
+    "hp":1,
     "sp":0,
     "cp":0,
     "speed":0,
-    "talent":2,
+    "talent":1,
     "data":["[Sixth Sense]: You always know what direction is north, and what time of day it is.","[Keen Memory]: You can recall any information given to you in the last month."]
 },
 {
     "name":"Adrenaline Junky",
-    "hp":4,
+    "hp":2,
     "sp":0,
     "cp":0,
     "speed":0,
@@ -69,28 +69,28 @@
 },
 {
     "name":"Blight Bearer",
-    "hp":1,
+    "hp":0,
     "sp":0,
-    "cp":2,
+    "cp":1,
     "speed":0,
     "talent":1,
     "data":["[Blight Harbinger]: You are immune to blight damage and are immune to disease.","[Blight Spreader]: When you crit with a melee attack, you may turn the damage type into blight damage."]
 },
 {
     "name":"Survivor",
-    "hp":3,
+    "hp":1,
     "sp":0,
     "cp":1,
     "speed":0,
-    "data":["[Patch Up - 1 CP]: Heal yourself 1d6 HP.","[Surrounded]: If there are 2 or more enemies within 5 ft of you, you gain 1 AC."]
+    "data":["[Patch Up - 3 CP]: Heal yourself 1d6 HP.","[Surrounded]: If there are 2 or more enemies within 5 ft of you, you gain 1 AC."]
 },
 {
     "name":"Olympian",
-    "hp":2,
+    "hp":0,
     "sp":1,
     "cp":1,
-    "speed":10,
-    "data":["[Long Winded - 1 CP]: Double your movement speed for 1 hour.","[Surge]: Regain all SP and CP. You can do this once per long rest."]
+    "speed":0,
+    "data":["[Long Winded - 1 CP]: Double your movement speed for 1 hour.","[Surge]: Regain all SP and 1d6 CP. You can do this once per long rest."]
 },
 {
     "name":"Beast Master",
@@ -102,25 +102,25 @@
 },
 {
     "name":"Battle Worn",
-    "hp":4,
+    "hp":2,
     "sp":0,
     "cp":0,
     "speed":0,
-    "data":["[Leather Skin]: Gain resistance to laser damage.","[Enduring - 2 CP]: When brought into critical condition, you may use this ability to regain 1 HP and come back to consciousness."]
+    "data":["[Leather Skin]: Gain resistance to laser damage.","[Enduring]: If an attack would put you into critical condition, roll a d6. On a result of 5+ regain 1 HP and stay conscious."]
 },
 {
     "name":"Overwatch",
-    "hp":2,
+    "hp":1,
     "sp":1,
-    "cp":1,
+    "cp":0,
     "speed":0,
     "data":["[Battle Survey - 1 CP]: Give 3 creatures that you can see within 60 ft, the marked condition. This condition lasts until the start of your next turn.","[Cover Sniper]: You ignore the benefits of ¼ and half cover."]
 },
 {
     "name":"Prepper",
-    "hp":2,
-    "sp":0,
-    "cp":2,
+    "hp":1,
+    "sp":1,
+    "cp":0,
     "speed":0,
     "data":["[Skeleton Key - 1 CP]: Succeed on a hack or a lockpick with a difficulty rating lower than Master.","[Master Toolkit - 1 CP]: Your next repair will heal double the HP it normally would."]
 }

@@ -62,6 +62,7 @@ function loadJSON(){
 
 function updateAll(){
     resetVars()
+    verifyInputs()
 
     if (training)
     {
@@ -85,7 +86,7 @@ function resetVars(){
     addSP = 0
     addCP = 0
     addSpeed = 30
-    addThresholds = [2,6,12]
+    addThresholds = [3,7,11]
 
     console.log("test")
 
@@ -93,8 +94,26 @@ function resetVars(){
     addAC = 0
 
     //Points
-    totalSkillPoints = 6
+    totalSkillPoints = 5
     totalTalentPoints = 2
+}
+
+function verifyInputs(){
+    if (document.getElementById("chr_ang").value * 1 > 3){
+        document.getElementById("chr_ang").value = 3
+    }
+    if (document.getElementById("chr_trk").value * 1 > 3){
+        document.getElementById("chr_trk").value = 3
+    }
+    if (document.getElementById("chr_lck").value * 1 > 3){
+        document.getElementById("chr_lck").value = 3
+    }
+    if (document.getElementById("chr_agl").value * 1 > 3){
+        document.getElementById("chr_agl").value = 3
+    }
+    if (document.getElementById("chr_smt").value * 1 > 3){
+        document.getElementById("chr_smt").value = 3
+    }
 }
 
 function updateDropDowns(){
@@ -379,11 +398,31 @@ function updateSkills(){
     addSP += skillBonus(document.getElementById("chr_lck").value) * 1;
     addHP += skillBonus(document.getElementById("chr_ang").value) * 1;
     totalTalentPoints += skillBonus(document.getElementById("chr_smt").value) * 1;
+
+    /*addSpeed += document.getElementById("chr_agl").value * 5;
+    addCP += document.getElementById("chr_trk").value * 1;
+    addSP += document.getElementById("chr_lck").value * 1;
+    addHP += document.getElementById("chr_ang").value * 1;
+    totalTalentPoints += document.getElementById("chr_smt").value * 1;*/
 }
 
 function tallyPoints(){
     //Skill Points
-    totalSkillPoints += document.getElementById("chr_lvl").value * 1;
+    var level = document.getElementById("chr_lvl").value * 1
+
+    if (level >= 2) {
+        totalSkillPoints += 1;
+    }
+    if (level >= 5) {
+        totalSkillPoints += 1;
+    }
+    if (level >= 7) {
+        totalSkillPoints += 1;
+    }
+    if (level >= 10) {
+        totalSkillPoints += 1;
+    }
+
     totalSkillPoints -= document.getElementById("chr_agl").value
     totalSkillPoints -= document.getElementById("chr_trk").value
     totalSkillPoints -= document.getElementById("chr_lck").value
@@ -428,15 +467,7 @@ function updatePoints(){
 }
 
 function skillBonus(val){
-    if (val >= 5)
-    {
-        return 3
-    }
-    else if (val >= 3)
-    {
-        return 2
-    }
-    else if (val >= 1)
+    if (val >= 3)
     {
         return 1
     }
