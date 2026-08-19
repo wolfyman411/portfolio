@@ -3,98 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Eli Huffman</title>
     <link rel="stylesheet" href="style.css">
-    <script src="header.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/00f18cf7ad.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "OIAcwsHQrAdncjmB6",
+        });
+    })();
+    </script>
 </head>
-
-<header id = "header"></header>
-
 <body>
-    <div style="text-align: center;">
-        <div style="background-color: rgb(15, 15, 15); padding: 1%;">
-            <h1 style="padding-top: 12vh;">Eli Huffman - Software Engineer</h1>
-            <img src="Media/Main/me2.png" class="img-border" style="width: 25%;">
-
-            <div style="grid-template-columns: 23% 23% 23% 23%;" class="d-grid gap-3 row-gap-3 pt-5 justify-content-center mx-auto" style="max-width: 100vw;">
-                <div>
-                    <div class="card h-100 front">
-                    <div class="card-body">
-                        <img src="Media/Main/react.png" class="w-25">
-                        <h2 class="card-title">Frontend Technologies</h2>
-                        <h5 class="card-text">HTML, CSS, Bootstrap, JavaScript, TypeScript, Angular, React</h5>
-                    </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="card h-100 front">
-                    <div class="card-body">
-                        <img src="Media/Main/c.png" class="w-25">
-                        <h2 class="card-title">Backend Technologies</h2>
-                        <h5 class="card-text">Java SE, JDBC, MySQL, Spring Core, Spring AOP, Spring boot, Spring REST, Spring JPA, Spring Security, Python, C, C++, C#</h5>
-                    </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="card h-100 front">
-                    <div class="card-body">
-                        <img src="Media/Main/postman.png" class="w-25">
-                        <h2 class="card-title">Automation Tools</h2>
-                        <h5 class="card-text">Selenium WebDriver, RestAssured, Postman</h5>
-                    </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="card h-100 front">
-                    <div class="card-body">
-                        <img src="Media/Main/git.png" class="w-25">
-                        <h2 class="card-title">Other Technologies</h2>
-                        <h5 class="card-text">JUnit, SDLC, GIT, AWS, Docker, Microservices, SQL</h5>
-                    </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="card h-100 front">
-                    <div class="card-body">
-                        <img src="Media/Main/vscode.png" class="w-25">
-                        <h2 class="card-title">Development Tools</h2>
-                        <h5 class="card-text">Eclipse, Visual Studio, Visual Studio Code</h5>
-                    </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="card h-100 front">
-                    <div class="card-body">
-                        <img src="Media/Main/ue5.png" class="w-25">
-                        <h2 class="card-title">Game Development Tools</h2>
-                        <h5 class="card-text">Unreal Engine, Unity, Godot, Source SDK2013</h5>
-                    </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="card h-100 front">
-                    <div class="card-body">
-                        <img src="Media/Main/clickup.png" class="w-25">
-                        <h2 class="card-title">Management Tools</h2>
-                        <h5 class="card-text">Trello, Miro, Clickup</h5>
-                    </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="card h-100 front">
-                    <div class="card-body">
-                        <img src="Media/Main/microsoft365.png" class="w-25">
-                        <h2 class="card-title">Other Tools</h2>
-                        <h5 class="card-text">Microsoft 365 Suite, Google Workspace</h5>
-                    </div>
-                    </div>
+    <section id="landing-page" onmousemove="moveBackground(event)">
+        <nav>
+            <div class="nav__name primary">Eli Huffman</div>
+            <ul class="nav__links">
+                <li class="nav__link" onclick="toggleModal()">
+                    <a href="#" class="nav__link--anchor link__hover link__hover-effect link__hover-effect--black">About</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#projects" class="nav__link--anchor link__hover link__hover-effect link__hover-effect--black">Projects</a>
+                </li>
+                <li class="nav__link" onclick="toggleModal()">
+                    <a href="#" class="nav__link--anchor link__hover link__hover-effect link__hover-effect--black">Contact</a>
+                </li>
+                <li class="nav__link" onclick="toggleContrast()">
+                    <a class="click nav__link--anchor link__hover link__hover-effect link__hover-effect--black"><i class="fas fa-adjust"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <header class="header">
+            <div class="header__content">
+                <h1 class="title">Hey</h1>
+                <h1 class="title primary">I'm Eli.</h1>
+                <p class="header__para">I'm a <b class="primary">Software Engineer</b> that loves the creative process of building applications. I enjoy working with clients to make their dream web websites, and build amazing user experiences.
+                    <br><br>
+                    Here's a bit more <b onclick="toggleModal()"><a class="primary click" href="#about">about me</a></b>.
+                </p>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/eli-huffman-096734222/" target="_blank" class="social click">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/wolfyman411" target="_blank" class="social click">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="assets/Eli Huffman.pdf" target="_blank" class="social click">
+                        <i class="fas fa-file-pdf"></i>
+                    </a>
                 </div>
             </div>
-            <h3>
-                <a href="contact.html">Contact</a>
-            </h3>
+        </header>
+        <a href="#">
+            <button class="mail__btn click" onclick="toggleModal()">
+                <i class="fas fa-envelope"></i>
+            </button>
+        </a>
+        <a href="#projects" class="scroll">
+            <div class="scroll__icon" click></div>
+        </a>
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h3 class="modal__title">Here's a bit about me.</h3>
+                <h4 class="modal__subtitle">Software Engineer</h4>
+                <p class="modal__para">
+                    I'm a <b class="primary"> software engineer</b> that loves working with clients to create great <b class="primary">user experiences.</b>
+                    <br><br>
+                    I have a varied background in programming, design, and organization, as well as experience with working in teams in all sizes. If you're missing a piece to your team, I'll fit right in.
+                </p>
+                <div class="modal__languages">
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://cdn.worldvectorlogo.com/logos/css-3.svg">
+                        <span class="language__name">CSS</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/html-1.svg">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://static.cdnlogo.com/logos/j/69/javascript.svg">
+                        <span class="language__name">Javascript</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/3840px-React-icon.svg.png">
+                        <span class="language__name">React</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png">
+                        <span class="language__name">Java</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png">
+                        <span class="language__name">Python</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Logo_C_sharp.png">
+                        <span class="language__name">C#</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1280px-ISO_C%2B%2B_Logo.svg.png">
+                        <span class="language__name">C++</span>
+                    </figure>
+                </div>
+            </div>
+            <div class="modal__half modal__contact">
+                <h3 class="modal__title">Let's have a chat!</h3>
+                <h4 class="modal__subtitle">I'm currently open to new opportunities.</h4>
+                <form id="contact__form" onsubmit="contact(event)">
+                    <div class="form__item">
+                        <label class="form__item--label">Name</label>
+                        <input class="input" name="user_name" type="text" required>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Email</label>
+                        <input class="input" name="user_email" type="email" required>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Message</label>
+                        <textarea name="message" required></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">Send The Message</button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Message Sent!
+                </div>
+                <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+            </div>
         </div>
-    </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">
+                    Here are some of my <b class="primary">projects</b>
+                </h1>
+                <div class="view__selector">
+                    <div class="view__selection link__hover link__hover-effect link__hover-effect--black" onclick="buildProjects('websites',0)">Websites</div>
+                    <div class="view__selection link__hover link__hover-effect link__hover-effect--black" onclick="buildProjects('games',1)">Games</div>
+                </div>
+                <ul class="projects">
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer_name">Eli Huffman</div>
+                <div class="footer__socials">
+                    <a href="https://github.com/wolfyman411" target="_blank" class="footer__social link__hover-effect link__hover-effect--white">Github</a>
+                    <a href="https://www.linkedin.com/in/eli-huffman-096734222/" target="_blank" class="footer__social link__hover-effect link__hover-effect--white">LinkedIn</a>
+                    <a href="#" class="footer__social link__hover-effect link__hover-effect--white" onclick="toggleModal()">Contact</a>
+                    <a href="assets/Eli Huffman.pdf" target="_blank" class="footer__social link__hover-effect link__hover-effect--white">Resume</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+</html>

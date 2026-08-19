@@ -1,0 +1,79 @@
+
+{
+    "websites":[
+        {
+            "name":"Summarist",
+            "skills":"HTML, CSS, TypeScript, React, Firebase, NextJS, Stripe",
+            "desc":"A library platform for reading or listening to book summaries, featuring real-time search, personalized library management, and Stripe-powered premium upgrades. Built with TypeScript, Firebase, and a seamless payment workflow to monetize content access.",
+            "git":"https://github.com/wolfyman411/fes-internship-v2",
+            "web":"https://fes-internship-v2.vercel.app/",
+            "image":"summarist"
+        },
+        {
+            "name":"Dungeon Diver",
+            "skills":"HTML, CSS, TypeScript, React, NextJS, Firebase",
+            "desc":"A browser based RPG with character creation, location-based monster battles, and progression tracking. Firebase handles all player data and dynamic game configuration, allowing non-developers to update monster and location attributes via a backend interface.",
+            "git":"https://github.com/wolfyman411/dungeon-diver",
+            "web":"https://dungeon-diver-psi.vercel.app/",
+            "image":"dungeondiver"
+        },
+        {
+            "name":"Ultraverse NFT World",
+            "skills":"HTML, CSS, TypeScript, React",
+            "desc":"A marketplace for browsing collections, viewing user profiles, and inspecting individual NFT metadata. Streamlines discovery and portfolio exploration in a clean, responsive interface.",
+            "git":"https://github.com/wolfyman411/Eli-FES-Internship",
+            "web":"https://eli-fes-internship.vercel.app/",
+            "image":"nft"
+        },
+        {
+            "name":"Job Lurker",
+            "skills":"HTML, CSS, TypeScript, React",
+            "desc":"A job search platform that aggregates real-time listings via a third-party API. Users can search by title, filter by job type, sort by recency, and navigate directly to original job postings.",
+            "git":"https://github.com/wolfyman411/fes-final-project-3",
+            "web":"https://fes-final-project-3.vercel.app/",
+            "image":"joblurker"
+        },
+        {
+            "name":"YouTube Clone",
+            "skills":"HTML, CSS, TypeScript, React, NextJS",
+            "desc":"A video streaming interface that pulls real-time data from the YouTube API. Users can browse videos by category, watch embedded content, view comments, and explore related recommendations seamlessly.",
+            "git":"https://github.com/wolfyman411/youtube-clone",
+            "web":"https://youtube-clone-two-sand.vercel.app/",
+            "image":"yt"
+        }
+    ],
+    "games":[
+        {
+            "name":"Restless Nights",
+            "skills":"GDscript, Godot, Blender, Krita",
+            "desc":"A solo-developed horror game built in Godot, featuring over 2 hours of immersive gameplay. Designed and implemented custom 3D assets using Blender for modeling and Krita for texturing, handling everything from development to marketing independently.",
+            "git":"",
+            "web":"https://store.steampowered.com/app/4337510/Restless_Nights/",
+            "image":"restless"
+        },
+        {
+            "name":"Infinite Finality",
+            "skills":"C++, SDK2013, Blender, Krita",
+            "desc":"Half-Life 2 addon developed in C++ and SDK2013 by a 10+ person team, where I serve as Lead and Principal Engineer. Delivered proprietary weapon systems, AI-driven NPCs, and custom tooling that accelerated team workflows and content iteration.",
+            "git":"",
+            "web":"https://www.moddb.com/mods/infinite-finality",
+            "image":"finality"
+        },
+        {
+            "name":"Dungeon Bounties",
+            "skills":"Unreal Engine 5, Blender, Krita",
+            "desc":"A UE5 dungeon crawler with procedural level generation, custom inventory logic, and intelligent enemy AI. Solely responsible for gameplay programming and all 3D asset creation using Blender and Krita.",
+            "git":"",
+            "web":"https://wolfy411.itch.io/dungeon-bounties",
+            "image":"dungeonbounties"
+        },
+        {
+            "name":"Blood Fuel",
+            "skills":"C#, Unity, Krita",
+            "desc":"A top-down horde survival game built in Unity with C#, featuring a dynamic wave-based enemy system, unique equippable items, and an in-game shop for progression. Built full gameplay implementation from enemy AI to player-driven economy systems.",
+            "git":"",
+            "web":"https://wolfy411.itch.io/bloodfuel",
+            "image":"bloodfuel"
+        }
+    ]
+}
