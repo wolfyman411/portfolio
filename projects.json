@@ -35,7 +35,7 @@
         },
         {
             "name":"YouTube Clone",
-            "skills":"HTML, CSS, TypeScript, React, NextJS",
+            "skills":"HTML, CSS, TypeScript, React, Vite",
             "desc":"A video streaming interface that pulls real-time data from the YouTube API. Users can browse videos by category, watch embedded content, view comments, and explore related recommendations seamlessly.",
             "git":"https://github.com/wolfyman411/youtube-clone",
             "web":"https://youtube-clone-two-sand.vercel.app/",
