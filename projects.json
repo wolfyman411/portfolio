@@ -2,6 +2,14 @@
 {
     "websites":[
         {
+            "name":"Ultraverse NFT World",
+            "skills":"HTML, CSS, TypeScript, React",
+            "desc":"A marketplace for browsing collections, viewing user profiles, and inspecting individual NFT metadata. Streamlines discovery and portfolio exploration in a clean, responsive interface.",
+            "git":"https://github.com/wolfyman411/Eli-FES-Internship",
+            "web":"https://eli-fes-internship.vercel.app/",
+            "image":"nft"
+        },
+        {
             "name":"Summarist",
             "skills":"HTML, CSS, TypeScript, React, Firebase, NextJS, Stripe",
             "desc":"A library platform for reading or listening to book summaries, featuring real-time search, personalized library management, and Stripe-powered premium upgrades. Built with TypeScript, Firebase, and a seamless payment workflow to monetize content access.",
@@ -16,14 +24,6 @@
             "git":"https://github.com/wolfyman411/dungeon-diver",
             "web":"https://dungeon-diver-psi.vercel.app/",
             "image":"dungeondiver"
-        },
-        {
-            "name":"Ultraverse NFT World",
-            "skills":"HTML, CSS, TypeScript, React",
-            "desc":"A marketplace for browsing collections, viewing user profiles, and inspecting individual NFT metadata. Streamlines discovery and portfolio exploration in a clean, responsive interface.",
-            "git":"https://github.com/wolfyman411/Eli-FES-Internship",
-            "web":"https://eli-fes-internship.vercel.app/",
-            "image":"nft"
         },
         {
             "name":"Job Lurker",
