@@ -26,6 +26,14 @@
             "image":"dungeondiver"
         },
         {
+            "name":"Blackjack",
+            "skills":"HTML, CSS, TypeScript, VueJS",
+            "desc":"A web application that integrates the Deck of Cards API to deliver a fully functional blackjack game. It features betting, audio feedback for certain gameplay events, and a card dealing system.",
+            "git":"https://github.com/wolfyman411/blackjack",
+            "web":"https://blackjack-gamma-eosin.vercel.app",
+            "image":"blackjack"
+        },
+        {
             "name":"Job Lurker",
             "skills":"HTML, CSS, TypeScript, React",
             "desc":"A job search platform that aggregates real-time listings via a third-party API. Users can search by title, filter by job type, sort by recency, and navigate directly to original job postings.",
