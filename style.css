@@ -530,7 +530,8 @@ nav {
 }
 
 .project {
-    padding: 48px 32px;
+    padding: 0px 32px;
+    padding-top: 6vh;
 }
 
 .view__selector {
@@ -600,7 +601,7 @@ nav {
 }
 
 .project__desc--title {
-    font-size: 40px;
+    font-size: clamp(8px,8vw,48px);
 }
 
 .project__desc--sub-title {
